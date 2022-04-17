@@ -1,5 +1,6 @@
 {
-  "name": "jakubpawlowski.pl",
+  "name": "personal_website",
+  "homepage": "https://jakubpawlowski.pl",
   "private": true,
   "version": "0.0.0",
   "scripts": {
