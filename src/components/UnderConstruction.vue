@@ -1,6 +1,7 @@
 <template>
     <div class="under_construction">
-        <h1>Website under construction</h1>
+        <i class="fa-solid fa-person-digging"></i>
+        <h2>Website under construction</h2>
     </div>
 </template>
 
@@ -11,8 +12,15 @@ div.under_construction {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    h1 {
+    text-align: center;
+
+    i {
+        font-size: 4em;
+    }
+
+    h2 {
         text-align: center;
+        font-weight: normal;
     }
 }
 </style>
