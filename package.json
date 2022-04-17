@@ -10,6 +10,7 @@
     "test": "echo \"Tests not implemented yet\""
   },
   "dependencies": {
+    "esbuild": "^0.14.36",
     "vue": "^3.2.25"
   },
   "devDependencies": {
