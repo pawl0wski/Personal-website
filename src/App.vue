@@ -1,9 +1,5 @@
-<script setup lang="ts">
-import UnderConstruction from "./components/UnderConstruction.vue";
-</script>
-
 <template>
-    <UnderConstruction />
+    <router-view></router-view>
 </template>
 
 <style lang="scss">
