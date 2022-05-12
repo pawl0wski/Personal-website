@@ -31,6 +31,9 @@ export default {
 <style lang="scss">
 nav {
     background-color: $darkLighter;
+    position: absolute;
+    z-index: 100;
+    width: 100vw;
 
     padding: 0 1em;
 
