@@ -13,7 +13,7 @@
 
         </div>
         <div class="welcome__right">
-            <img src="../assets/avatar.png" class="welcome__right__avatar">
+            <img src="../assets/avatar.webp" class="welcome__right__avatar">
         </div>
     </div>
 </template>
