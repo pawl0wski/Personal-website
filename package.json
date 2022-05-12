@@ -10,6 +10,7 @@
     "test": "echo \"Tests not implemented yet\""
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "esbuild": "^0.14.36",
     "vue": "^3.2.25",
     "vue-gtag": "^2.0.1",
