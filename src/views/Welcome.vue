@@ -9,6 +9,7 @@
             <div class="welcome__left__icons">
                 <IconLink :icon="['fa-brands', 'fa-github']" href="https://github.com/pawl0wski" />
                 <IconLink :icon="['fa-solid', 'fa-envelope']" href="mailto:jakub@jpawlowski.me" />
+                <IconLink :icon="['fa-solid', 'fa-code-branch']" href="https://github.com/pawl0wski/Personal-website" />
             </div>
 
         </div>
@@ -26,6 +27,8 @@ import IconLink from "../components/IconLink.vue"
 .welcome {
     width: 100%;
     height: 100vh;
+
+    padding: 0 2rem;
 
     display: flex;
     flex-direction: column-reverse;
@@ -71,7 +74,7 @@ import IconLink from "../components/IconLink.vue"
         }
 
         &__content {
-            width: 25rem;
+            max-width: 25rem;
         }
 
         &__icons {
