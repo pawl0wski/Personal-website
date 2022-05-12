@@ -10,9 +10,12 @@
     "test": "echo \"Tests not implemented yet\""
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "esbuild": "^0.14.36",
     "vue": "^3.2.25",
-    "vue-gtag": "^2.0.1"
+    "vue-gtag": "^2.0.1",
+    "vue-i18n": "^9.1.10",
+    "vue-router": "^4.0.15"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
