@@ -1,4 +1,7 @@
 <template>
-    <h1>Hello</h1>
-    <router-link to="/projects"></router-link>
+    <h1>
+        {{
+                $t("message.hello")
+        }}
+    </h1>
 </template>

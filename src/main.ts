@@ -1,6 +1,8 @@
 import { createApp } from "vue";
 import router from "./router";
 
+import i18n from "./i18n";
+
 import "animate.css";
 
 import App from "./App.vue";
@@ -11,4 +13,5 @@ createApp(App)
         config: { id: import.meta.env.VITE_GOOGLE_ANALYTICS },
     })
     .use(router)
+    .use(i18n)
     .mount("#app");
