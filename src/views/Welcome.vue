@@ -9,6 +9,7 @@
             <div class="welcome__left__icons">
                 <IconLink :icon="['fa-brands', 'fa-github']" href="https://github.com/pawl0wski" />
                 <IconLink :icon="['fa-solid', 'fa-envelope']" href="mailto:jakub@jpawlowski.me" />
+                <IconLink :icon="['fa-solid', 'fa-code-branch']" href="https://github.com/pawl0wski/Personal-website" />
             </div>
 
         </div>
