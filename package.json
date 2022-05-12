@@ -4,14 +4,14 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "echo \"Tests not implemented yet\""
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "esbuild": "^0.14.36",
+    "esbuild": "^0.14.39",
     "vue": "^3.2.25",
     "vue-gtag": "^2.0.1",
     "vue-i18n": "^9.1.10",
@@ -19,9 +19,9 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
-    "sass": "^1.50.0",
+    "sass": "^1.51.0",
     "typescript": "^4.5.4",
-    "vite": "^2.9.2",
+    "vite": "^2.9.9",
     "vue-tsc": "^0.29.8"
   }
 }

@@ -27,6 +27,8 @@ import IconLink from "../components/IconLink.vue"
     width: 100%;
     height: 100vh;
 
+    padding: 0 2rem;
+
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -71,7 +73,7 @@ import IconLink from "../components/IconLink.vue"
         }
 
         &__content {
-            width: 25rem;
+            max-width: 25rem;
         }
 
         &__icons {
