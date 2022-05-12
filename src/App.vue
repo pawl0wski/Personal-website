@@ -26,6 +26,11 @@ body {
     margin: 0;
     background-color: $bgColor;
     min-width: 100vw;
+    max-width: 100vw;
     min-height: 100vh;
+}
+
+span.main-color {
+    color: $lime;
 }
 </style>
