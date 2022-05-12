@@ -5,9 +5,11 @@
 </template>
 
 <style lang="scss">
-div#projects {
-    background-color: lime;
-    height: 100vh;
-    width: 100vw;
+div {
+    #projects {
+        background-color: lime;
+        height: 100vh;
+        width: 100vw;
+    }
 }
 </style>
