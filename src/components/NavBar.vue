@@ -2,7 +2,7 @@
     <nav>
         <router-link to="/">
             <div class="nav__logo">
-                <img src="src/assets/avatar.png">
+                <img src="../assets/avatar.png">
                 <h3>Jakub Pawłowski</h3>
             </div>
         </router-link>
@@ -12,9 +12,7 @@
 
 <script lang="ts">
 
-import defineComponent from "vue"
-
-export default defineComponent({
+export default {
     data() {
         return {
             links: [
@@ -27,7 +25,7 @@ export default defineComponent({
             ]
         }
     }
-})
+}
 </script>
 
 <style lang="scss">
