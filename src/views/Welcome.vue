@@ -21,6 +21,7 @@
 
 <script lang="ts" setup>
 import IconLink from "../components/IconLink/IconLink.vue"
+import { useMeta } from "vue-meta"
 </script>
 
 <style lang="scss">

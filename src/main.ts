@@ -2,6 +2,7 @@ import { createApp } from "vue";
 import router from "./router";
 
 import i18n from "./i18n";
+import { createMetaManager } from "vue-meta";
 
 import "animate.css";
 
@@ -14,4 +15,5 @@ createApp(App)
     })
     .use(router)
     .use(i18n)
+    .use(createMetaManager(false))
     .mount("#app");
