@@ -1,4 +1,8 @@
 <template>
+    <metainfo>
+        <template v-slot:title="{ content }">{{ content ? `${content} | Jakub Pawłowski` : `Jakub Pawłowski`
+        }}</template>
+    </metainfo>
     <NavBar />
     <router-view v-slot="{ Component }">
         <transition name="fade" enter-active-class="animate__animated animate__faster animate__fadeIn"
@@ -10,6 +14,15 @@
 
 <script setup lang="ts">
 import NavBar from "./components/NavBar/NavBar.vue"
+import { useMeta } from "vue-meta"
+import { detectLanguage } from "./i18n/index"
+
+useMeta({
+    htmlAttrs: {
+        lang: detectLanguage()
+    }
+})
+
 </script>
 
 <style lang="scss">

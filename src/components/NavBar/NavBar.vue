@@ -2,7 +2,7 @@
     <nav>
         <router-link to="/">
             <div class="nav__logo">
-                <img src="../../assets/avatar.webp">
+                <img src="../../assets/avatar.webp" alt="pawl0wsk">
                 <h3>Jakub Pawłowski</h3>
             </div>
         </router-link>
