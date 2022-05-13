@@ -20,10 +20,10 @@ export default {
     data() {
         return {
             links: [
-                {
-                    name: "Projects",
-                    link: "/project"
-                }
+                // {
+                //     name: "Projects",
+                //     link: "/project"
+                // }
             ]
         }
     }
