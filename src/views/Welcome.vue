@@ -1,7 +1,7 @@
 <template>
     <div class="welcome">
         <div class="welcome__left">
-            <h1 v-html="$t('message.aboutmeTitle')"></h1>
+            <h1 class="welcome__left__title" v-html="$t('message.aboutmeTitle')"></h1>
             <p class="welcome__left__extra">
                 {{ $t("message.aboutmeDesc") }}
             </p>
