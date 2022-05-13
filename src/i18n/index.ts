@@ -3,8 +3,11 @@ import { createI18n } from "vue-i18n";
 import en from "./lang/en";
 import pl from "./lang/pl";
 
-function detectLanguage(): string {
-    let lang = navigator.language;
+export function detectLanguage(lang?: string): string {
+    if (!lang) {
+        lang = navigator.language;
+    }
+    lang = lang.toLowerCase();
     if (lang.includes("-")) {
         lang = lang.split("-")[0];
     }
