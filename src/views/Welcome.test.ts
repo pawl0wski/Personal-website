@@ -3,10 +3,12 @@
  */
 import { mount } from "@vue/test-utils";
 import { describe, it, expect } from "vitest";
+import { createMetaManager } from "vue-meta";
 import Welcome from "./Welcome.vue";
 
 const options = {
     global: {
+        plugins: [createMetaManager(false)],
         mocks: {
             $t: (key: string) => key,
         },
