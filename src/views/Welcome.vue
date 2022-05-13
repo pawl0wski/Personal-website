@@ -22,6 +22,10 @@
 <script lang="ts" setup>
 import IconLink from "../components/IconLink/IconLink.vue"
 import { useMeta } from "vue-meta"
+
+useMeta({
+    description: "Hi, I'm Jakub Pawłowski. I program in JavaScript, Python and Dart."
+})
 </script>
 
 <style lang="scss">
