@@ -1,5 +1,5 @@
 <template>
-    <a :href="href" target="__blank">
+    <a :href="href" target="__blank" v-if="!!icon">
         <i :class="icon"></i>
     </a>
 </template>

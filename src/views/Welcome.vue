@@ -1,7 +1,7 @@
 <template>
     <div class="welcome">
         <div class="welcome__left">
-            <h1 v-html="$t('message.aboutmeTitle')"></h1>
+            <h1 class="welcome__left__title" v-html="$t('message.aboutmeTitle')"></h1>
             <p class="welcome__left__extra">
                 {{ $t("message.aboutmeDesc") }}
             </p>
@@ -14,13 +14,13 @@
 
         </div>
         <div class="welcome__right">
-            <img src="../assets/avatar.webp" class="welcome__right__avatar">
+            <img src="../assets/avatar.webp" class="welcome__right__avatar animate__animated animate__fadeInDown">
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-import IconLink from "../components/IconLink.vue"
+import IconLink from "../components/IconLink/IconLink.vue"
 </script>
 
 <style lang="scss">

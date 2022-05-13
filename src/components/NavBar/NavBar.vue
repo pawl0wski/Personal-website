@@ -2,11 +2,15 @@
     <nav>
         <router-link to="/">
             <div class="nav__logo">
-                <img src="../assets/avatar.webp">
+                <img src="../../assets/avatar.webp">
                 <h3>Jakub Pawłowski</h3>
             </div>
         </router-link>
-
+        <span class="nav__link" :key="link" v-for="link in links">
+            <router-link :to="link.link">
+                {{ link.name }}
+            </router-link>
+        </span>
     </nav>
 </template>
 
@@ -17,10 +21,8 @@ export default {
         return {
             links: [
                 {
-                    routerName: "Welcome",
-                },
-                {
-                    routerName: "Projects"
+                    name: "Projects",
+                    link: "/project"
                 }
             ]
         }
@@ -54,7 +56,7 @@ nav {
     }
 }
 
-div.nav {
+.nav {
     &__logo {
         display: flex;
         align-items: center;
@@ -65,6 +67,19 @@ div.nav {
             border-radius: 100%;
             margin-right: 0.7rem;
             height: auto;
+        }
+    }
+
+    &__link {
+        margin: 0 1.5rem;
+        text-decoration: none;
+
+        a {
+            color: transparentize($textColor, 0.3);
+
+            &:hover {
+                color: transparentize($textColor, 0.1);
+            }
         }
     }
 }
