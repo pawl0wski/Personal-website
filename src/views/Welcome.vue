@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import IconLink from "../components/IconLink.vue"
+import IconLink from "../components/IconLink/IconLink.vue"
 </script>
 
 <style lang="scss">
