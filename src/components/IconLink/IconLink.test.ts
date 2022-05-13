@@ -13,8 +13,7 @@ describe("IconLink tests", () => {
     });
     it("should render if something passed", async () => {
         const wrapper = mount(IconLink);
-        await wrapper.setProps({ icon: ["a"] });
-        await wrapper.setProps({ href: ["a"] });
+        await wrapper.setProps({ icon: ["a"], href: "a" });
         expect(wrapper.find("a").exists()).toBeTruthy();
     });
     it("should inject strings in icon to i class", async () => {
