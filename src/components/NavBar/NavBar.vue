@@ -6,7 +6,8 @@
                 <h3>Jakub Pawłowski</h3>
             </div>
         </router-link>
-        <span :class="['nav__link', router.active ? 'nav__link--active' : '']" :key="router" v-for="router in paths">
+        <span :class="['nav__link', router.active ? 'nav__link--active' : '']" :key="router.name"
+            v-for="router in paths">
             <router-link :to="router.path">
                 {{ router.name }}
             </router-link>
@@ -16,7 +17,7 @@
 
 <script lang="ts">
 
-import { useRouter } from "vue-router";
+import { defineComponent } from "vue";
 
 interface Path {
     active: boolean,
@@ -24,24 +25,22 @@ interface Path {
     path: string
 }
 
-export default {
+export default defineComponent({
     computed: {
         paths(): Path[] {
-            const router = useRouter();
-            const routersToShow = ["Projects"];
-            const routes = router.getRoutes().filter(e => routersToShow.includes(e.name!.toString()));
+            const routes = this.$router.getRoutes().filter(e => e.path != "/");
             const paths: Path[] = [];
             routes.forEach(e => {
                 paths.push({
                     name: e.name!.toString(),
                     path: e.path,
-                    active: router.currentRoute.value.path === e.path
+                    active: this.$router.currentRoute.value.path === e.path
                 });
             });
             return paths;
         }
     }
-};
+});
 </script>
 
 <style lang="scss">
