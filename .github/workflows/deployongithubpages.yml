@@ -1,7 +1,10 @@
 name: Deploy on Github Pages
 
 on:
-  push:
+  workflow_run:
+    workflows: [ "ci" ]
+    types:
+      - completed
     branches: [ "main" ]
 
 jobs:
@@ -15,8 +18,6 @@ jobs:
         run: npm ci
       - name: Apply my Google Analytics key
         run: mv .env.example .env && sed -i "s/xxx/${{ secrets.GOOGLE_ANALYTICS }}/" .env
-      - name: Test project
-        run: npm run test
       - name: Build project
         run: npm run build
       - name: Make CNAME
