@@ -25,7 +25,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npm ci
-      - run: npm run checkLint
-      - run: npm run build --if-present
-      - run: npm test
+      - name: "Install dependencies ⏳"
+        run: npm ci
+      - name: "Check linting 📃"
+        run: npm run checkLint
+      - name: "Build project 🔨"
+        run: npm run build --if-present
+      - name: "Test project ✅"
+        run: npm test
