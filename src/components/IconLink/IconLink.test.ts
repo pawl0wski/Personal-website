@@ -22,8 +22,9 @@ describe("IconLink tests", () => {
         await wrapper.setProps({ icon: icons });
 
         const wrapperClasses = wrapper.find("i").classes();
-        expect(wrapperClasses.length === icons.length).toBeTruthy();
-        expect(wrapperClasses.every((e) => icons.includes(e))).toBeTruthy();
+        icons.forEach((icon: string) => {
+            expect(wrapperClasses.includes(icon)).toBeTruthy()
+        })
     });
     it("should redirect to url provided in href prop", async () => {
         const url = "https://www.example.com";
