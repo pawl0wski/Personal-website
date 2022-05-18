@@ -19,6 +19,8 @@ jobs:
         run: npm run test
       - name: Build project
         run: npm run build
+      - name: Make CNAME
+        run: printf "${{ secrets.CNAME }}" > dist/CNAME
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
