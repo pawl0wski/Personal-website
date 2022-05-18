@@ -1,4 +1,6 @@
-const messages = {
+import lang from "./lang";
+
+const plLang: lang = {
     welcome: {
         title: 'Cześć, jestem <span class="main-color">Jakub</span>',
         description:
@@ -14,4 +16,4 @@ const messages = {
     },
 };
 
-export default messages;
+export default plLang;

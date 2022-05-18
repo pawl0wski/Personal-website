@@ -1,4 +1,6 @@
-const messages = {
+import lang from "./lang";
+
+const enLang: lang = {
     welcome: {
         title: 'Hi I\'m <span class="main-color">Jakub</span>',
         description: "👨‍💻 I do various things in Python, Javascript and Dart.",
@@ -9,8 +11,8 @@ const messages = {
         notImplementedYet: "This pages is not implemented yet",
     },
     misc: {
-        hello: "Hello world",
+        helloWorld: "Hello world",
     },
 };
 
-export default messages;
+export default enLang;
