@@ -7,7 +7,8 @@
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "test": "vitest run"
+    "test": "vitest run",
+    "checkLint": "prettier --check '*'"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
@@ -24,6 +25,7 @@
     "@vue/test-utils": "^2.0.0-rc.21",
     "git-describe": "^4.1.0",
     "happy-dom": "^3.2.2",
+    "prettier": "^2.6.2",
     "sass": "^1.51.0",
     "typescript": "^4.6.4",
     "vite": "^2.9.9",

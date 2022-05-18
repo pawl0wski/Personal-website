@@ -1,11 +1,11 @@
 <template>
     <div class="welcome">
         <div class="welcome__left">
-            <h1 class="welcome__left__title" v-html="$t('message.aboutmeTitle')"></h1>
+            <h1 class="welcome__left__title" v-html="$t('welcome.title')"></h1>
             <p class="welcome__left__extra">
-                {{ $t("message.aboutmeDesc") }}
+                {{ $t("welcome.description") }}
             </p>
-            <p class="welcome__left__content" v-html="$t('message.aboutmeContent')"></p>
+            <p class="welcome__left__content" v-html="$t('welcome.content')"></p>
             <div class="welcome__left__icons">
                 <IconLink :icon="['fa-brands', 'fa-github']" href="https://github.com/pawl0wski" />
                 <IconLink :icon="['fa-solid', 'fa-envelope']" href="mailto:jakub@jpawlowski.me" />
@@ -15,18 +15,18 @@
         </div>
         <div class="welcome__right">
             <img src="../assets/avatar.webp" class="welcome__right__avatar animate__animated animate__fadeInDown"
-                alt="pawl0wski">
+                 alt="pawl0wski">
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-import IconLink from "../components/IconLink/IconLink.vue"
-import { useMeta } from "vue-meta"
+import IconLink from "../components/IconLink/IconLink.vue";
+import { useMeta } from "vue-meta";
 
 useMeta({
     description: "Hi, I'm Jakub Pawłowski. I program in JavaScript, Python and Dart."
-})
+});
 </script>
 
 <style lang="scss">

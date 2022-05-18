@@ -6,9 +6,10 @@
                 <h3>Jakub Pawłowski</h3>
             </div>
         </router-link>
-        <span class="nav__link" :key="link" v-for="link in links">
-            <router-link :to="link.link">
-                {{ link.name }}
+        <span :class="['nav__link', router.active ? 'nav__link--active' : '']" :key="router.name"
+            v-for="router in paths">
+            <router-link :to="router.path">
+                {{ router.name }}
             </router-link>
         </span>
     </nav>
@@ -16,18 +17,30 @@
 
 <script lang="ts">
 
-export default {
-    data() {
-        return {
-            links: [
-                // {
-                //     name: "Projects",
-                //     link: "/project"
-                // }
-            ]
+import { defineComponent } from "vue";
+
+interface Path {
+    active: boolean,
+    name: string,
+    path: string
+}
+
+export default defineComponent({
+    computed: {
+        paths(): Path[] {
+            const routes = this.$router.getRoutes().filter(e => e.path != "/");
+            const paths: Path[] = [];
+            routes.forEach(e => {
+                paths.push({
+                    name: e.name!.toString(),
+                    path: e.path,
+                    active: this.$router.currentRoute.value.path === e.path
+                });
+            });
+            return paths;
         }
     }
-}
+});
 </script>
 
 <style lang="scss">
@@ -80,6 +93,14 @@ nav {
             &:hover {
                 color: transparentize($textColor, 0.1);
             }
+        }
+
+        &--active {
+            a {
+                color: white;
+            }
+
+            font-weight: 600;
         }
     }
 }
