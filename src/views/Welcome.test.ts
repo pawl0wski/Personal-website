@@ -25,9 +25,9 @@ describe("Test Welcome", () => {
     it("Should use i18n", () => {
         const wrapper = mount(Welcome, options);
         const testTable: { [key: string]: string } = {
-            "h1.welcome__left__title": "message.aboutmeTitle",
-            "p.welcome__left__extra": "message.aboutmeDesc",
-            "p.welcome__left__content": "message.aboutmeContent",
+            "h1.welcome__left__title": "welcome.title",
+            "p.welcome__left__extra": "welcome.description",
+            "p.welcome__left__content": "welcome.content",
         };
         for (const key in testTable) {
             expect(wrapper.find(key).exists()).toBeTruthy();

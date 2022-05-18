@@ -1,6 +1,6 @@
 <template>
     <div id="projects">
-        <h1>{{ $t("message.notImplementedYet") }} 😕</h1>
+        <h1>{{ $t("projects.notImplementedYet") }} 😕</h1>
     </div>
 </template>
 
