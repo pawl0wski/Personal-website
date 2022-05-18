@@ -1,20 +1,33 @@
 <template>
-    <a :href="href" target="__blank" v-if="!!icon">
-        <i :class="icon"></i>
+    <a class="iconlink__link" :href="href"
+       target="__blank" v-if="!!icon"
+       @mouseover="isHovering = true" @mouseout="isHovering = false">
+        <i :class="['animate__animated', 'iconlink__link__icon', icon, isHovering ? 'animate__heartBeat' : '']"
+        ></i>
     </a>
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
+    data() {
+        return {
+            isHovering: false
+        };
+    },
     props: {
         icon: Object as () => Array<String>,
         href: String
     }
-}
+});
 </script>
 
-<style scoped>
-i {
-    font-size: 1.6em;
+<style lang="scss" scoped>
+.iconlink__link {
+    &__icon {
+        font-size: 1.6em;
+    }
 }
+
 </style>
