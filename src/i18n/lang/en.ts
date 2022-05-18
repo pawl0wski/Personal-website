@@ -1,6 +1,4 @@
-import lang from "./lang";
-
-const enLang: lang = {
+const enLang = {
     welcome: {
         title: 'Hi I\'m <span class="main-color">Jakub</span>',
         description: "👨‍💻 I do various things in Python, Javascript and Dart.",

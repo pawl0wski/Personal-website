@@ -1,6 +1,4 @@
-import lang from "./lang";
-
-const plLang: lang = {
+const plLang = {
     welcome: {
         title: 'Cześć, jestem <span class="main-color">Jakub</span>',
         description:

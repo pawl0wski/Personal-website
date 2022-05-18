@@ -17,18 +17,12 @@ export function detectLanguage(lang?: string): string {
     return lang;
 }
 
-//FIXME: Find workaround to this interface problem
-const enLang = {};
-const plLang = {};
-Object.assign(en, enLang);
-Object.assign(pl, plLang);
-
 const i18n = createI18n({
     locale: detectLanguage(),
     fallbackLocale: "en",
     messages: {
-        enLang,
-        plLang,
+        en,
+        pl,
     },
 });
 
