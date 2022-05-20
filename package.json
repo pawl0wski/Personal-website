@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
-    "@vue/test-utils": "^2.0.0-rc.21",
+    "@vue/test-utils": "^2.0.0",
     "git-describe": "^4.1.0",
     "happy-dom": "^3.2.2",
     "prettier": "^2.6.2",
