@@ -26,7 +26,7 @@
     "git-describe": "^4.1.0",
     "happy-dom": "^4.0.0",
     "prettier": "^2.6.2",
-    "sass": "^1.52.0",
+    "sass": "^1.52.1",
     "typescript": "^4.6.4",
     "vite": "^2.9.9",
     "vue-tsc": "^0.34.15"
