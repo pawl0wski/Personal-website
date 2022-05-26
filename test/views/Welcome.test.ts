@@ -15,14 +15,14 @@ const options = {
     },
 };
 
-describe("Test Welcome", () => {
-    it("Welcome should render", () => {
+describe("Welcome", () => {
+    it("should render", () => {
         const wrapper = mount(Welcome, options);
         expect(wrapper.find("div.welcome").exists()).toBeTruthy();
         expect(wrapper.find("div.welcome__left").exists()).toBeTruthy();
         expect(wrapper.find("div.welcome__right").exists()).toBeTruthy();
     });
-    it("Should use i18n", () => {
+    it("should use i18n", () => {
         const wrapper = mount(Welcome, options);
         const testTable: { [key: string]: string } = {
             "h1.welcome__left__title": "welcome.title",

@@ -6,8 +6,8 @@ import { detectLanguage } from "../../src/i18n";
 import en from "../../src/i18n/lang/en";
 import pl from "../../src/i18n/lang/en";
 
-describe("Test i18n", () => {
-    it("Test language detection", () => {
+describe("i18n", () => {
+    it("should detect languages", () => {
         const locationTests: { [key: string]: string } = {
             "pl-PL": "pl",
             gdfa: "en",

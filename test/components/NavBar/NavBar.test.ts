@@ -47,8 +47,8 @@ const mockRouter = {
     },
 };
 
-describe("Navbar tests", () => {
-    it("Navbar should render", () => {
+describe("Navbar", () => {
+    it("should render", () => {
         const wrapper = mount(NavBar, {
             global: {
                 mocks: {
@@ -59,7 +59,7 @@ describe("Navbar tests", () => {
         });
         expect(wrapper.find("nav").exists()).toBeTruthy();
     });
-    it("Navbar should display all routes expect '/'", () => {
+    it("should display all routes expect '/'", () => {
         const wrapper = mount(NavBar, {
             global: {
                 mocks: {
