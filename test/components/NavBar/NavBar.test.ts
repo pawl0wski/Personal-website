@@ -54,8 +54,8 @@ describe("Navbar tests", () => {
                 mocks: {
                     $router: mockRouter,
                 },
+                plugins: [router],
             },
-            plugin: [router],
         });
         expect(wrapper.find("nav").exists()).toBeTruthy();
     });
