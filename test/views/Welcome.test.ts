@@ -4,7 +4,7 @@
 import { mount } from "@vue/test-utils";
 import { describe, it, expect } from "vitest";
 import { createMetaManager } from "vue-meta";
-import Welcome from "./Welcome.vue";
+import Welcome from "../../src/views/Welcome.vue";
 
 const options = {
     global: {

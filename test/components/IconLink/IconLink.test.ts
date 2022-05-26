@@ -4,7 +4,7 @@
 
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import IconLink from "./IconLink.vue";
+import IconLink from "../../../src/components/IconLink/IconLink.vue";
 
 describe("IconLink tests", () => {
     it("should be empty if nothing passed", () => {
@@ -23,8 +23,8 @@ describe("IconLink tests", () => {
 
         const wrapperClasses = wrapper.find("i").classes();
         icons.forEach((icon: string) => {
-            expect(wrapperClasses.includes(icon)).toBeTruthy()
-        })
+            expect(wrapperClasses.includes(icon)).toBeTruthy();
+        });
     });
     it("should redirect to url provided in href prop", async () => {
         const url = "https://www.example.com";

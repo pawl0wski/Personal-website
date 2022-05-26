@@ -2,9 +2,9 @@
  * @vitest-environment happy-dom
  */
 import { describe, it, expect } from "vitest";
-import { detectLanguage } from "./index";
-import en from "./lang/en";
-import pl from "./lang/en";
+import { detectLanguage } from "../../src/i18n";
+import en from "../../src/i18n/lang/en";
+import pl from "../../src/i18n/lang/en";
 
 describe("Test i18n", () => {
     it("Test language detection", () => {

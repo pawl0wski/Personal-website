@@ -4,7 +4,7 @@
 
 import { describe, it, expect } from "vitest";
 import { mount } from "@vue/test-utils";
-import NavBar from "./NavBar.vue";
+import NavBar from "../../../src/components/NavBar/NavBar.vue";
 import {
     createRouter,
     createWebHistory,
