@@ -19,6 +19,7 @@ div {
 
         h1 {
             font-size: 1.5rem;
+            padding: 0 2rem;
         }
 
     }
