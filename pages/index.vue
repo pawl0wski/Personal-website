@@ -9,3 +9,9 @@ export default Vue.extend({
     name: "IndexPage",
 });
 </script>
+
+<style lang="scss">
+body {
+    background-color: $background-color;
+}
+</style>
