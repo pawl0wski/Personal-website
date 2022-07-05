@@ -40,6 +40,7 @@ export default {
         // https://go.nuxtjs.dev/axios
         "@nuxtjs/axios",
         "@nuxtjs/style-resources",
+        "@nuxtjs/google-fonts",
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -53,5 +54,12 @@ export default {
 
     styleResources: {
         scss: ["./assets/scss/*.scss"],
+    },
+
+    // Google Fonts
+    googleFonts: {
+        families: {
+            Lato: [400, 700, 900],
+        },
     },
 };
