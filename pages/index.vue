@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Welcome from "~/components/welcome/Welcome.vue";
+import Welcome from "~/components/welcome/WelcomeSlide.vue";
 
 export default Vue.extend({
     name: "IndexPage",
