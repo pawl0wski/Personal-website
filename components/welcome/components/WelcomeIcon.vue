@@ -1,6 +1,6 @@
 <template>
     <div class="welcome__icon">
-        <a :href="href">
+        <a :href="href" target="_blank">
             <i :class="icon"></i>
         </a>
     </div>
