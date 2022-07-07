@@ -1,3 +1,11 @@
 <template>
-    <h1>Hello</h1>
+    <WelcomeText />
 </template>
+<script>
+import WelcomeText from "~/components/welcome/components/WelcomeText";
+import Vue from "vue";
+
+export default Vue.extend({
+    components: {WelcomeText}
+})
+</script>
