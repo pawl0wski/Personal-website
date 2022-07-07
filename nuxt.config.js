@@ -59,7 +59,7 @@ export default {
     // Google Fonts
     googleFonts: {
         families: {
-            Lato: [400, 700, 900],
+            NotoSans: [400, 700, 900],
         },
     },
 };
