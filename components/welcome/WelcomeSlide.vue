@@ -30,5 +30,11 @@ export default Vue.extend({
             height: 100%;
         }
 
+        &__left {
+            display: flex;
+            align-items: center;
+            margin: 0 10vw;
+        }
+
 }
 </style>
