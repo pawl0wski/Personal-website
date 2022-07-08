@@ -73,4 +73,22 @@ div.welcome {
         justify-content: end;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    div.welcome {
+        &__left {
+            text-align: center;
+            width: 100%;
+            align-items: center;
+
+            &__icons {
+                justify-content: center;
+            }
+        }
+
+        &__right {
+            display: none;
+        }
+    }
+}
 </style>
