@@ -19,8 +19,19 @@ export default Vue.extend({
 <style lang="scss">
 div.about_me {
     width: 100vw;
-    min-height: 100vh;
+
+    display: flex;
+    flex-direction: row;
 
     margin: 0 $default-margin;
+
+    &__left,
+    &__right {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 </style>
