@@ -59,6 +59,8 @@ div.welcome {
         flex-direction: column;
         justify-content: center;
 
+        align-items: start;
+
         &__icons {
             margin-top: 2rem;
 

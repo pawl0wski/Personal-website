@@ -1,10 +1,18 @@
 <template>
-    <h1 class="animate__animated animate__fadeInUp">
-        Cześć, jestem <span class="primary-color">Jakub</span>. Zajmuje się
-        <span class="primary-color">frontendem</span> oraz
-        <span class="primary-color">backendem</span>.
-    </h1>
+    <h1 class="animate__animated animate__fadeInUp" v-html="content"></h1>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+    computed: {
+        content() {
+            return this.$locale("welcomeTitle");
+        },
+    },
+});
+</script>
 
 <style scoped lang="scss">
 h1 {

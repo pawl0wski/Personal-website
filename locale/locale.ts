@@ -13,12 +13,24 @@ export default class Locale {
         return lang;
     }
 
+    // The text may include <pc> and <pc> tags.
+    // These tags color the text in the primary color.
+    private _changePrimaryColorTags(content: string): string {
+        return content
+            .replaceAll("<pc>", "<span class='primary-color'>")
+            .replaceAll("</pc>", "</span>");
+    }
+
     get(key: keyof LangI): string {
+        let text: string;
         switch (this._detectLanguage()) {
             case "pl":
-                return pl[key] ?? "";
+                text = pl[key] ?? "";
+                break;
             default:
-                return en[key] ?? "";
+                text = en[key] ?? "";
         }
+
+        return this._changePrimaryColorTags(text);
     }
 }
