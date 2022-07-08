@@ -54,7 +54,7 @@ div.welcome {
     }
 
     &__left {
-        margin: 0 10vw;
+        margin: 0 $default-margin;
 
         flex-direction: column;
         justify-content: center;

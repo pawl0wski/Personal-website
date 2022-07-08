@@ -1,14 +1,18 @@
 <template>
-    <Welcome />
+    <div class="index">
+        <WelcomeSlide />
+        <AboutMeSlide />
+    </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import Welcome from "~/components/welcome/WelcomeSlide.vue";
+import WelcomeSlide from "~/components/welcome/WelcomeSlide.vue";
+import AboutMeSlide from "~/components/aboutMe/AboutMeSlide.vue";
 
 export default Vue.extend({
     name: "IndexPage",
-    components: { Welcome },
+    components: { AboutMeSlide, WelcomeSlide },
 });
 </script>
 
