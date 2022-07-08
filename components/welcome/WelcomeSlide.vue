@@ -4,8 +4,11 @@
             <WelcomeText />
             <div class="welcome__left__icons">
                 <WelcomeIcon
-                    icon="devicon-github-original"
-                    href="https://github.com/pawl0wski"
+                    v-for="social in socials"
+                    :key="social.name"
+                    :name="social.name"
+                    :icon="social.icon"
+                    :href="social.link"
                 />
             </div>
         </div>
@@ -14,14 +17,22 @@
         </div>
     </div>
 </template>
-<script>
+<script lang="ts">
 import Vue from "vue";
-import WelcomeText from "~/components/welcome/components/WelcomeText";
-import WelcomeCube from "~/components/welcome/components/WelcomeCube";
-import WelcomeIcon from "~/components/welcome/components/WelcomeIcon";
+import WelcomeText from "~/components/welcome/components/WelcomeText.vue";
+import WelcomeCube from "~/components/welcome/components/WelcomeCube.vue";
+import WelcomeIcon from "~/components/welcome/components/WelcomeIcon.vue";
+import socialsConfig from "~/config/socials.json";
+import SocialI from "~/config/interfaces/social";
 
 export default Vue.extend({
     components: { WelcomeText, WelcomeCube, WelcomeIcon },
+    data(): { socials: SocialI[] } {
+        const { socials } = socialsConfig;
+        return {
+            socials,
+        };
+    },
 });
 </script>
 
