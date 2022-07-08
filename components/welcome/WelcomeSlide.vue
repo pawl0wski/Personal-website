@@ -2,7 +2,9 @@
     <div class="welcome">
         <div class="welcome__left">
             <WelcomeText />
-            <div class="welcome__left__icons">
+            <div
+                class="welcome__left__icons animate__animated animate__fadeIn animate__delay-1s"
+            >
                 <WelcomeIcon
                     v-for="social in socials"
                     :key="social.name"
