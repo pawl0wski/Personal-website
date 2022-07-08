@@ -28,8 +28,6 @@ export default Vue.extend({
 
 <style lang="scss">
 div.about_me {
-    width: 100vw;
-
     display: flex;
     flex-direction: row;
 
@@ -42,6 +40,22 @@ div.about_me {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.about_me {
+        margin: 0 $small-margin;
+
+        flex-direction: column-reverse;
+
+        &__left,
+        &__right {
+            width: 100%;
+
+            align-items: center;
+            text-align: justify;
+        }
     }
 }
 </style>

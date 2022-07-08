@@ -41,7 +41,6 @@ export default Vue.extend({
 <style scoped lang="scss">
 div.welcome {
     display: flex;
-    width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 
@@ -67,7 +66,7 @@ div.welcome {
             width: 100%;
             display: flex;
 
-            gap: 0.9rem;
+            gap: 1.5rem;
         }
     }
 
@@ -82,6 +81,7 @@ div.welcome {
             text-align: center;
             width: 100%;
             align-items: center;
+            margin: 0 $small-margin;
 
             &__icons {
                 justify-content: center;
