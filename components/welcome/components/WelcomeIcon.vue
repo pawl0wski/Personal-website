@@ -12,7 +12,6 @@ import Vue from "vue";
 export default Vue.extend({
     props: {
         icon: {
-            type: String,
             required: true,
         },
         href: {
@@ -40,7 +39,7 @@ div.welcome__icon {
         }
 
         i {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 }

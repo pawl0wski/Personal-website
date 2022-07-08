@@ -25,6 +25,8 @@ export default {
         "~assets/scss/main.scss",
         "animate.css/animate.min.css",
         "devicon/devicon.min.css",
+        "@fortawesome/fontawesome-free/css/fontawesome.css",
+        "@fortawesome/fontawesome-free/css/solid.css",
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -59,6 +61,15 @@ export default {
     styleResources: {
         scss: ["./assets/scss/*.scss"],
     },
+
+    script: [
+        {
+            src: "@fortawesome/fontawesome-free/js/fontawesome.min.js",
+        },
+        {
+            src: "@fortawesome/fontawesome-free/js/solid.min.js",
+        },
+    ],
 
     // Google Fonts
     googleFonts: {

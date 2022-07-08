@@ -58,8 +58,12 @@ div.welcome {
         justify-content: center;
 
         &__icons {
+            margin-top: 2rem;
+
             width: 100%;
             display: flex;
+
+            gap: 0.9rem;
         }
     }
 
