@@ -2,23 +2,17 @@
     "socials": [
         {
             "name": "Github",
-            "icon": [
-                "devicon-github-original"
-            ],
+            "icon": ["devicon-github-original"],
             "link": "https://github.com/pawl0wski"
         },
         {
             "name": "Branch",
-            "icon": [
-                "fa-solid", "fa-code-branch"
-            ],
+            "icon": ["fa-solid", "fa-code-branch"],
             "link": "https://github.com/pawl0wski/Personal-website"
         },
         {
             "name": "E-Mail",
-            "icon": [
-                "fa-solid", "fa-envelope"
-            ],
+            "icon": ["fa-solid", "fa-envelope"],
             "link": "https://github.com/pawl0wski"
         }
     ]
