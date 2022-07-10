@@ -23,9 +23,9 @@ export default Vue.extend({
 
 <style lang="scss">
 div.about_me {
+    @include slide;
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
 
     gap: 3rem;
 
