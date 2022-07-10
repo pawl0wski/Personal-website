@@ -41,6 +41,8 @@ export default Vue.extend({
 div.projects__project_entry {
     width: 300px;
 
+    user-select: none;
+
     img:first-child {
         border-radius: 1rem;
     }
