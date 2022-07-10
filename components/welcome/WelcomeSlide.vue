@@ -24,13 +24,13 @@ import Vue from "vue";
 import WelcomeText from "~/components/welcome/components/WelcomeText.vue";
 import WelcomeCube from "~/components/welcome/components/WelcomeCube.vue";
 import WelcomeIcon from "~/components/welcome/components/WelcomeIcon.vue";
-import socialsConfig from "~/config/socials.json";
-import SocialI from "~/config/interfaces/social";
+import socialsContent from "~/content/socials.json";
+import SocialI from "~/content/interfaces/social";
 
 export default Vue.extend({
     components: { WelcomeText, WelcomeCube, WelcomeIcon },
     data(): { socials: SocialI[] } {
-        const { socials } = socialsConfig;
+        const { socials } = socialsContent;
         return {
             socials,
         };
