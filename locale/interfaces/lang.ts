@@ -1,4 +1,5 @@
 export default interface LangI {
+    readMore: string;
     welcomeTitle: string;
     aboutMeTitle: string;
     aboutMeContent: string;

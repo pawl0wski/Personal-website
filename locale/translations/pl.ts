@@ -1,6 +1,7 @@
 import LangI from "~/locale/interfaces/lang";
 
 const pl: LangI = {
+    readMore: "Czytaj więcej",
     aboutMeContent:
         "Dziękuję Ci, że odwiedziłeś moją stronę 👋. Nazywam się Jakub Pawłowski i mieszkam w Polsce. Moją pasję do informatyki pielęgnuje już od podstawówki." +
         "<br><br>" +
