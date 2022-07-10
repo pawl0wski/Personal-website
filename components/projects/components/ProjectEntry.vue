@@ -1,6 +1,10 @@
 <template>
     <div class="projects__project_entry">
-        <nuxt-img :src="thumbnail" format="webp" />
+        <nuxt-img
+            :src="thumbnail"
+            format="webp"
+            class="projects__project_entry__thumbnail"
+        />
         <h3 class="projects__project_entry__title">
             {{ title }}
         </h3>
