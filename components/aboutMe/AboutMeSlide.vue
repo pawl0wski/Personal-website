@@ -4,7 +4,9 @@
             <TitleText :content="$locale('aboutMeTitle')" />
             <AboutMeContent :content="$locale('aboutMeContent')" />
         </div>
-        <div class="about_me__right"></div>
+        <div class="about_me__right">
+            <AboutMePhoto />
+        </div>
     </div>
 </template>
 
@@ -12,9 +14,10 @@
 import Vue from "vue";
 import TitleText from "~/components/TitleText.vue";
 import AboutMeContent from "~/components/aboutMe/components/AboutMeContent.vue";
+import AboutMePhoto from "~/components/aboutMe/components/AboutMePhoto.vue";
 
 export default Vue.extend({
-    components: { AboutMeContent, TitleText },
+    components: { AboutMeContent, TitleText, AboutMePhoto },
 });
 </script>
 
