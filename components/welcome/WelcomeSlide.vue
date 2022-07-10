@@ -42,7 +42,6 @@ export default Vue.extend({
 div.welcome {
     display: flex;
     height: 100vh;
-    overflow-x: hidden;
 
     &__left,
     &__right {
@@ -53,8 +52,6 @@ div.welcome {
     }
 
     &__left {
-        margin: 0 $default-margin;
-
         flex-direction: column;
         justify-content: center;
 

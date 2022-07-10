@@ -22,4 +22,10 @@ body {
     color: $text-color;
     font-family: $font-family;
 }
+
+div.index {
+    margin: 0 auto;
+    padding: 0 3rem;
+    max-width: 90rem;
+}
 </style>

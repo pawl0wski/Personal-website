@@ -27,7 +27,6 @@ div.about_me {
     flex-direction: row;
     min-height: 100vh;
 
-    margin: 0 $default-margin;
     gap: 3rem;
 
     &__left,
@@ -46,8 +45,6 @@ div.about_me {
 
 @media only screen and (max-width: 800px) {
     div.about_me {
-        margin: 0 $small-margin;
-
         flex-direction: column-reverse;
 
         gap: 4rem;
