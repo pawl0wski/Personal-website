@@ -1,18 +1,9 @@
 <template>
-    <h1 class="animate__animated animate__fadeInUp" v-html="content"></h1>
+    <h1
+        class="animate__animated animate__fadeInUp"
+        v-html="$locale('welcomeTitle')"
+    ></h1>
 </template>
-
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-    computed: {
-        content() {
-            return this.$locale("welcomeTitle");
-        },
-    },
-});
-</script>
 
 <style scoped lang="scss">
 h1 {
