@@ -25,8 +25,10 @@ export default Vue.extend({
 div.about_me {
     display: flex;
     flex-direction: row;
+    min-height: 100vh;
 
     margin: 0 $default-margin;
+    gap: 3rem;
 
     &__left,
     &__right {
@@ -36,6 +38,10 @@ div.about_me {
         flex-direction: column;
         justify-content: center;
     }
+
+    &__right {
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -44,6 +50,7 @@ div.about_me {
 
         flex-direction: column-reverse;
 
+        gap: 4rem;
         &__left,
         &__right {
             width: 100%;

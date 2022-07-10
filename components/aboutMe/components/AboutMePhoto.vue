@@ -11,13 +11,16 @@ div.about_me__photo {
     border-style: solid;
     border-radius: 1rem;
 
+    width: auto;
+    max-height: 550px;
+    background-color: rebeccapurple;
+
     overflow: hidden;
 
-    width: fit-content;
+    aspect-ratio: 9 / 16;
 
     img {
-        width: 20vw;
-        height: auto;
+        width: 100%;
     }
 }
 </style>
