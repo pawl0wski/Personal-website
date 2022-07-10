@@ -27,7 +27,7 @@ body {
 
 div.index {
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 $small-margin;
     max-width: 90rem;
 }
 </style>
