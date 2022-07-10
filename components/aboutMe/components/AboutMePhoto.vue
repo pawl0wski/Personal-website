@@ -1,6 +1,6 @@
 <template>
     <div class="about_me__photo">
-        <nuxt-img src="/img/me.jpg" />
+        <nuxt-img format="webp" src="/img/me.jpg" />
     </div>
 </template>
 
