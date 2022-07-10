@@ -12,7 +12,7 @@ div.about_me__photo {
     border-radius: 1rem;
 
     width: auto;
-    max-height: 550px;
+    max-height: 600px;
 
     overflow: hidden;
 
