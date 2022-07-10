@@ -10,6 +10,7 @@ const pl: LangI = {
     aboutMeTitle: "O mnie",
     welcomeTitle:
         "Cześć, nazywam się <pc>Jakub</pc>. I jestem <pc>fullstack</pc> developerem.",
+    projectsTitle: "Projekty",
 };
 
 export default pl;
