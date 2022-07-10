@@ -1,10 +1,10 @@
 <template>
     <div class="projects__project_entry">
-        <nuxt-img :src="img" />
+        <nuxt-img :src="thumbnail" />
         <h3 class="projects__project_entry__title">
             {{ title }}
         </h3>
-        <p>
+        <p class="projects__project_entry__content">
             {{ content }}
         </p>
         <a>{{ $locale("readMore") }} →</a>
@@ -16,12 +16,8 @@ import Vue from "vue";
 
 export default Vue.extend({
     props: {
-        id: {
+        projectId: {
             type: Number,
-            required: true,
-        },
-        img: {
-            type: String,
             required: true,
         },
         title: {
@@ -33,5 +29,29 @@ export default Vue.extend({
             required: true,
         },
     },
+    computed: {
+        thumbnail() {
+            return `/img/projects/${this.projectId}_thumbnail.jpg`;
+        },
+    },
 });
 </script>
+
+<style lang="scss">
+div.projects__project_entry {
+    width: 300px;
+
+    img:first-child {
+        border-radius: 1rem;
+    }
+
+    h3.projects__project_entry__title {
+        font-size: 1.4rem;
+        margin: 0.7rem 0;
+    }
+
+    p.projects__project_entry__content {
+        color: $text-color-muted;
+    }
+}
+</style>
