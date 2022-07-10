@@ -1,6 +1,6 @@
 <template>
     <div class="about_me__photo">
-        <nuxt-img format="webp" loading="lazy" src="/img/me.jpg" />
+        <nuxt-img src="/img/me.jpg" />
     </div>
 </template>
 
@@ -13,7 +13,6 @@ div.about_me__photo {
 
     width: auto;
     max-height: 550px;
-    background-color: rebeccapurple;
 
     overflow: hidden;
 
