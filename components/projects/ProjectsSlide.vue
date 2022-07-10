@@ -45,7 +45,19 @@ div.projects {
         flex-direction: row;
         flex-wrap: wrap;
 
-        gap: 4rem;
+        gap: $medium-margin;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__list {
+            justify-content: center;
+        }
     }
 }
 </style>

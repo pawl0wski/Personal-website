@@ -29,5 +29,9 @@ div.index {
     margin: 0 auto;
     padding: 0 $small-margin;
     max-width: 90rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: $medium-margin;
 }
 </style>
