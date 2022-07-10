@@ -36,7 +36,7 @@ export default Vue.extend({
 
 <style lang="scss">
 div.projects {
-    @include slide;
+    min-height: 100vh;
 
     &__list {
         margin-top: 3rem;

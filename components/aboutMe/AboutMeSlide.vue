@@ -23,7 +23,7 @@ export default Vue.extend({
 
 <style lang="scss">
 div.about_me {
-    @include slide;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
 
