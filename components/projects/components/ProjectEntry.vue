@@ -11,7 +11,9 @@
         <p class="projects__project_entry__content">
             {{ shortContent }}
         </p>
-        <a>{{ $locale("readMore") }} →</a>
+        <a class="projects__project_entry__read_more"
+            >{{ $locale("readMore") }} →</a
+        >
     </div>
 </template>
 
@@ -61,6 +63,12 @@ div.projects__project_entry {
 
     p.projects__project_entry__content {
         color: $text-color-muted;
+    }
+
+    a.projects__project_entry__read_more {
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 </style>
