@@ -52,6 +52,10 @@ div.projects__project_entry {
 
     user-select: none;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     img:first-child {
         border-radius: 1rem;
     }
