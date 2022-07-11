@@ -3,27 +3,32 @@
         {
             "id": 1,
             "name": "Poznaj Mikołaja Kopernika",
-            "images": [""]
+            "images": [""],
+            "color": "#4A2D01"
         },
         {
             "id": 2,
             "name": "Maturzystnie",
-            "images": [""]
+            "images": [""],
+            "color": "#191A1C"
         },
         {
             "id": 3,
             "name": "Bookmark",
-            "images": [""]
+            "images": [""],
+            "color": "#FAFAFA"
         },
         {
             "id": 4,
             "name": "Playlist Tools",
-            "images": [""]
+            "images": [""],
+            "color": "#041318"
         },
         {
             "id": 5,
             "name": "Technik Informatyk",
-            "images": [""]
+            "images": [""],
+            "color": "#002A29"
         }
     ]
 }

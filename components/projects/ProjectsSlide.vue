@@ -7,6 +7,7 @@
                 :key="project.id"
                 :project-id="project.id"
                 :title="project.name"
+                :color="project.color"
                 :content="$localProject(project.id)"
             />
         </div>

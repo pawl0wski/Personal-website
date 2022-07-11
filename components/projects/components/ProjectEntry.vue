@@ -1,10 +1,16 @@
 <template>
     <div class="projects__project_entry">
-        <nuxt-img
-            :src="thumbnail"
-            format="webp"
+        <div
             class="projects__project_entry__thumbnail"
-        />
+            :style="{ backgroundColor: color }"
+        >
+            <nuxt-img
+                :src="icon"
+                format="webp"
+                class="projects__project_entry__thumbnail__logo"
+            />
+        </div>
+
         <h3 class="projects__project_entry__title">
             {{ title }}
         </h3>
@@ -34,10 +40,14 @@ export default Vue.extend({
             type: String,
             required: true,
         },
+        color: {
+            type: String,
+            required: true,
+        },
     },
     computed: {
-        thumbnail() {
-            return `/img/projects/${this.projectId}_thumbnail.jpg`;
+        icon() {
+            return `/img/projects/icons/${this.projectId}.png`;
         },
         shortContent() {
             return this.content.slice(0, 100) + "...";
@@ -56,8 +66,20 @@ div.projects__project_entry {
         cursor: pointer;
     }
 
-    img:first-child {
+    &__thumbnail {
+        width: 300px;
+        height: 200px;
+
         border-radius: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img.projects__project_entry__thumbnail__logo {
+            height: 5rem;
+            aspect-ratio: 1/1;
+        }
     }
 
     h3.projects__project_entry__title {
