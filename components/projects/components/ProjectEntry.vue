@@ -23,7 +23,10 @@
         <p class="projects__project_entry__content">
             {{ shortContent }}
         </p>
-        <a class="projects__project_entry__read_more"
+        <a
+            :class="`projects__project_entry__read_more${
+                hovered ? '--hovered' : ''
+            }`"
             >{{ $locale("readMore") }} →</a
         >
     </div>
@@ -109,7 +112,7 @@ div.projects__project_entry {
     }
 
     a.projects__project_entry__read_more {
-        &:hover {
+        &--hovered {
             text-decoration: underline;
         }
     }
