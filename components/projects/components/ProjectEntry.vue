@@ -1,5 +1,9 @@
 <template>
-    <div class="projects__project_entry">
+    <div
+        class="projects__project_entry"
+        @mouseover="hovered = true"
+        @mouseleave="hovered = false"
+    >
         <div
             class="projects__project_entry__thumbnail"
             :style="{ backgroundColor: color }"
@@ -7,7 +11,9 @@
             <nuxt-img
                 :src="icon"
                 format="webp"
-                class="projects__project_entry__thumbnail__logo"
+                :class="`projects__project_entry__thumbnail__logo${
+                    hovered ? '--hovered' : ''
+                }`"
             />
         </div>
 
@@ -45,6 +51,11 @@ export default Vue.extend({
             required: true,
         },
     },
+    data(): { hovered: boolean } {
+        return {
+            hovered: false,
+        };
+    },
     computed: {
         icon() {
             return `/img/projects/icons/${this.projectId}.png`;
@@ -77,8 +88,14 @@ div.projects__project_entry {
         justify-content: center;
 
         img.projects__project_entry__thumbnail__logo {
-            height: 5rem;
+            height: 4.5rem;
             aspect-ratio: 1/1;
+            transition: 0.5s height;
+
+            &--hovered {
+                height: 6rem;
+                transition: 0.5s height;
+            }
         }
     }
 
