@@ -40,7 +40,7 @@ export default Vue.extend({
             return `/img/projects/${this.projectId}_thumbnail.jpg`;
         },
         shortContent() {
-            return this.content.split(" ").slice(0, 15).join(" ") + "...";
+            return this.content.slice(0, 100) + "...";
         },
     },
 });
