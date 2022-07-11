@@ -9,7 +9,7 @@
             {{ title }}
         </h3>
         <p class="projects__project_entry__content">
-            {{ content }}
+            {{ shortContent }}
         </p>
         <a>{{ $locale("readMore") }} →</a>
     </div>
@@ -36,6 +36,9 @@ export default Vue.extend({
     computed: {
         thumbnail() {
             return `/img/projects/${this.projectId}_thumbnail.jpg`;
+        },
+        shortContent() {
+            return this.content.split(" ").slice(0, 15).join(" ") + "...";
         },
     },
 });

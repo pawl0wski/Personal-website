@@ -7,7 +7,7 @@
                 :key="project.id"
                 :project-id="project.id"
                 :title="project.name"
-                content="LoremIpsum"
+                :content="$localProject(project.id)"
             />
         </div>
     </div>
@@ -45,7 +45,7 @@ div.projects {
         flex-direction: row;
         flex-wrap: wrap;
 
-        gap: $medium-margin;
+        gap: 3rem;
     }
 }
 

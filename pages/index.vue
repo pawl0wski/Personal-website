@@ -2,6 +2,7 @@
     <div class="index">
         <WelcomeSlide />
         <AboutMeSlide />
+        <hr class="index__divider" />
         <ProjectsSlide />
     </div>
 </template>
@@ -30,8 +31,9 @@ div.index {
     padding: 0 $small-margin;
     max-width: 90rem;
 
-    display: flex;
-    flex-direction: column;
-    gap: $medium-margin;
+    hr.index__divider {
+        height: $medium-margin;
+        border-style: none;
+    }
 }
 </style>

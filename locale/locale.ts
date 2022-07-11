@@ -1,6 +1,8 @@
 import pl from "~/locale/translations/pl";
 import en from "~/locale/translations/en";
 import LangI from "~/locale/interfaces/lang";
+import plProjects from "~/locale/projects/pl";
+import enProjects from "~/locale/projects/en";
 
 export default class Locale {
     private _detectLanguage(): string {
@@ -19,6 +21,18 @@ export default class Locale {
         return content
             .replaceAll("<pc>", "<span class='primary-color'>")
             .replaceAll("</pc>", "</span>");
+    }
+
+    getProjectDescription(id: number): string {
+        let text: string;
+        switch (this._detectLanguage()) {
+            case "pl":
+                text = plProjects[id.toString()] ?? "";
+                break;
+            default:
+                text = enProjects[id.toString()] ?? "";
+        }
+        return text;
     }
 
     get(key: keyof LangI): string {
