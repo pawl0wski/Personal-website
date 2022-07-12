@@ -12,7 +12,7 @@ const en: LangI = {
     welcomeTitle:
         "Hi, my name is <pc>Jacob</pc>. And I'm <pc>fullstack</pc> developer.",
     projectsTitle: "Projects",
-    experienceTitle: "Experience",
+    knowledgeTitle: "Knowledge",
 };
 
 export default en;

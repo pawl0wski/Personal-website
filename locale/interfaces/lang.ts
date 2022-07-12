@@ -4,5 +4,5 @@ export default interface LangI {
     aboutMeTitle: string;
     aboutMeContent: string;
     projectsTitle: string;
-    experienceTitle: string;
+    knowledgeTitle: string;
 }

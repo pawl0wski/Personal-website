@@ -1,6 +1,6 @@
 <template>
-    <div class="experience_slide">
-        <TitleText :content="$locale('experienceTitle')" />
+    <div class="knowledge">
+        <TitleText :content="$locale('knowledgeTitle')" />
     </div>
 </template>
 
@@ -16,7 +16,7 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-div.experience_slide {
+div.knowledge {
     min-height: 100vh;
 }
 </style>
