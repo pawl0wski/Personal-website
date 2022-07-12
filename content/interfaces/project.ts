@@ -1,4 +1,4 @@
-export default interface ProjectI {
+export interface ProjectI {
     id: number;
     name: string;
     color: string;

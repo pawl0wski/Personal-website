@@ -1,4 +1,4 @@
-export default interface SocialI {
+export interface SocialI {
     name: string;
     icon: string[];
     link: string;

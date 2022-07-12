@@ -25,7 +25,7 @@ import WelcomeText from "~/components/welcome/components/WelcomeText.vue";
 import WelcomeCube from "~/components/welcome/components/WelcomeCube.vue";
 import WelcomeIcon from "~/components/welcome/components/WelcomeIcon.vue";
 import socialsContent from "~/content/socials.json";
-import SocialI from "~/content/interfaces/social";
+import { SocialI } from "~/content/interfaces/social";
 
 export default Vue.extend({
     components: { WelcomeText, WelcomeCube, WelcomeIcon },
