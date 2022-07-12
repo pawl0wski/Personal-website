@@ -5,4 +5,7 @@ export default interface LangI {
     aboutMeContent: string;
     projectsTitle: string;
     knowledgeTitle: string;
+    languages: string;
+    technologies: string;
+    others: string;
 }

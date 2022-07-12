@@ -1,5 +1,20 @@
 {
-    "languages": [],
-    "technologies": [],
-    "others": []
+    "languages": [
+        {
+            "name": "Javascript",
+            "icon": "devicon-javascript-plain"
+        }
+    ],
+    "technologies": [
+        {
+            "name": "Vue",
+            "icon": "devicon-vuejs-plain"
+        }
+    ],
+    "others": [
+        {
+            "name": "Git",
+            "icon": "devicon-git-plain"
+        }
+    ]
 }

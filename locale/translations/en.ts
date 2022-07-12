@@ -1,6 +1,9 @@
 import LangI from "~/locale/interfaces/lang";
 
 const en: LangI = {
+    languages: "Languages",
+    others: "Others",
+    technologies: "Technologies",
     readMore: "Read more",
     aboutMeContent:
         "Thank you for visiting my website 👋. My name is Jakub Pawlowski and I live in Poland. I have been cultivating my passion for computer science since elementary school." +

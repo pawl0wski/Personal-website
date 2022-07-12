@@ -19,7 +19,7 @@ export default Vue.extend({
             type: String,
             required: true,
         },
-        name: {
+        title: {
             type: String,
             required: true,
         },
