@@ -4,6 +4,8 @@
         <AboutMeSlide />
         <hr class="index__divider" />
         <ProjectsSlide />
+        <hr class="index__divider" />
+        <ExperienceSlide />
     </div>
 </template>
 
@@ -12,10 +14,11 @@ import Vue from "vue";
 import WelcomeSlide from "~/components/welcome/WelcomeSlide.vue";
 import AboutMeSlide from "~/components/aboutMe/AboutMeSlide.vue";
 import ProjectsSlide from "~/components/projects/ProjectsSlide.vue";
+import ExperienceSlide from "~/components/experience/ExperienceSlide.vue";
 
 export default Vue.extend({
     name: "IndexPage",
-    components: { ProjectsSlide, AboutMeSlide, WelcomeSlide },
+    components: { ProjectsSlide, AboutMeSlide, WelcomeSlide, ExperienceSlide },
 });
 </script>
 
