@@ -1,5 +1,8 @@
 <template>
-    <div class="knowledge_entry"></div>
+    <div class="knowledge_entry">
+        <i :class="[knowledge.icon, 'knowledge_entry__icon', 'colored']" />
+        <span class="knowledge_entry__name">{{ knowledge.name }}</span>
+    </div>
 </template>
 
 <script lang="ts">
@@ -15,3 +18,25 @@ export default Vue.extend({
     },
 });
 </script>
+
+<style lang="scss" scoped>
+.knowledge_entry {
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.8rem;
+
+    border-radius: 0.5rem;
+    background-color: $background-color-lighter;
+
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        font-size: 1.7rem;
+    }
+
+    &__name {
+        padding-left: 1rem;
+    }
+}
+</style>

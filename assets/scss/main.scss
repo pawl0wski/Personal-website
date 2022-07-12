@@ -9,3 +9,7 @@ body {
 span.primary-color {
     color: $primary-color;
 }
+
+* {
+    box-sizing: border-box;
+}

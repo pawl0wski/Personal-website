@@ -1,5 +1,6 @@
 $primary-color: #fff01f;
 $background-color: #000000;
+$background-color-lighter: lighten($background-color, 9%);
 $text-color: #ffffff;
 $text-color-muted: transparentize($text-color, 0.35);
 

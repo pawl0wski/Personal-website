@@ -32,9 +32,10 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .knowledge_list {
     width: calc(100% / 3);
+    padding: 0 2rem;
 
     &__title {
         font-weight: bold;
