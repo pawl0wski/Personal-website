@@ -44,11 +44,24 @@ export default Vue.extend({
 div.knowledge {
     min-height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+
     &__columns {
         margin-top: 5rem;
 
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.knowledge {
+        align-items: center;
+        &__columns {
+            flex-direction: column;
+            width: 100%;
+        }
     }
 }
 </style>
