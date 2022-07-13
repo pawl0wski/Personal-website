@@ -16,6 +16,8 @@ const pl: LangI = {
         "Cześć, nazywam się <pc>Jakub</pc>. I jestem <pc>fullstack</pc> developerem.",
     projectsTitle: "Projekty",
     knowledgeTitle: "Wiedza",
+    stillLearningInfo:
+        "Staram się umieszczać tutaj tylko rzeczy, które potrafię bardzo dobrze. Lecz tej rzeczy jeszcze się uczę i nie powiedziałbym, że ją umiem doskonale. Jednak umiem ją na tyle, aby znalazła tutaj swoje miejsce.",
 };
 
 export default pl;

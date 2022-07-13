@@ -8,4 +8,5 @@ export default interface LangI {
     languages: string;
     technologies: string;
     appsServices: string;
+    stillLearningInfo: string;
 }

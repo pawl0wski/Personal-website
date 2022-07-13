@@ -16,6 +16,8 @@ const en: LangI = {
         "Hi, my name is <pc>Jacob</pc>. And I'm <pc>fullstack</pc> developer.",
     projectsTitle: "Projects",
     knowledgeTitle: "Knowledge",
+    stillLearningInfo:
+        "I try to put here only things that I can do very well. But this thing I am still learning and I wouldn't say that I know it perfectly. However, I know it well enough to find its place here.",
 };
 
 export default en;
