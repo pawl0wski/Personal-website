@@ -2,23 +2,23 @@
     "languages": [
         {
             "name": "Javascript",
-            "icon": "devicon-javascript-plain"
+            "icon": "javascript-original"
         },
         {
             "name": "Python",
-            "icon": "devicon-python-plain"
+            "icon": "python-original"
         }
     ],
     "technologies": [
         {
             "name": "Vue",
-            "icon": "devicon-vuejs-plain"
+            "icon": "vuejs-original"
         }
     ],
     "others": [
         {
             "name": "Git",
-            "icon": "devicon-git-plain"
+            "icon": "git-original"
         }
     ]
 }

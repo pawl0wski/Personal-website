@@ -1,6 +1,9 @@
 <template>
     <div class="knowledge_entry">
-        <i :class="[knowledge.icon, 'knowledge_entry__icon', 'colored']" />
+        <nuxt-img
+            class="knowledge_entry__icon"
+            :src="`img/devicon/${knowledge.icon}.svg`"
+        />
         <span class="knowledge_entry__name">{{ knowledge.name }}</span>
     </div>
 </template>
@@ -32,7 +35,8 @@ export default Vue.extend({
     align-items: center;
 
     &__icon {
-        font-size: 1.7rem;
+        height: 55%;
+        aspect-ratio: 1 / 1;
     }
 
     &__name {

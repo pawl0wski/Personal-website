@@ -24,7 +24,6 @@ export default {
     css: [
         "~assets/scss/main.scss",
         "animate.css/animate.min.css",
-        "devicon/devicon.min.css",
         "@fortawesome/fontawesome-free/css/fontawesome.css",
         "@fortawesome/fontawesome-free/css/solid.css",
         "@fortawesome/fontawesome-free/css/brands.css",
