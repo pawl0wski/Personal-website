@@ -17,7 +17,7 @@ const en: LangI = {
     projectsTitle: "Projects",
     knowledgeTitle: "Knowledge",
     stillLearningInfo:
-        "I try to put here only things that I can do very well. But this thing I am still learning and I wouldn't say that I know it perfectly. However, I know it well enough to find its place here.",
+        "This is something I'm still learning and I don't know it perfectly, but I know it well enough to put it in here.",
 };
 
 export default en;

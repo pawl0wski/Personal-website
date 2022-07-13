@@ -20,7 +20,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 #info-popover {
     padding: 1rem;
-    max-width: 30rem;
+    max-width: 18rem;
     border-radius: 10px;
     background-color: $background-color-lighter;
     opacity: 0;

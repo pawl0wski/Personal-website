@@ -17,7 +17,7 @@ const pl: LangI = {
     projectsTitle: "Projekty",
     knowledgeTitle: "Wiedza",
     stillLearningInfo:
-        "Staram się umieszczać tutaj tylko rzeczy, które potrafię bardzo dobrze. Lecz tej rzeczy jeszcze się uczę i nie powiedziałbym, że ją umiem doskonale. Jednak umiem ją na tyle, aby znalazła tutaj swoje miejsce.",
+        "Tej rzeczy się jeszcze uczę i nie znam jej perfekcyjnie, ale znam ją na tyle dobrze by ją tu mieścić.",
 };
 
 export default pl;
