@@ -2,7 +2,7 @@
     "socials": [
         {
             "name": "Github",
-            "icon": ["devicon-github-original"],
+            "icon": ["fa-brands", "fa-github"],
             "link": "https://github.com/pawl0wski"
         },
         {

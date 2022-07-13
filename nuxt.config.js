@@ -27,6 +27,7 @@ export default {
         "devicon/devicon.min.css",
         "@fortawesome/fontawesome-free/css/fontawesome.css",
         "@fortawesome/fontawesome-free/css/solid.css",
+        "@fortawesome/fontawesome-free/css/brands.css",
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -69,6 +70,9 @@ export default {
         },
         {
             src: "@fortawesome/fontawesome-free/js/solid.min.js",
+        },
+        {
+            src: "@fortawesome/fontawesome-free/js/brands.min.js",
         },
     ],
 
