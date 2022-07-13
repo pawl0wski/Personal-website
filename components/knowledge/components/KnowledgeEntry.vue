@@ -8,9 +8,9 @@
         <span class="knowledge_entry__name">{{ knowledge.name }}</span>
         <i
             v-if="knowledge.stillLearning"
+            class="fa-solid fa-book-open knowledge_entry__still_learning"
             @mouseover="showStillLearningPopover"
             @mouseleave="hideStillLearningPopover"
-            class="fa-solid fa-book-open knowledge_entry__still_learning"
         ></i>
     </div>
 </template>
