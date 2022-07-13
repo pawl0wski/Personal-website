@@ -13,8 +13,8 @@
             />
             <ColumnDivider />
             <KnowledgeList
-                :title="$locale('others')"
-                :knowledge-array="knowledgeContent['others']"
+                :title="$locale('appsServices')"
+                :knowledge-array="knowledgeContent['appsServices']"
             />
         </div>
     </div>

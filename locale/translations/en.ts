@@ -2,7 +2,7 @@ import LangI from "~/locale/interfaces/lang";
 
 const en: LangI = {
     languages: "Languages",
-    others: "Others",
+    appsServices: "Apps / Services",
     technologies: "Technologies",
     readMore: "Read more",
     aboutMeContent:

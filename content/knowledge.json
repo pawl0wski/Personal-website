@@ -23,14 +23,62 @@
     ],
     "technologies": [
         {
+            "name": "HTML",
+            "icon": "html5-original"
+        },
+        {
+            "name": "CSS",
+            "icon": "css3-original"
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "bootstrap-original"
+        },
+        {
             "name": "Vue",
             "icon": "vuejs-original"
+        },
+        {
+            "name": "Nuxt",
+            "icon": "nuxtjs-original"
+        },
+        {
+            "name": "Sass",
+            "icon": "sass-original"
+        },
+        {
+            "name": "Sequelize",
+            "icon": "sequelize-original"
+        },
+        {
+            "name": "Express",
+            "icon": "express-original"
+        },
+        {
+            "name": "Flutter",
+            "icon": "flutter-original"
+        },
+        {
+            "name": "Django",
+            "icon": "django-plain"
+        },
+        {
+            "name": "FastAPI",
+            "icon": "fastapi-original"
         }
     ],
-    "others": [
+    "appsServices": [
         {
             "name": "Git",
             "icon": "git-original"
+        },
+        {
+            "name": "Firebase",
+            "icon": "firebase-plain"
+        },
+        {
+            "name": "Node",
+            "icon": "nodejs-original"
         }
     ]
 }

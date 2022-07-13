@@ -2,7 +2,7 @@ import LangI from "~/locale/interfaces/lang";
 
 const pl: LangI = {
     languages: "Języki",
-    others: "Inne",
+    appsServices: "Aplikacje / Serwisy",
     technologies: "Technologie",
     readMore: "Czytaj więcej",
     aboutMeContent:

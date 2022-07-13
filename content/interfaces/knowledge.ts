@@ -6,5 +6,5 @@ export interface KnowledgeI {
 export interface KnowledgeContentI {
     languages: KnowledgeI[];
     technologies: KnowledgeI[];
-    others: KnowledgeI[];
+    appsServices: KnowledgeI[];
 }

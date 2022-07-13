@@ -7,5 +7,5 @@ export default interface LangI {
     knowledgeTitle: string;
     languages: string;
     technologies: string;
-    others: string;
+    appsServices: string;
 }
