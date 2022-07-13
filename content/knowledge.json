@@ -3,6 +3,10 @@
         {
             "name": "Javascript",
             "icon": "devicon-javascript-plain"
+        },
+        {
+            "name": "Python",
+            "icon": "devicon-python-plain"
         }
     ],
     "technologies": [
