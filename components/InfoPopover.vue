@@ -24,6 +24,7 @@ export default Vue.extend({
     border-radius: 10px;
     background-color: $background-color-lighter;
     opacity: 0;
+    box-shadow: 0px 0px 15px 0px $background-color;
 
     position: absolute;
 
