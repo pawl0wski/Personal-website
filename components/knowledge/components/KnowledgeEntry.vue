@@ -1,6 +1,7 @@
 <template>
     <div class="knowledge_entry">
         <nuxt-img
+            loading="lazy"
             class="knowledge_entry__icon"
             :src="`img/devicon/${knowledge.icon}.svg`"
         />
