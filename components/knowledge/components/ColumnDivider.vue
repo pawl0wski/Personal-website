@@ -5,11 +5,9 @@
 <style lang="scss" scoped>
 div.column_divider {
     width: 2px;
-
     margin: 5rem 1rem 0;
 
     background-color: $background-color-lighter;
-
     opacity: 0.8;
 }
 
