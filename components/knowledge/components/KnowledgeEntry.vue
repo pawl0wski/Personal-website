@@ -36,7 +36,9 @@ export default Vue.extend({
 
             popover.style.opacity = "1";
 
-            createPopper(target, popover);
+            createPopper(target, popover, {
+                placement: "bottom-end",
+            });
         },
         hideStillLearningPopover() {
             const popover = document.querySelector(
