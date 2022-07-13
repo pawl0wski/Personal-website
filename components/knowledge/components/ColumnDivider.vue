@@ -9,6 +9,8 @@ div.column_divider {
     margin: 5rem 1rem 0;
 
     background-color: $background-color-lighter;
+
+    opacity: 0.8;
 }
 
 @media only screen and (max-width: 800px) {
