@@ -25,7 +25,7 @@ export default Vue.extend({
             required: true,
         },
         knowledgeArray: {
-            type: Object as () => KnowledgeI[],
+            type: Array as () => KnowledgeI[],
             required: true,
         },
     },
