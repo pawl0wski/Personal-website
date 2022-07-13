@@ -6,6 +6,10 @@
             :src="`img/devicon/${knowledge.icon}.svg`"
         />
         <span class="knowledge_entry__name">{{ knowledge.name }}</span>
+        <i
+            v-if="knowledge.stillLearning"
+            class="fa-solid fa-book-open knowledge_entry__still_learning"
+        ></i>
     </div>
 </template>
 
@@ -42,6 +46,12 @@ export default Vue.extend({
 
     &__name {
         padding-left: 1rem;
+    }
+
+    &__still_learning {
+        margin-left: auto;
+        color: $text-color;
+        cursor: help;
     }
 }
 </style>
