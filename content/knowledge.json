@@ -73,12 +73,48 @@
             "icon": "git-original"
         },
         {
+            "name": "Linux",
+            "icon": "linux-original"
+        },
+        {
+            "name": "Github",
+            "icon": "github-original"
+        },
+        {
             "name": "Firebase",
             "icon": "firebase-plain"
         },
         {
             "name": "Node",
             "icon": "nodejs-original"
+        },
+        {
+            "name": "Nginx",
+            "icon": "nginx-original"
+        },
+        {
+            "name": "MySQL",
+            "icon": "mysql-original"
+        },
+        {
+            "name": "SQLite",
+            "icon": "sqlite-original"
+        },
+        {
+            "name": "Figma",
+            "icon": "figma-original"
+        },
+        {
+            "name": "Docker",
+            "icon": "docker-original"
+        },
+        {
+            "name": "Visual Studio Code",
+            "icon": "vscode-original"
+        },
+        {
+            "name": "IntelliJ IDEA",
+            "icon": "intellij-original"
         }
     ]
 }
