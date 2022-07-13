@@ -5,8 +5,20 @@
             "icon": "javascript-original"
         },
         {
+            "name": "Typescript",
+            "icon": "typescript-original"
+        },
+        {
             "name": "Python",
             "icon": "python-original"
+        },
+        {
+            "name": "Dart",
+            "icon": "dart-original"
+        },
+        {
+            "name": "Go",
+            "icon": "go-original-wordmark"
         }
     ],
     "technologies": [
