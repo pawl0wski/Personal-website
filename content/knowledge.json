@@ -2,119 +2,147 @@
     "languages": [
         {
             "name": "Javascript",
-            "icon": "javascript-original"
+            "icon": "javascript-original",
+            "stillLearning": false
         },
         {
             "name": "Typescript",
-            "icon": "typescript-original"
+            "icon": "typescript-original",
+            "stillLearning": false
         },
         {
             "name": "Python",
-            "icon": "python-original"
+            "icon": "python-original",
+            "stillLearning": false
         },
         {
             "name": "Dart",
-            "icon": "dart-original"
+            "icon": "dart-original",
+            "stillLearning": false
         },
         {
             "name": "Go",
-            "icon": "go-original-wordmark"
+            "icon": "go-original-wordmark",
+            "stillLearning": true
         }
     ],
     "technologies": [
         {
             "name": "HTML",
-            "icon": "html5-original"
+            "icon": "html5-original",
+            "stillLearning": false
         },
         {
             "name": "CSS",
-            "icon": "css3-original"
+            "icon": "css3-original",
+            "stillLearning": false
         },
         {
             "name": "Bootstrap",
-            "icon": "bootstrap-original"
+            "icon": "bootstrap-original",
+            "stillLearning": false
         },
         {
             "name": "Vue",
-            "icon": "vuejs-original"
+            "icon": "vuejs-original",
+            "stillLearning": false
         },
         {
             "name": "Nuxt",
-            "icon": "nuxtjs-original"
+            "icon": "nuxtjs-original",
+            "stillLearning": false
         },
         {
             "name": "Sass",
-            "icon": "sass-original"
+            "icon": "sass-original",
+            "stillLearning": false
         },
         {
             "name": "Sequelize",
-            "icon": "sequelize-original"
+            "icon": "sequelize-original",
+            "stillLearning": false
         },
         {
             "name": "Express",
-            "icon": "express-original"
+            "icon": "express-original",
+            "stillLearning": false
         },
         {
             "name": "Flutter",
-            "icon": "flutter-original"
+            "icon": "flutter-original",
+            "stillLearning": false
         },
         {
             "name": "Django",
-            "icon": "django-plain"
+            "icon": "django-plain",
+            "stillLearning": false
         },
         {
             "name": "FastAPI",
-            "icon": "fastapi-original"
+            "icon": "fastapi-original",
+            "stillLearning": false
         }
     ],
     "appsServices": [
         {
             "name": "Git",
-            "icon": "git-original"
+            "icon": "git-original",
+            "stillLearning": false
         },
         {
             "name": "Linux",
-            "icon": "linux-original"
+            "icon": "linux-original",
+            "stillLearning": false
         },
         {
             "name": "Github",
-            "icon": "github-original"
+            "icon": "github-original",
+            "stillLearning": false
         },
         {
             "name": "Firebase",
-            "icon": "firebase-plain"
+            "icon": "firebase-plain",
+            "stillLearning": false
         },
         {
             "name": "Node",
-            "icon": "nodejs-original"
+            "icon": "nodejs-original",
+            "stillLearning": false
         },
         {
             "name": "Nginx",
-            "icon": "nginx-original"
+            "icon": "nginx-original",
+            "stillLearning": false
         },
         {
             "name": "MySQL",
-            "icon": "mysql-original"
+            "icon": "mysql-original",
+            "stillLearning": false
         },
         {
             "name": "SQLite",
-            "icon": "sqlite-original"
+            "icon": "sqlite-original",
+            "stillLearning": false
         },
         {
             "name": "Figma",
-            "icon": "figma-original"
+            "icon": "figma-original",
+            "stillLearning": false
         },
         {
             "name": "Docker",
-            "icon": "docker-original"
+            "icon": "docker-original",
+            "stillLearning": false
         },
         {
             "name": "Visual Studio Code",
-            "icon": "vscode-original"
+            "icon": "vscode-original",
+            "stillLearning": false
         },
         {
             "name": "IntelliJ IDEA",
-            "icon": "intellij-original"
+            "icon": "intellij-original",
+            "stillLearning": false
         }
     ]
 }
