@@ -132,7 +132,7 @@
         {
             "name": "Docker",
             "icon": "docker-original",
-            "stillLearning": false
+            "stillLearning": true
         },
         {
             "name": "Visual Studio Code",
