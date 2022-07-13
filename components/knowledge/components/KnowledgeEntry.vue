@@ -11,6 +11,7 @@
             class="fa-solid fa-book-open knowledge_entry__still_learning"
             @mouseover="showStillLearningPopover"
             @mouseleave="hideStillLearningPopover"
+            @click="showStillLearningPopover"
         ></i>
     </div>
 </template>
@@ -29,7 +30,7 @@ export default Vue.extend({
     },
     methods: {
         showStillLearningPopover(event: MouseEvent) {
-            const target = event.relatedTarget as Element;
+            const target = event.target as Element;
             const popover = document.querySelector(
                 "#info-popover"
             ) as HTMLElement;
