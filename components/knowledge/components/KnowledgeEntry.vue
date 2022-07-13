@@ -8,6 +8,8 @@
         <span class="knowledge_entry__name">{{ knowledge.name }}</span>
         <i
             v-if="knowledge.stillLearning"
+            @mouseover="showStillLearningPopover"
+            @mouseleave="hideStillLearningPopover"
             class="fa-solid fa-book-open knowledge_entry__still_learning"
         ></i>
     </div>
@@ -15,6 +17,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { createPopper } from "@popperjs/core";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
 
 export default Vue.extend({
@@ -22,6 +25,24 @@ export default Vue.extend({
         knowledge: {
             type: Object as () => KnowledgeI,
             required: true,
+        },
+    },
+    methods: {
+        showStillLearningPopover(event: MouseEvent) {
+            const target = event.relatedTarget as Element;
+            const popover = document.querySelector(
+                "#info-popover"
+            ) as HTMLElement;
+
+            popover.style.opacity = "1";
+
+            createPopper(target, popover);
+        },
+        hideStillLearningPopover() {
+            const popover = document.querySelector(
+                "#info-popover"
+            ) as HTMLElement;
+            if (popover != null) popover.style.opacity = "0";
         },
     },
 });

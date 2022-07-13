@@ -19,10 +19,6 @@ export default Vue.extend({
             type: String,
             required: true,
         },
-        title: {
-            type: String,
-            required: true,
-        },
     },
 });
 </script>
