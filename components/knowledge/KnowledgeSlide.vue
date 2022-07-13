@@ -48,7 +48,7 @@ div.knowledge {
     flex-direction: column;
 
     &__columns {
-        margin-top: 5rem;
+        margin-top: 2rem;
 
         display: flex;
         flex-direction: row;
