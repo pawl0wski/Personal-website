@@ -21,6 +21,7 @@ import Vue from "vue";
 import { createPopper } from "@popperjs/core";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import Locale from "~/lib/locale/locale";
 
 export default Vue.extend({
     props: {
@@ -32,10 +33,12 @@ export default Vue.extend({
     methods: {
         showStillLearningPopover(event: MouseEvent) {
             const popoverController = new InfoPopoverController();
+            const locale = new Locale();
+
             const target = event.target as Element;
             const popover = popoverController.popover;
 
-            popoverController.setText(this.$locale("stillLearningInfo"));
+            popoverController.setText(locale.get("stillLearningInfo"));
             popoverController.show();
 
             createPopper(target, popover, {

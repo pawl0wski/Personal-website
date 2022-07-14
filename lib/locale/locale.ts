@@ -1,8 +1,8 @@
-import pl from "~/locale/translations/pl";
-import en from "~/locale/translations/en";
-import LangI from "~/locale/interfaces/lang";
-import plProjects from "~/locale/projects/pl";
-import enProjects from "~/locale/projects/en";
+import pl from "./translations/pl";
+import en from "./translations/en";
+import LangI from "./interfaces/lang";
+import plProjects from "./projects/pl";
+import enProjects from "./projects/en";
 
 export default class Locale {
     private _detectLanguage(): string {

@@ -1,4 +1,4 @@
-import LangI from "~/locale/interfaces/lang";
+import LangI from "../interfaces/lang";
 
 const en: LangI = {
     languages: "Languages",

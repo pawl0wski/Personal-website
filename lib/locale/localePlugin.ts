@@ -1,6 +1,6 @@
 import Vue from "vue";
-import Locale from "~/locale/locale";
-import LangI from "~/locale/interfaces/lang";
+import Locale from "./locale";
+import LangI from "./interfaces/lang";
 
 const locale = new Locale();
 Vue.prototype.$locale = (key: keyof LangI) => {
