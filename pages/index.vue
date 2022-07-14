@@ -25,9 +25,7 @@ export default Vue.extend({
 
 <style lang="scss">
 div.index {
-    margin: 0 auto;
-    padding: 0 $small-margin;
-    max-width: 90rem;
+    @include page;
 
     hr.index__divider {
         height: $medium-margin;

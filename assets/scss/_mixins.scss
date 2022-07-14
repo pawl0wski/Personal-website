@@ -1,0 +1,5 @@
+@mixin page {
+    margin: 0 auto;
+    padding: 0 $small-margin;
+    max-width: 90rem;
+}
