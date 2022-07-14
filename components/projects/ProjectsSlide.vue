@@ -27,7 +27,7 @@ export default defineComponent({
     data(): { projects: ProjectI[] } {
         const { projects } = projectsContent;
         return {
-            projects: projects.reverse(),
+            projects: projects[0].id === 1 ? projects.reverse() : projects,
         };
     },
 });
