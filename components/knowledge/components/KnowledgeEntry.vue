@@ -17,13 +17,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import { createPopper } from "@popperjs/core";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 import Locale from "~/lib/locale/locale";
 
-export default Vue.extend({
+export default defineComponent({
     props: {
         knowledge: {
             type: Object as () => KnowledgeI,

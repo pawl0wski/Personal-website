@@ -21,14 +21,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import TitleText from "~/components/TitleText.vue";
 import KnowledgeList from "~/components/knowledge/components/KnowledgeList.vue";
 import ColumnDivider from "~/components/knowledge/components/ColumnDivider.vue";
 import { KnowledgeContentI } from "~/content/interfaces/knowledge";
 import knowledgeContent from "~/content/knowledge.json";
 
-export default Vue.extend({
+export default defineComponent({
     components: {
         KnowledgeList,
         TitleText,

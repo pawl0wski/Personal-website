@@ -11,12 +11,12 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import TitleText from "~/components/TitleText.vue";
 import AboutMeContent from "~/components/aboutMe/components/AboutMeContent.vue";
 import AboutMePhoto from "~/components/aboutMe/components/AboutMePhoto.vue";
 
-export default Vue.extend({
+export default defineComponent({
     components: { AboutMeContent, TitleText, AboutMePhoto },
 });
 </script>
