@@ -27,6 +27,7 @@ div.title {
 
         border-top-style: solid;
         border-top-color: $primary-color;
+        border-top-width: 3px;
 
         h1 {
             margin-top: 0.2rem;
