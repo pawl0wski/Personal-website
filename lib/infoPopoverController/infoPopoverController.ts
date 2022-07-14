@@ -1,3 +1,8 @@
+/**
+ * This class is designed to make the use of the InfoPopover.vue easier.
+ * Thanks to it you can hide, change the text and show the InfoPopover.
+ * Make sure that the content of ~/components/InfoPopover.vue is on current page
+ */
 export default class InfoPopoverController {
     private readonly _popover: HTMLElement;
     private readonly _popoverText: HTMLElement;
