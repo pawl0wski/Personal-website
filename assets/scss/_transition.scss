@@ -1,0 +1,9 @@
+.page-enter-active,
+.page-leave-active {
+    animation: fadeInLeft .5s;
+}
+.page-enter,
+.page-leave-to {
+    animation: fadeOutRight .5s;
+
+}

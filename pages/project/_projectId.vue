@@ -4,7 +4,13 @@
     </div>
 </template>
 
-<style lang="scss">
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({});
+</script>
+
+<style lang="scss" scoped>
 .project {
     @include page;
 }
