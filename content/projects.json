@@ -27,7 +27,7 @@
         {
             "id": 5,
             "name": "Technik Informatyk",
-            "images": [""],
+            "images": ["ti1.jpg", "ti2.jpg", "ti3.jpg"],
             "color": "#002A29"
         }
     ]
