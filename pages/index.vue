@@ -24,12 +24,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-body {
-    background-color: $background-color;
-    color: $text-color;
-    font-family: $font-family;
-}
-
 div.index {
     margin: 0 auto;
     padding: 0 $small-margin;

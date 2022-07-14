@@ -27,11 +27,11 @@
             <p class="projects__project_entry__link__content">
                 {{ shortContent }}
             </p>
-            <a
+            <span
                 :class="`projects__project_entry__link__read_more${
                     hovered ? '--hovered' : ''
                 }`"
-                >{{ $locale("readMore") }} →</a
+                >{{ $locale("readMore") }} →</span
             >
         </NuxtLink>
     </div>

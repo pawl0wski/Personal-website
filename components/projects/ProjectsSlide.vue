@@ -35,7 +35,7 @@ export default Vue.extend({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 div.projects {
     min-height: 100vh;
 
