@@ -28,9 +28,6 @@ export default defineComponent({
             required: true,
         },
     },
-    mounted() {
-        console.log(this.$props.project);
-    },
 });
 </script>
 
