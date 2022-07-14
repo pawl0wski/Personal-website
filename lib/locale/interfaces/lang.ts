@@ -9,4 +9,5 @@ export default interface LangI {
     technologies: string;
     appsServices: string;
     stillLearningInfo: string;
+    backToHomePage: string;
 }
