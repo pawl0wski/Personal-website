@@ -4,31 +4,36 @@
         @mouseover="hovered = true"
         @mouseleave="hovered = false"
     >
-        <div
-            class="projects__project_entry__thumbnail"
-            :style="{ backgroundColor: color }"
+        <NuxtLink
+            :to="`project/${projectId}`"
+            class="projects__project_entry__link"
         >
-            <nuxt-img
-                :src="icon"
-                format="webp"
-                :class="`projects__project_entry__thumbnail__logo${
+            <div
+                class="projects__project_entry__link__thumbnail"
+                :style="{ backgroundColor: color }"
+            >
+                <nuxt-img
+                    :src="icon"
+                    format="webp"
+                    :class="`projects__project_entry__link__thumbnail__logo${
+                        hovered ? '--hovered' : ''
+                    }`"
+                />
+            </div>
+
+            <h3 class="projects__project_entry__link__title">
+                {{ title }}
+            </h3>
+            <p class="projects__project_entry__link__content">
+                {{ shortContent }}
+            </p>
+            <a
+                :class="`projects__project_entry__link__read_more${
                     hovered ? '--hovered' : ''
                 }`"
-            />
-        </div>
-
-        <h3 class="projects__project_entry__title">
-            {{ title }}
-        </h3>
-        <p class="projects__project_entry__content">
-            {{ shortContent }}
-        </p>
-        <a
-            :class="`projects__project_entry__read_more${
-                hovered ? '--hovered' : ''
-            }`"
-            >{{ $locale("readMore") }} →</a
-        >
+                >{{ $locale("readMore") }} →</a
+            >
+        </NuxtLink>
     </div>
 </template>
 
@@ -71,49 +76,52 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-div.projects__project_entry {
+.projects__project_entry {
     width: 300px;
-
     user-select: none;
+    &__link {
+        text-decoration: none;
+        color: $text-color;
 
-    &:hover {
-        cursor: pointer;
-    }
+        &:hover {
+            cursor: pointer;
+        }
 
-    &__thumbnail {
-        width: 300px;
-        height: 200px;
+        &__thumbnail {
+            width: 300px;
+            height: 200px;
 
-        border-radius: 1rem;
+            border-radius: 1rem;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-        img.projects__project_entry__thumbnail__logo {
-            height: 4.5rem;
-            aspect-ratio: 1/1;
-            transition: 0.5s height;
-
-            &--hovered {
-                height: 6rem;
+            &__logo {
+                height: 4.5rem;
+                aspect-ratio: 1/1;
                 transition: 0.5s height;
+
+                &--hovered {
+                    height: 6rem;
+                    transition: 0.5s height;
+                }
             }
         }
-    }
 
-    h3.projects__project_entry__title {
-        font-size: 1.4rem;
-        margin: 0.7rem 0;
-    }
+        &__title {
+            font-size: 1.4rem;
+            margin: 0.7rem 0;
+        }
 
-    p.projects__project_entry__content {
-        color: $text-color-muted;
-    }
+        &__content {
+            color: $text-color-muted;
+        }
 
-    a.projects__project_entry__read_more {
-        &--hovered {
-            text-decoration: underline;
+        &__read_more {
+            &--hovered {
+                text-decoration: underline;
+            }
         }
     }
 }
