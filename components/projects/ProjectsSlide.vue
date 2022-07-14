@@ -5,9 +5,7 @@
             <ProjectEntry
                 v-for="project in projects"
                 :key="project.id"
-                :project-id="project.id"
-                :title="project.name"
-                :color="project.color"
+                :project="project"
                 :content="$localProject(project.id)"
             />
         </div>

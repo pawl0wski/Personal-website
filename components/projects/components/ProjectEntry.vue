@@ -5,12 +5,12 @@
         @mouseleave="hovered = false"
     >
         <NuxtLink
-            :to="`project/${projectId}`"
+            :to="`project/${project.id}`"
             class="projects__project_entry__link"
         >
             <div
                 class="projects__project_entry__link__thumbnail"
-                :style="{ backgroundColor: color }"
+                :style="{ backgroundColor: project.color }"
             >
                 <nuxt-img
                     :src="icon"
@@ -22,7 +22,7 @@
             </div>
 
             <h3 class="projects__project_entry__link__title">
-                {{ title }}
+                {{ project.name }}
             </h3>
             <p class="projects__project_entry__link__content">
                 {{ shortContent }}
@@ -38,23 +38,16 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent, PropType } from "vue";
+import { ProjectI } from "~/content/interfaces/project";
 
-export default Vue.extend({
+export default defineComponent({
     props: {
-        projectId: {
-            type: Number,
-            required: true,
-        },
-        title: {
-            type: String,
+        project: {
+            type: Object as PropType<ProjectI>,
             required: true,
         },
         content: {
-            type: String,
-            required: true,
-        },
-        color: {
             type: String,
             required: true,
         },
@@ -66,10 +59,10 @@ export default Vue.extend({
     },
     computed: {
         icon() {
-            return `/img/projects/icons/${this.projectId}.png`;
+            return `/img/projects/icons/${this.$props.project.id}.png`;
         },
         shortContent() {
-            return this.content.slice(0, 100) + "...";
+            return this.$props.content.slice(0, 100) + "...";
         },
     },
 });
