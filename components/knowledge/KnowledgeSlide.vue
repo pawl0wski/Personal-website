@@ -1,6 +1,5 @@
 <template>
     <div class="knowledge">
-        <InfoPopover :content="$locale('stillLearningInfo')" />
         <TitleText :content="$locale('knowledgeTitle')" />
         <div class="knowledge__columns">
             <KnowledgeList
@@ -41,10 +40,6 @@ export default Vue.extend({
         return {
             knowledgeContent,
         };
-    },
-    mounted() {
-        const popover = document.getElementById("info-popover");
-        if (popover != null) popover.style.opacity = "0";
     },
 });
 </script>

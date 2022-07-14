@@ -1,5 +1,6 @@
 <template>
     <div class="index">
+        <InfoPopover />
         <WelcomeSlide />
         <AboutMeSlide />
         <hr class="index__divider" />

@@ -20,6 +20,7 @@
 import Vue from "vue";
 import { createPopper } from "@popperjs/core";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
+import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 
 export default Vue.extend({
     props: {
@@ -30,22 +31,20 @@ export default Vue.extend({
     },
     methods: {
         showStillLearningPopover(event: MouseEvent) {
+            const popoverController = new InfoPopoverController();
             const target = event.target as Element;
-            const popover = document.querySelector(
-                "#info-popover"
-            ) as HTMLElement;
+            const popover = popoverController.popover;
 
-            popover.style.opacity = "1";
+            popoverController.setText(this.$locale("stillLearningInfo"));
+            popoverController.show();
 
             createPopper(target, popover, {
                 placement: "bottom-end",
             });
         },
         hideStillLearningPopover() {
-            const popover = document.querySelector(
-                "#info-popover"
-            ) as HTMLElement;
-            if (popover != null) popover.style.opacity = "0";
+            const popoverController = new InfoPopoverController();
+            popoverController.hide();
         },
     },
 });
