@@ -58,4 +58,18 @@ export default defineComponent({
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .project_info_slide__main {
+        flex-direction: column-reverse;
+
+        &__images {
+            width: 100%;
+        }
+
+        &__details {
+            width: 100%;
+        }
+    }
+}
 </style>
