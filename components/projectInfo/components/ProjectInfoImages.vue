@@ -7,6 +7,7 @@
         <ProjectInfoImagesControls
             :project="project"
             :current-index="currentIndex"
+            @changeIndex="changeIndex"
         />
     </div>
 </template>
@@ -44,8 +45,8 @@ export default defineComponent({
         prevImage() {
             if (this.currentIndex > 0) this.currentIndex--;
         },
-        changeImageTo(i: number) {
-            if (i > 0 && i < this.$props.project.images.length)
+        changeIndex(i: number) {
+            if (i >= 0 && i < this.$props.project.images.length)
                 this.currentIndex = i;
         },
     },

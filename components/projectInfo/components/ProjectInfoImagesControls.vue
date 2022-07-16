@@ -4,6 +4,7 @@
             v-for="(image, i) in project.images"
             :key="image"
             class="project_info__images__controls__control"
+            @click="changeIndex(i)"
         >
             <div
                 v-if="i === currentIndex"
@@ -26,6 +27,11 @@ export default defineComponent({
         project: {
             type: Object as PropType<ProjectI>,
             required: true,
+        },
+    },
+    methods: {
+        changeIndex(i: number) {
+            this.$emit("changeIndex", i);
         },
     },
 });
@@ -55,6 +61,8 @@ export default defineComponent({
         justify-content: center;
 
         background-color: $background-color;
+
+        cursor: pointer;
 
         &__dot {
             width: 50%;
