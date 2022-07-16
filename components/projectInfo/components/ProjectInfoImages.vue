@@ -4,14 +4,20 @@
         :style="{ 'background-color': $props.project.color }"
     >
         <nuxt-img :src="currentImage" class="project_info_images__image" />
+        <ProjectInfoImagesControls
+            :project="project"
+            :current-index="currentIndex"
+        />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { ProjectI } from "~/content/interfaces/project";
+import ProjectInfoImagesControls from "~/components/projectInfo/components/ProjectInfoImagesControls.vue";
 
 export default defineComponent({
+    components: { ProjectInfoImagesControls },
     props: {
         project: {
             type: Object as PropType<ProjectI>,
@@ -54,11 +60,15 @@ export default defineComponent({
     border-radius: 1rem;
     overflow: hidden;
 
-    display: flex;
-    justify-content: center;
-
     &__image {
         height: 100%;
+
+        position: relative;
+        left: 50%;
+        bottom: 50%;
+        z-index: 0;
+
+        transform: translate(-50%, 50%);
     }
 }
 </style>
