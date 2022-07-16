@@ -18,7 +18,7 @@ export default defineComponent({
             required: true,
         },
     },
-    data() {
+    data(): { currentIndex: number } {
         return {
             currentIndex: 0,
         };
@@ -37,6 +37,10 @@ export default defineComponent({
         },
         prevImage() {
             if (this.currentIndex > 0) this.currentIndex--;
+        },
+        changeImageTo(i: number) {
+            if (i > 0 && i < this.$props.project.images.length)
+                this.currentIndex = i;
         },
     },
 });
