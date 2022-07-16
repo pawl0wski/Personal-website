@@ -20,6 +20,13 @@ export default defineComponent({
             currentIndex: 0,
         };
     },
+    computed: {
+        currentImage(): string {
+            return `img/projects/${
+                this.$props.project.images[this.currentIndex]
+            }`;
+        },
+    },
 });
 </script>
 
