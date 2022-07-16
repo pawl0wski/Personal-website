@@ -1,6 +1,7 @@
+import TechnologyI from "~/content/interfaces/technology";
+
 export interface KnowledgeI {
-    icon: string;
-    name: string;
+    technology: TechnologyI;
     stillLearning: boolean;
 }
 

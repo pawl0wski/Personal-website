@@ -3,9 +3,11 @@
         <nuxt-img
             loading="lazy"
             class="knowledge_entry__icon"
-            :src="`img/devicon/${knowledge.icon}.svg`"
+            :src="`img/devicon/${knowledge.technology.icon}.svg`"
         />
-        <span class="knowledge_entry__name">{{ knowledge.name }}</span>
+        <span class="knowledge_entry__name">{{
+            knowledge.technology.name
+        }}</span>
         <i
             v-if="knowledge.stillLearning"
             class="fa-solid fa-book-open knowledge_entry__still_learning"
