@@ -1,6 +1,6 @@
 <template>
     <div class="project_info_images">
-        <img />
+        <nuxt-img :src="currentImage" class="project_info_images__image" />
     </div>
 </template>
 
@@ -44,6 +44,13 @@ export default defineComponent({
     width: 100%;
     aspect-ratio: 16 / 9;
 
+    border-radius: 1rem;
+    overflow: hidden;
+
     background-color: $background-color-lighter;
+    &__image {
+        height: 100%;
+        width: 100%;
+    }
 }
 </style>

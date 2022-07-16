@@ -5,7 +5,7 @@
         </a>
         <div class="project_info_slide__main">
             <div class="project_info_slide__main__images">
-                <ProjectInfoImages />
+                <ProjectInfoImages :project="project" />
             </div>
             <div class="project_info_slide__main__details">
                 <ProjectInfoDetails />
