@@ -46,6 +46,7 @@ export default defineComponent({
     }
 
     &__main {
+        margin-top: 2rem;
         display: flex;
         flex-direction: row;
 
