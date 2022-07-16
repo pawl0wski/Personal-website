@@ -1,8 +1,8 @@
 <template>
     <div class="project_info_slide">
-        <a href="/" class="project_info_slide__back">
+        <nuxt-link to="/" class="project_info_slide__back">
             {{ $locale("backToHomePage") }}
-        </a>
+        </nuxt-link>
         <div class="project_info_slide__main">
             <div class="project_info_slide__main__images">
                 <ProjectInfoImages :project="project" />
