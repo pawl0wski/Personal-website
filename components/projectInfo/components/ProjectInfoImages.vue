@@ -32,7 +32,7 @@ export default defineComponent({
     },
     computed: {
         currentImage(): string {
-            return `img/projects/${
+            return `/img/projects/${
                 this.$props.project.images[this.currentIndex]
             }`;
         },
