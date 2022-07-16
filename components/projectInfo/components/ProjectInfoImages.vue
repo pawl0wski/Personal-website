@@ -27,6 +27,15 @@ export default defineComponent({
             }`;
         },
     },
+    methods: {
+        nextImage() {
+            if (this.$props.project.images.length < this.currentIndex)
+                this.currentIndex++;
+        },
+        prevImage() {
+            if (this.currentIndex > 0) this.currentIndex--;
+        },
+    },
 });
 </script>
 
