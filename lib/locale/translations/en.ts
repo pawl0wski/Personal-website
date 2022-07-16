@@ -18,7 +18,7 @@ const en: LangI = {
     knowledgeTitle: "Knowledge",
     stillLearningInfo:
         "This is something I'm still learning and I don't know it perfectly, but I know it well enough to put it in here.",
-    backToHomePage: "🠔 go back to the home page",
+    backToHomePage: "← go back to the home page",
 };
 
 export default en;
