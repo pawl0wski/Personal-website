@@ -1,5 +1,8 @@
 <template>
-    <div class="project_info_images">
+    <div
+        class="project_info_images"
+        :style="{ 'background-color': $props.project.color }"
+    >
         <nuxt-img :src="currentImage" class="project_info_images__image" />
     </div>
 </template>
@@ -47,10 +50,11 @@ export default defineComponent({
     border-radius: 1rem;
     overflow: hidden;
 
-    background-color: $background-color-lighter;
+    display: flex;
+    justify-content: center;
+
     &__image {
         height: 100%;
-        width: 100%;
     }
 }
 </style>
