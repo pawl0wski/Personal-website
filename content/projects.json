@@ -4,31 +4,65 @@
             "id": 1,
             "name": "Poznaj Mikołaja Kopernika",
             "images": [""],
-            "color": "#4A2D01"
+            "color": "#4A2D01",
+            "technologies": []
         },
         {
             "id": 2,
             "name": "Maturzystnie",
             "images": [""],
-            "color": "#191A1C"
+            "color": "#191A1C",
+            "technologies": []
         },
         {
             "id": 3,
             "name": "Bookmark",
             "images": [""],
-            "color": "#FAFAFA"
+            "color": "#FAFAFA",
+            "technologies": []
         },
         {
             "id": 4,
             "name": "Playlist Tools",
             "images": [""],
-            "color": "#041318"
+            "color": "#041318",
+            "technologies": []
         },
         {
             "id": 5,
             "name": "Technik Informatyk",
             "images": ["ti1.jpg", "ti2.jpg", "ti3.jpg"],
-            "color": "#002A29"
+            "color": "#002A29",
+            "technologies": [
+                {
+                    "name": "Dart",
+                    "icon": "dart-original"
+                },
+                {
+                    "name": "Flutter",
+                    "icon": "flutter-original"
+                },
+                {
+                    "name": "Firebase",
+                    "icon": "firebase-plain"
+                },
+                {
+                    "name": "Node",
+                    "icon": "nodejs-original"
+                },
+                {
+                    "name": "Typescript",
+                    "icon": "typescript-original"
+                },
+                {
+                    "name": "Express",
+                    "icon": "express-original"
+                },
+                {
+                    "name": "Sequelize",
+                    "icon": "sequelize-original"
+                }
+            ]
         }
     ]
 }
