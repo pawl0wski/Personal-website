@@ -4,3 +4,11 @@
     max-width: 90rem;
     min-height: 100vh;
 }
+
+@mixin relativeCenter {
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+
+    transform: translate(-50%, 50%);
+}

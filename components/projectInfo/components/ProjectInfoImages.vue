@@ -7,7 +7,15 @@
             <nuxt-img
                 :src="currentImage"
                 class="project_info_images__main__image"
+                @load="imageLoaded"
             />
+            <PulseLoader
+                class="project_info_images__main__loader"
+                :loading="loading"
+                color="#fff01f"
+                :size="0.5"
+                sizeUnit="rem"
+            ></PulseLoader>
         </div>
         <div class="project_info_images__controls">
             <ProjectInfoImagesControls
@@ -21,20 +29,22 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
+import { PulseLoader } from "@saeris/vue-spinners";
 import { ProjectI } from "~/content/interfaces/project";
 import ProjectInfoImagesControls from "~/components/projectInfo/components/ProjectInfoImagesControls.vue";
 
 export default defineComponent({
-    components: { ProjectInfoImagesControls },
+    components: { ProjectInfoImagesControls, PulseLoader },
     props: {
         project: {
             type: Object as PropType<ProjectI>,
             required: true,
         },
     },
-    data(): { currentIndex: number } {
+    data(): { currentIndex: number; loading: boolean } {
         return {
             currentIndex: 0,
+            loading: true,
         };
     },
     computed: {
@@ -48,13 +58,19 @@ export default defineComponent({
         nextImage() {
             if (this.$props.project.images.length < this.currentIndex)
                 this.currentIndex++;
+            this.loading = true;
         },
         prevImage() {
             if (this.currentIndex > 0) this.currentIndex--;
+            this.loading = true;
         },
         changeIndex(i: number) {
             if (i >= 0 && i < this.$props.project.images.length)
                 this.currentIndex = i;
+            this.loading = true;
+        },
+        imageLoaded() {
+            this.loading = false;
         },
     },
 });
@@ -76,12 +92,15 @@ export default defineComponent({
         &__image {
             height: 100%;
 
-            position: relative;
-            left: 50%;
-            bottom: 50%;
+            @include relativeCenter;
             z-index: 0;
+        }
 
-            transform: translate(-50%, 50%);
+        &__loader {
+            text-align: center;
+
+            @include relativeCenter;
+            z-index: 1;
         }
     }
 }
