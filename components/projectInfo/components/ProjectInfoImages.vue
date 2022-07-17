@@ -1,14 +1,21 @@
 <template>
-    <div
-        class="project_info_images"
-        :style="{ 'background-color': $props.project.color }"
-    >
-        <nuxt-img :src="currentImage" class="project_info_images__image" />
-        <ProjectInfoImagesControls
-            :project="project"
-            :current-index="currentIndex"
-            @changeIndex="changeIndex"
-        />
+    <div class="project_info_images">
+        <div
+            class="project_info_images__main"
+            :style="{ 'background-color': $props.project.color }"
+        >
+            <nuxt-img
+                :src="currentImage"
+                class="project_info_images__main__image"
+            />
+        </div>
+        <div class="project_info_images__controls">
+            <ProjectInfoImagesControls
+                :project="project"
+                :current-index="currentIndex"
+                @changeIndex="changeIndex"
+            />
+        </div>
     </div>
 </template>
 
@@ -55,22 +62,27 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .project_info_images {
-    width: 100%;
-    max-height: 600px;
-    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
-    border-radius: 1rem;
-    overflow: hidden;
+    &__main {
+        width: 100%;
+        max-height: 576px;
+        aspect-ratio: 16 / 9;
+        border-radius: 1rem;
+        overflow: hidden;
 
-    &__image {
-        height: 100%;
+        &__image {
+            height: 100%;
 
-        position: relative;
-        left: 50%;
-        bottom: 50%;
-        z-index: 0;
+            position: relative;
+            left: 50%;
+            bottom: 50%;
+            z-index: 0;
 
-        transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
+        }
     }
 }
 </style>

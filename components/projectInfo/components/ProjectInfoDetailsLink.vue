@@ -50,7 +50,7 @@ export default defineComponent({
         transition: 0.2s background-color;
 
         &:hover {
-            background-color: lighten($background-color-lighter, 3%);
+            background-color: $background-color-more-lighter;
         }
 
         &__icon {

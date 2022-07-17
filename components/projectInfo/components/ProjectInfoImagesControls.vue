@@ -46,10 +46,6 @@ export default defineComponent({
     justify-content: center;
     gap: 1rem;
 
-    position: relative;
-    bottom: max(10%, 20px);
-    z-index: 1;
-
     &__control {
         width: 0.8rem;
         aspect-ratio: 1 / 1;
@@ -60,7 +56,7 @@ export default defineComponent({
         align-items: center;
         justify-content: center;
 
-        background-color: $background-color;
+        background-color: $background-color-more-lighter;
 
         cursor: pointer;
 
