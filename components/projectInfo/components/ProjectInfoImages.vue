@@ -14,7 +14,7 @@
                 :loading="loading"
                 color="#fff01f"
                 :size="0.5"
-                sizeUnit="rem"
+                size-unit="rem"
             ></PulseLoader>
         </div>
         <div class="project_info_images__controls">
