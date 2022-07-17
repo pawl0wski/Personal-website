@@ -6,7 +6,12 @@
         >
             <nuxt-img
                 :src="currentImage"
-                class="project_info_images__main__image"
+                :class="[
+                    'project_info_images__main__image',
+                    'animate__animated',
+                    'animate__faster',
+                    loading ? 'animate__fadeOut' : 'animate__fadeIn',
+                ]"
                 @load="imageLoaded"
             />
             <PulseLoader
