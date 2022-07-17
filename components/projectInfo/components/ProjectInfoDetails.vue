@@ -99,4 +99,10 @@ export default defineComponent({
         gap: 0.5rem;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .project_info_details {
+        padding-left: 0;
+    }
+}
 </style>
