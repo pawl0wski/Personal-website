@@ -1,5 +1,6 @@
 <template>
     <div class="project">
+        <InfoPopover />
         <ProjectInfoSlide :project="getProject" />
     </div>
 </template>

@@ -8,7 +8,11 @@
             <nuxt-img
                 v-for="technology in project.technologies"
                 :key="technology"
+                :alt="technology.name"
                 :src="`/img/devicon/${technology.icon}.svg`"
+                @mouseover="showStillLearningPopover"
+                @mouseleave="hideStillLearningPopover"
+                @click="showStillLearningPopover"
             />
         </div>
     </div>
@@ -16,13 +20,34 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
+import { createPopper } from "@popperjs/core";
 import { ProjectI } from "~/content/interfaces/project";
+import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 
 export default defineComponent({
     props: {
         project: {
             type: Object as PropType<ProjectI>,
             required: true,
+        },
+    },
+    methods: {
+        showStillLearningPopover(event: MouseEvent) {
+            const popoverController = new InfoPopoverController();
+
+            const target = event.target as HTMLImageElement;
+            const popover = popoverController.popover;
+
+            popoverController.setText(target.alt);
+            popoverController.show();
+
+            createPopper(target, popover, {
+                placement: "bottom",
+            });
+        },
+        hideStillLearningPopover() {
+            const popoverController = new InfoPopoverController();
+            popoverController.hide();
         },
     },
 });
