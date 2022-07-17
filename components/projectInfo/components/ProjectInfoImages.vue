@@ -56,6 +56,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 .project_info_images {
     width: 100%;
+    max-height: 600px;
     aspect-ratio: 16 / 9;
 
     border-radius: 1rem;
