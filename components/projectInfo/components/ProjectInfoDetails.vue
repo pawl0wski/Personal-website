@@ -4,7 +4,7 @@
         <p class="project_info_details__technologies">
             {{ $locale("technologies") }}:
         </p>
-        <div class="project_info_details__technologies__list">
+        <div class="project_info_details__technologies_list">
             <nuxt-img
                 v-for="technology in project.technologies"
                 :key="technology"
@@ -16,6 +16,13 @@
             />
         </div>
         <p class="project_info_details__links">{{ $locale("links") }}:</p>
+        <div class="project_info_details__links_list">
+            <ProjectInfoDetailsLink
+                v-for="link in project.links"
+                :key="link.name"
+                :link="link"
+            />
+        </div>
     </div>
 </template>
 
@@ -24,8 +31,10 @@ import { defineComponent, PropType } from "vue";
 import { createPopper } from "@popperjs/core";
 import { ProjectI } from "~/content/interfaces/project";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import ProjectInfoDetailsLink from "~/components/projectInfo/components/ProjectInfoDetailsLink.vue";
 
 export default defineComponent({
+    components: { ProjectInfoDetailsLink },
     props: {
         project: {
             type: Object as PropType<ProjectI>,
@@ -73,17 +82,21 @@ export default defineComponent({
         margin-bottom: 0;
     }
 
-    &__technologies {
-        &__list {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            flex-wrap: wrap;
-            img {
-                width: 1.8rem;
-                aspect-ratio: 1 / 1;
-            }
+    &__technologies_list {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+        img {
+            width: 1.8rem;
+            aspect-ratio: 1 / 1;
         }
+    }
+
+    &__links_list {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
     }
 }
 </style>
