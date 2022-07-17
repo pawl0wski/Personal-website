@@ -1,4 +1,5 @@
 import TechnologyI from "~/content/interfaces/technology";
+import LinkI from "~/content/interfaces/link";
 
 export interface ProjectI {
     id: number;
@@ -6,4 +7,5 @@ export interface ProjectI {
     color: string;
     images: string[];
     technologies: TechnologyI[];
+    links: LinkI[];
 }

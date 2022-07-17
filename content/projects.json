@@ -5,28 +5,32 @@
             "name": "Poznaj Mikołaja Kopernika",
             "images": [""],
             "color": "#4A2D01",
-            "technologies": []
+            "technologies": [],
+            "links": []
         },
         {
             "id": 2,
             "name": "Maturzystnie",
             "images": [""],
             "color": "#191A1C",
-            "technologies": []
+            "technologies": [],
+            "links": []
         },
         {
             "id": 3,
             "name": "Bookmark",
             "images": [""],
             "color": "#FAFAFA",
-            "technologies": []
+            "technologies": [],
+            "links": []
         },
         {
             "id": 4,
             "name": "Playlist Tools",
             "images": [""],
             "color": "#041318",
-            "technologies": []
+            "technologies": [],
+            "links": []
         },
         {
             "id": 5,
@@ -61,6 +65,13 @@
                 {
                     "name": "Sequelize",
                     "icon": "sequelize-original"
+                }
+            ],
+            "links": [
+                {
+                    "name": "Google Play",
+                    "href": "https://play.google.com/store/apps/details?id=jebok.itexam",
+                    "icons": ["fa-brands", "fa-google-play"]
                 }
             ]
         }
