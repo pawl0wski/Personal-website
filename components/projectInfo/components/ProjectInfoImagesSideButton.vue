@@ -1,5 +1,5 @@
 <template>
-    <div class="project_info_images_side_button">
+    <div class="project_info_images_side_button" @click="$emit('click')">
         <i
             :class="[
                 'fa-solid',
@@ -30,5 +30,10 @@ export default defineComponent({
 <style lang="scss">
 .project_info_images_side_button {
     width: fit-content;
+
+    padding: 1rem;
+    background-color: transparentize($background-color, 0.7);
+
+    cursor: pointer;
 }
 </style>

@@ -22,10 +22,10 @@
                 size-unit="rem"
             ></PulseLoader>
             <div class="project_info_images__main__left_button">
-                <ProjectInfoImagesSideButton side="left" />
+                <ProjectInfoImagesSideButton side="left" @click="prevImage" />
             </div>
             <div class="project_info_images__main__right_button">
-                <ProjectInfoImagesSideButton side="right" />
+                <ProjectInfoImagesSideButton side="right" @click="nextImage" />
             </div>
         </div>
         <div class="project_info_images__controls">
@@ -80,13 +80,16 @@ export default defineComponent({
     },
     methods: {
         nextImage() {
-            if (this.$props.project.images.length < this.currentIndex)
+            if (this.$props.project.images.length - 1 > this.currentIndex) {
                 this.currentIndex++;
-            this.loading = true;
+                this.loading = true;
+            }
         },
         prevImage() {
-            if (this.currentIndex > 0) this.currentIndex--;
-            this.loading = true;
+            if (this.currentIndex > 0) {
+                this.currentIndex--;
+                this.loading = true;
+            }
         },
         changeIndex(i: number) {
             if (i >= 0 && i < this.$props.project.images.length)
@@ -112,20 +115,20 @@ export default defineComponent({
         aspect-ratio: 16 / 9;
         border-radius: 1rem;
         overflow: hidden;
+        position: relative;
 
         &__left_button {
-            position: relative;
+            position: absolute;
             left: 0;
             bottom: 50%;
-            transform: translate(0, 50%);
             width: fit-content;
 
             z-index: 2;
         }
         &__right_button {
-            position: relative;
+            position: absolute;
             left: 100%;
-            transform: translate(-100%, -50%);
+            transform: translateX(-100%);
             bottom: 50%;
 
             width: fit-content;
@@ -136,14 +139,14 @@ export default defineComponent({
         &__image {
             height: 100%;
 
-            @include relativeCenter;
+            @include absoluteCenter;
             z-index: 0;
         }
 
         &__loader {
             text-align: center;
 
-            @include relativeCenter;
+            @include absoluteCenter;
             z-index: 1;
         }
     }
