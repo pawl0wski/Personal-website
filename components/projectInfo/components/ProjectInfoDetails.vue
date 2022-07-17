@@ -15,6 +15,7 @@
                 @click="showStillLearningPopover"
             />
         </div>
+        <p class="project_info_details__links">{{ $locale("links") }}:</p>
     </div>
 </template>
 
@@ -63,8 +64,13 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
 
+    p {
+        margin-top: 2rem;
+    }
+
     &__title {
-        margin: 1rem 0;
+        margin-top: 1rem;
+        margin-bottom: 0;
     }
 
     &__technologies {

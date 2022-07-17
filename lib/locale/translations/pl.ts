@@ -19,6 +19,7 @@ const pl: LangI = {
     stillLearningInfo:
         "Tej rzeczy się jeszcze uczę i nie znam jej perfekcyjnie, ale znam ją na tyle dobrze by ją tu mieścić.",
     backToHomePage: "← wróc do strony głównej",
+    links: "Linki",
 };
 
 export default pl;
