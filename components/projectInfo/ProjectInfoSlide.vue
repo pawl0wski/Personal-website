@@ -4,10 +4,15 @@
             {{ $locale("backToHomePage") }}
         </nuxt-link>
         <div class="project_info_slide__main">
-            <div class="project_info_slide__main__images">
+            <div class="project_info_slide__main__left">
                 <ProjectInfoImages :project="project" />
+                <div class="project_info_slide__main__left__description">
+                    <p>
+                        {{ $localProject(project.id) }}
+                    </p>
+                </div>
             </div>
-            <div class="project_info_slide__main__details">
+            <div class="project_info_slide__main__right">
                 <ProjectInfoDetails :project="project" />
             </div>
         </div>
@@ -50,26 +55,34 @@ export default defineComponent({
         display: flex;
         flex-direction: row;
 
-        &__images {
+        &__left {
             width: 80%;
+
+            &__description {
+                padding-top: 2rem;
+                line-height: 1.7rem;
+                text-align: justify;
+            }
         }
 
-        &__details {
+        &__right {
             width: 30%;
         }
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .project_info_slide__main {
-        flex-direction: column-reverse;
+    .project_info_slide {
+        &__main {
+            flex-direction: column-reverse;
 
-        &__images {
-            width: 100%;
-        }
+            &__images {
+                width: 100%;
+            }
 
-        &__details {
-            width: 100%;
+            &__details {
+                width: 100%;
+            }
         }
     }
 }
