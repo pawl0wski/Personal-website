@@ -21,6 +21,12 @@
                 :size="0.5"
                 size-unit="rem"
             ></PulseLoader>
+            <div class="project_info_images__main__left_button">
+                <ProjectInfoImagesSideButton side="left" />
+            </div>
+            <div class="project_info_images__main__right_button">
+                <ProjectInfoImagesSideButton side="right" />
+            </div>
         </div>
         <div class="project_info_images__controls">
             <ProjectInfoImagesControls
@@ -38,9 +44,14 @@ import { PulseLoader } from "@saeris/vue-spinners";
 import Color from "color";
 import { ProjectI } from "~/content/interfaces/project";
 import ProjectInfoImagesControls from "~/components/projectInfo/components/ProjectInfoImagesControls.vue";
+import ProjectInfoImagesSideButton from "~/components/projectInfo/components/ProjectInfoImagesSideButton.vue";
 
 export default defineComponent({
-    components: { ProjectInfoImagesControls, PulseLoader },
+    components: {
+        ProjectInfoImagesControls,
+        PulseLoader,
+        ProjectInfoImagesSideButton,
+    },
     props: {
         project: {
             type: Object as PropType<ProjectI>,
@@ -101,6 +112,26 @@ export default defineComponent({
         aspect-ratio: 16 / 9;
         border-radius: 1rem;
         overflow: hidden;
+
+        &__left_button {
+            position: relative;
+            left: 0;
+            bottom: 50%;
+            transform: translate(0, 50%);
+            width: fit-content;
+
+            z-index: 2;
+        }
+        &__right_button {
+            position: relative;
+            left: 100%;
+            transform: translate(-100%, -50%);
+            bottom: 50%;
+
+            width: fit-content;
+
+            z-index: 3;
+        }
 
         &__image {
             height: 100%;
