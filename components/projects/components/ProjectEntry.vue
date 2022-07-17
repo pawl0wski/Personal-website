@@ -10,7 +10,7 @@
         >
             <div
                 class="projects__project_entry__link__thumbnail"
-                :style="{ backgroundColor: project.color }"
+                :style="{ backgroundColor: color }"
             >
                 <nuxt-img
                     :src="icon"
@@ -39,6 +39,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
+import Color from "color";
 import { ProjectI } from "~/content/interfaces/project";
 
 export default defineComponent({
@@ -63,6 +64,11 @@ export default defineComponent({
         },
         shortContent() {
             return this.$props.content.slice(0, 100) + "...";
+        },
+        color() {
+            const color = Color(this.$props.project.color);
+            if (color.hex() !== "#FFFFFF") return color.darken(0.6);
+            return color;
         },
     },
 });

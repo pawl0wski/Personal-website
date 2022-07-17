@@ -8,6 +8,7 @@
         >
             <div
                 v-if="i === currentIndex"
+                :style="{ 'background-color': $props.project.color }"
                 class="project_info__images__controls__control__dot"
             ></div>
         </div>
@@ -56,15 +57,15 @@ export default defineComponent({
         align-items: center;
         justify-content: center;
 
+        overflow: hidden;
+
         background-color: $background-color-more-lighter;
 
         cursor: pointer;
 
         &__dot {
-            width: 50%;
+            width: 100%;
             aspect-ratio: 1 / 1;
-
-            border-radius: 100%;
 
             background-color: $primary-color;
         }

@@ -4,7 +4,7 @@
             "id": 1,
             "name": "Poznaj Mikołaja Kopernika",
             "images": [""],
-            "color": "#4A2D01",
+            "color": "#F9A949",
             "technologies": [],
             "links": []
         },
@@ -12,7 +12,7 @@
             "id": 2,
             "name": "Maturzystnie",
             "images": [""],
-            "color": "#191A1C",
+            "color": "#4B4B4B",
             "technologies": [],
             "links": []
         },
@@ -20,7 +20,7 @@
             "id": 3,
             "name": "Bookmark",
             "images": [""],
-            "color": "#FAFAFA",
+            "color": "#FFFFFF",
             "technologies": [],
             "links": []
         },
@@ -28,7 +28,7 @@
             "id": 4,
             "name": "Playlist Tools",
             "images": [""],
-            "color": "#041318",
+            "color": "#004F63",
             "technologies": [],
             "links": []
         },
@@ -36,7 +36,7 @@
             "id": 5,
             "name": "Technik Informatyk",
             "images": ["ti1.jpg", "ti2.jpg", "ti3.jpg"],
-            "color": "#002A29",
+            "color": "#008C71",
             "technologies": [
                 {
                     "name": "Dart",

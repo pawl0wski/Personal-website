@@ -2,7 +2,7 @@
     <div class="project_info_images">
         <div
             class="project_info_images__main"
-            :style="{ 'background-color': $props.project.color }"
+            :style="{ 'background-color': darkenColor }"
         >
             <nuxt-img
                 :src="currentImage"
@@ -12,7 +12,7 @@
             <PulseLoader
                 class="project_info_images__main__loader"
                 :loading="loading"
-                color="#fff01f"
+                :color="color"
                 :size="0.5"
                 size-unit="rem"
             ></PulseLoader>
@@ -30,6 +30,7 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { PulseLoader } from "@saeris/vue-spinners";
+import Color from "color";
 import { ProjectI } from "~/content/interfaces/project";
 import ProjectInfoImagesControls from "~/components/projectInfo/components/ProjectInfoImagesControls.vue";
 
@@ -52,6 +53,13 @@ export default defineComponent({
             return `/img/projects/${
                 this.$props.project.images[this.currentIndex]
             }`;
+        },
+        color(): string {
+            return this.$props.project.color;
+        },
+        darkenColor(): string {
+            const color = Color(this.color).darken(0.7);
+            return color.hex();
         },
     },
     methods: {
