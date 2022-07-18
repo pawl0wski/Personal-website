@@ -8,7 +8,7 @@
                 <ProjectInfoImages :project="project" />
                 <div class="project_info_slide__main__left__description">
                     <p>
-                        {{ $localProject(project.id) }}
+                        {{ $localeProject(project.id) }}
                     </p>
                 </div>
             </div>

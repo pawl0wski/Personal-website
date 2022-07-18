@@ -7,6 +7,6 @@ Vue.prototype.$locale = (key: keyof LangI) => {
     return locale.get(key as keyof LangI);
 };
 
-Vue.prototype.$localProject = (id: number) => {
+Vue.prototype.$localeProject = (id: number) => {
     return locale.getProjectDescription(id);
 };

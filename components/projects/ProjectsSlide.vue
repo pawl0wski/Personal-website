@@ -6,7 +6,7 @@
                 v-for="project in projects"
                 :key="project.id"
                 :project="project"
-                :content="$localProject(project.id)"
+                :content="$localeProject(project.id)"
             />
         </div>
     </div>
