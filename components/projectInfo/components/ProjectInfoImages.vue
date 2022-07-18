@@ -6,6 +6,7 @@
         >
             <nuxt-img
                 :src="currentImage"
+                format="webp"
                 :class="[
                     'project_info_images__main__image',
                     'animate__animated',
