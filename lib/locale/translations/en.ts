@@ -1,6 +1,7 @@
 import LangI from "../interfaces/lang";
 
 const en: LangI = {
+    description: "Description",
     projectWebsite: "Project website",
     googlePlay: "Google Play",
     repository: "Repository",

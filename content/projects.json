@@ -40,7 +40,13 @@
                     "icon": "mysql-original"
                 }
             ],
-            "links": []
+            "links": [
+                {
+                    "name": "description",
+                    "href": "https://drive.google.com/file/d/1MkqPjHpf6xuvUGBdKBJ48LIGn16dQbVb/view",
+                    "icons": ["fa-solid", "fa-file-lines"]
+                }
+            ]
         },
         {
             "id": 2,

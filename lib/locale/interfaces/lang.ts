@@ -14,4 +14,5 @@ export default interface LangI {
     repository: string;
     googlePlay: string;
     projectWebsite: string;
+    description: string;
 }

@@ -1,6 +1,7 @@
 import LangI from "../interfaces/lang";
 
 const pl: LangI = {
+    description: "Opis",
     projectWebsite: "Strona projektu",
     googlePlay: "Google Play",
     repository: "Repozytorium",
