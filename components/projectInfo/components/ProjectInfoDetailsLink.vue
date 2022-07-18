@@ -9,7 +9,7 @@
                 <i :class="link.icons"></i>
             </div>
             <span class="project_info_details_link__link__name">
-                {{ link.name }}
+                {{ $locale(link.name) }}
             </span>
         </a>
     </div>

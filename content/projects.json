@@ -27,10 +27,38 @@
         {
             "id": 4,
             "name": "Playlist Tools",
-            "images": [""],
+            "images": ["pt1.jpg", "pt2.jpg", "pt3.jpg", "pt4.jpg"],
             "color": "#004F63",
-            "technologies": [],
-            "links": []
+            "technologies": [
+                {
+                    "name": "Vue",
+                    "icon": "vuejs-original"
+                },
+                {
+                    "name": "Node",
+                    "icon": "nodejs-original"
+                },
+                {
+                    "name": "Typescript",
+                    "icon": "typescript-original"
+                },
+                {
+                    "name": "Sass",
+                    "icon": "sass-original"
+                }
+            ],
+            "links": [
+                {
+                    "name": "repository",
+                    "href": "https://github.com/pawl0wski/Playlist-Tools",
+                    "icons": ["fa-brands", "fa-github"]
+                },
+                {
+                    "name": "projectWebsite",
+                    "href": "https://pawl0wski.github.io/Playlist-Tools/",
+                    "icons": ["fa-solid", "fa-earth-americas"]
+                }
+            ]
         },
         {
             "id": 5,
@@ -69,7 +97,7 @@
             ],
             "links": [
                 {
-                    "name": "Google Play",
+                    "name": "googlePlay",
                     "href": "https://play.google.com/store/apps/details?id=jebok.itexam",
                     "icons": ["fa-brands", "fa-google-play"]
                 }

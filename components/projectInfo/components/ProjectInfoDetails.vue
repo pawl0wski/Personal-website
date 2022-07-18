@@ -96,7 +96,7 @@ export default defineComponent({
     &__links_list {
         display: flex;
         flex-direction: column-reverse;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 }
 

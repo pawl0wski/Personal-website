@@ -11,4 +11,7 @@ export default interface LangI {
     stillLearningInfo: string;
     backToHomePage: string;
     links: string;
+    repository: string;
+    googlePlay: string;
+    projectWebsite: string;
 }
