@@ -44,10 +44,37 @@
         {
             "id": 3,
             "name": "Bookmark",
-            "images": [""],
+            "images": [
+                "bm1.jpg",
+                "bm2.jpg",
+                "bm3.jpg",
+                "bm4.jpg",
+                "bm5.jpg",
+                "bm6.jpg",
+                "bm7.jpg"
+            ],
             "color": "#FFFFFF",
-            "technologies": [],
-            "links": []
+            "technologies": [
+                {
+                    "name": "Dart",
+                    "icon": "dart-original"
+                },
+                {
+                    "name": "Flutter",
+                    "icon": "flutter-original"
+                },
+                {
+                    "name": "Firebase",
+                    "icon": "firebase-plain"
+                }
+            ],
+            "links": [
+                {
+                    "name": "googlePlay",
+                    "href": "https://play.google.com/store/apps/details?id=com.jebok.ezakladka",
+                    "icons": ["fa-brands", "fa-google-play"]
+                }
+            ]
         },
         {
             "id": 4,
