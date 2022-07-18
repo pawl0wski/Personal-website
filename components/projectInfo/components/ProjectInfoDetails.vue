@@ -66,7 +66,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 .project_info_details {
     width: 100%;
-    height: 300px;
 
     padding-left: 1.5rem;
 

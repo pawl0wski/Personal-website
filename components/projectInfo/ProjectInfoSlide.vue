@@ -78,6 +78,7 @@ export default defineComponent({
         }
         &__main {
             flex-direction: column-reverse;
+            gap: 2rem;
 
             &__left {
                 width: 100%;
