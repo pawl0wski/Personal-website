@@ -45,10 +45,46 @@
         {
             "id": 2,
             "name": "Maturzystnie",
-            "images": [""],
+            "images": ["m1.png", "m2.png", "m3.png", "m4.png", "m5.png"],
             "color": "#4B4B4B",
-            "technologies": [],
-            "links": []
+            "technologies": [
+                {
+                    "name": "Django",
+                    "icon": "django-plain"
+                },
+                {
+                    "name": "Python",
+                    "icon": "python-original"
+                },
+                {
+                    "name": "Javascript",
+                    "icon": "javascript-original"
+                },
+                {
+                    "name": "HTML",
+                    "icon": "html5-original"
+                },
+                {
+                    "name": "sass",
+                    "icon": "sass-original"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "mysql-original"
+                }
+            ],
+            "links": [
+                {
+                    "name": "repository",
+                    "href": "https://github.com/pawl0wski/maturzystnie-web",
+                    "icons": ["fa-brands", "fa-github"]
+                },
+                {
+                    "name": "projectWebsite",
+                    "href": "https://maturzystnie.pl",
+                    "icons": ["fa-solid", "fa-earth-americas"]
+                }
+            ]
         },
         {
             "id": 3,
