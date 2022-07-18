@@ -30,7 +30,7 @@ div.title {
         border-top-width: 3px;
 
         h1 {
-            margin-top: 0.2rem;
+            margin-top: 0.5rem;
         }
     }
 }
