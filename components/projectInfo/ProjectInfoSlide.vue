@@ -1,8 +1,8 @@
 <template>
     <div class="project_info_slide">
-        <nuxt-link to="/" class="project_info_slide__back">
+        <span class="project_info_slide__back" @click="goToPrev">
             {{ $locale("backToHomePage") }}
-        </nuxt-link>
+        </span>
         <div class="project_info_slide__main">
             <div class="project_info_slide__main__left">
                 <ProjectInfoImages :project="project" />
@@ -33,6 +33,12 @@ export default defineComponent({
             required: true,
         },
     },
+    methods: {
+        goToPrev() {
+            const router = this.$router as { go: (index: number) => null };
+            router.go(-1);
+        },
+    },
 });
 </script>
 
@@ -47,6 +53,8 @@ export default defineComponent({
         &:hover {
             color: $primary-color;
             text-decoration: underline;
+
+            cursor: pointer;
         }
     }
 
