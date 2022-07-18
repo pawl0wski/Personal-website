@@ -3,7 +3,16 @@
         {
             "id": 1,
             "name": "Poznaj Mikołaja Kopernika",
-            "images": [""],
+            "images": [
+                "pmk1.png",
+                "pmk2.png",
+                "pmk3.png",
+                "pmk4.png",
+                "pmk5.png",
+                "pmk6.png",
+                "pmk7.png",
+                "pmk8.png"
+            ],
             "color": "#F9A949",
             "technologies": [
                 {
