@@ -122,14 +122,15 @@ export default defineComponent({
             left: 0;
             bottom: 50%;
             width: fit-content;
+            transform: translateY(50%);
 
             z-index: 2;
         }
         &__right_button {
             position: absolute;
             left: 100%;
-            transform: translateX(-100%);
             bottom: 50%;
+            transform: translate(-100%, 50%);
 
             width: fit-content;
 
