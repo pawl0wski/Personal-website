@@ -5,7 +5,32 @@
             "name": "Poznaj Mikołaja Kopernika",
             "images": [""],
             "color": "#F9A949",
-            "technologies": [],
+            "technologies": [
+                {
+                    "name": "Django",
+                    "icon": "django-plain"
+                },
+                {
+                    "name": "Python",
+                    "icon": "python-original"
+                },
+                {
+                    "name": "Javascript",
+                    "icon": "javascript-original"
+                },
+                {
+                    "name": "HTML",
+                    "icon": "html5-original"
+                },
+                {
+                    "name": "CSS",
+                    "icon": "css3-original"
+                },
+                {
+                    "name": "MySQL",
+                    "icon": "mysql-original"
+                }
+            ],
             "links": []
         },
         {
@@ -41,6 +66,10 @@
                 {
                     "name": "Typescript",
                     "icon": "typescript-original"
+                },
+                {
+                    "name": "HTML",
+                    "icon": "html5-original"
                 },
                 {
                     "name": "Sass",
