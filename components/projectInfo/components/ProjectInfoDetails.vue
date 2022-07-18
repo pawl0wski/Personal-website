@@ -7,7 +7,7 @@
         <div class="project_info_details__technologies_list">
             <nuxt-img
                 v-for="technology in project.technologies"
-                :key="technology"
+                :key="technology.name"
                 :alt="technology.name"
                 :src="`/img/devicon/${technology.icon}.svg`"
                 @mouseover="showStillLearningPopover"

@@ -12,16 +12,13 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 
-export enum ProjectInfoButtonSide {
-    left = "left",
-    right = "right",
-}
+export type ProjectInfoButtonSide = "left" | "right";
 
 export default defineComponent({
     props: {
         side: {
-            type: Object as PropType<ProjectInfoButtonSide>,
-            default: ProjectInfoButtonSide.left,
+            type: String as PropType<ProjectInfoButtonSide>,
+            required: true,
         },
     },
 });
