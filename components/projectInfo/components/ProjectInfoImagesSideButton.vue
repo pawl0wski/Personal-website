@@ -34,6 +34,8 @@ export default defineComponent({
     padding: 1rem;
     background-color: transparentize($background-color, 0.7);
 
+    user-select: none;
+
     cursor: pointer;
 }
 </style>
