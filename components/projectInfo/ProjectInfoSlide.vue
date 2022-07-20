@@ -35,8 +35,7 @@ export default defineComponent({
     },
     methods: {
         goToPrev() {
-            const router = this.$router as { go: (index: number) => null };
-            router.go(-1);
+            this.$router.go(-1);
         },
     },
 });
