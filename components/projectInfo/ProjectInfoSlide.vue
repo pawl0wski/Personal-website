@@ -48,6 +48,7 @@ export default defineComponent({
 
         text-decoration: none;
         font-size: x-large;
+        user-select: none;
 
         &:hover {
             color: $primary-color;
