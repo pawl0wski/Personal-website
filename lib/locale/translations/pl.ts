@@ -22,7 +22,7 @@ const pl: LangI = {
     knowledgeTitle: "Wiedza",
     stillLearningInfo:
         "Tej rzeczy się jeszcze uczę i nie znam jej perfekcyjnie, ale znam ją na tyle dobrze by ją tu mieścić.",
-    backToHomePage: "← wróc do strony głównej",
+    backToHomePage: "← wróć do strony głównej",
     links: "Linki",
 };
 
