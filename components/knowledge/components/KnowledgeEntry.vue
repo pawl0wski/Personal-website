@@ -1,5 +1,13 @@
 <template>
-    <div class="knowledge_entry">
+    <div
+        :class="[
+            'knowledge_entry',
+            'animate__animated',
+            hovered ? 'animate__pulse' : '',
+        ]"
+        @mouseover="hovered = true"
+        @mouseleave="hovered = false"
+    >
         <nuxt-img
             loading="lazy"
             class="knowledge_entry__icon"
@@ -31,6 +39,9 @@ export default defineComponent({
             type: Object as () => KnowledgeI,
             required: true,
         },
+    },
+    data(): { hovered: boolean } {
+        return { hovered: false };
     },
     methods: {
         showStillLearningPopover(event: MouseEvent) {
