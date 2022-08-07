@@ -1,10 +1,10 @@
 <template>
     <div class="index">
-        <InfoPopover />
         <WelcomeSlide />
         <AboutMeSlide />
         <ProjectsSlide />
         <KnowledgeSlide />
+        <InfoPopover />
     </div>
 </template>
 
@@ -24,5 +24,15 @@ export default defineComponent({
 <style lang="scss">
 div.index {
     @include page;
+}
+
+@media only screen and (max-width: 800px) {
+    div.index {
+        scroll-snap-type: none;
+
+        > div:not(:first-child) {
+            margin-top: 5rem;
+        }
+    }
 }
 </style>
