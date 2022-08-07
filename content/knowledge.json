@@ -27,13 +27,6 @@
                 "icon": "dart-original"
             },
             "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "Go",
-                "icon": "go-original-wordmark"
-            },
-            "stillLearning": true
         }
     ],
     "technologies": [
