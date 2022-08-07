@@ -47,6 +47,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 div.knowledge {
     @include slide;
+    padding-bottom: 3rem;
 
     display: flex;
     flex-direction: column;
