@@ -35,7 +35,12 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.projects {
-    min-height: 100vh;
+    @include slide;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
 
     &__list {
         margin-top: 3rem;

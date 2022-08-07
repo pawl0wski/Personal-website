@@ -1,8 +1,16 @@
 @mixin page {
-    margin: 0 auto;
-    padding: 0 $small-margin;
-    max-width: 90rem;
+    max-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+@mixin slide {
     min-height: 100vh;
+    max-width: 90rem;
+    padding: 0 $small-margin;
+    margin: 0 auto;
+    scroll-snap-align: start;
 }
 
 @mixin absoluteCenter {

@@ -46,7 +46,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.knowledge {
-    min-height: 100vh;
+    @include slide;
 
     display: flex;
     flex-direction: column;

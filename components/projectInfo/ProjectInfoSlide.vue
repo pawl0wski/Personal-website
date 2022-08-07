@@ -43,6 +43,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .project_info_slide {
+    @include slide;
     &__back {
         color: $text-color;
 

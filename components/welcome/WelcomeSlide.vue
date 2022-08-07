@@ -40,7 +40,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 div.welcome {
-    min-height: 100vh;
+    @include slide;
     height: 100vh;
     display: flex;
 

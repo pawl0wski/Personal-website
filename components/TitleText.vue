@@ -22,6 +22,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.title {
+    margin-top: 0.5rem;
     &__box {
         width: fit-content;
 

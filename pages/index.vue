@@ -3,9 +3,7 @@
         <InfoPopover />
         <WelcomeSlide />
         <AboutMeSlide />
-        <hr class="index__divider" />
         <ProjectsSlide />
-        <hr class="index__divider" />
         <KnowledgeSlide />
     </div>
 </template>
@@ -26,10 +24,5 @@ export default defineComponent({
 <style lang="scss">
 div.index {
     @include page;
-
-    hr.index__divider {
-        height: $medium-margin;
-        border-style: none;
-    }
 }
 </style>

@@ -23,7 +23,7 @@ export default defineComponent({
 
 <style lang="scss">
 div.about_me {
-    min-height: 100vh;
+    @include slide;
     display: flex;
     flex-direction: row;
 
