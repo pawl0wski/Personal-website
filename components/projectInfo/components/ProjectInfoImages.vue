@@ -78,23 +78,29 @@ export default defineComponent({
             const color = Color(this.color).darken(0.7);
             return color.hex();
         },
+        lastImageIndex(): number {
+            return this.$props.project.images.length - 1;
+        },
     },
     methods: {
         nextImage() {
-            if (this.$props.project.images.length - 1 > this.currentIndex) {
+            if (this.lastImageIndex > this.currentIndex) {
                 this.currentIndex++;
                 this.loading = true;
+            } else {
+                this.changeIndex(0);
             }
         },
         prevImage() {
             if (this.currentIndex > 0) {
                 this.currentIndex--;
                 this.loading = true;
+            } else {
+                this.changeIndex(this.lastImageIndex);
             }
         },
         changeIndex(i: number) {
-            if (i >= 0 && i < this.$props.project.images.length)
-                this.currentIndex = i;
+            if (i >= 0 && i <= this.lastImageIndex) this.currentIndex = i;
             this.loading = true;
         },
         imageLoaded() {
