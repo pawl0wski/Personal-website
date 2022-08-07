@@ -48,6 +48,7 @@ export default defineComponent({
 div.knowledge {
     @include slide;
     padding-bottom: 3rem;
+    margin-top: 5rem;
 
     display: flex;
     flex-direction: column;

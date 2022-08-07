@@ -24,6 +24,7 @@ export default defineComponent({
 <style lang="scss">
 div.index {
     @include page;
+    scroll-snap-type: y proximity;
 }
 
 @media only screen and (max-width: 800px) {
