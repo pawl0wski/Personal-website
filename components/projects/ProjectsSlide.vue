@@ -1,5 +1,5 @@
 <template>
-    <div class="projects">
+    <div id="projects" class="projects">
         <TitleText :content="$locale('projectsTitle')" />
         <div class="projects__list">
             <ProjectEntry

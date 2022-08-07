@@ -1,5 +1,5 @@
 <template>
-    <div class="project_info_slide">
+    <div id="project_info" class="project_info_slide">
         <span class="project_info_slide__back" @click="goToPrev">
             {{ $locale("backToHomePage") }}
         </span>

@@ -1,5 +1,5 @@
 <template>
-    <div class="about_me">
+    <div id="about_me" class="about_me">
         <div class="about_me__left">
             <TitleText :content="$locale('aboutMeTitle')" />
             <AboutMeContent :content="$locale('aboutMeContent')" />

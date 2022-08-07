@@ -1,5 +1,5 @@
 <template>
-    <div class="knowledge">
+    <div id="knowledge" class="knowledge">
         <TitleText :content="$locale('knowledgeTitle')" />
         <div class="knowledge__columns">
             <KnowledgeList
