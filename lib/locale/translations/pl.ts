@@ -24,6 +24,10 @@ const pl: LangI = {
         "Tej rzeczy się jeszcze uczę i nie znam jej perfekcyjnie, ale znam ją na tyle dobrze by ją tu mieścić.",
     backToHomePage: "← wróć do strony głównej",
     links: "Linki",
+    github: "Github",
+    branch: "Branch",
+    email: "Adres e-mail",
+    gpgKeys: "Klucze GPG"
 };
 
 export default pl;

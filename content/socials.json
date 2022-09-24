@@ -1,22 +1,22 @@
 {
     "socials": [
         {
-            "name": "Github",
+            "name": "github",
             "icon": ["fa-brands", "fa-github"],
             "link": "https://github.com/pawl0wski"
         },
         {
-            "name": "Branch",
+            "name": "branch",
             "icon": ["fa-solid", "fa-code-branch"],
             "link": "https://github.com/pawl0wski/Personal-website"
         },
         {
-            "name": "E-Mail",
+            "name": "email",
             "icon": ["fa-solid", "fa-envelope"],
             "link": "mailto:pawlowskijakub64@gmail.com"
         },
         {
-            "name": "GPG Keys",
+            "name": "gpgKeys",
             "icon": ["fa-solid", "fa-key"],
             "link": "/gpg-keys"
         }

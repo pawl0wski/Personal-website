@@ -15,4 +15,8 @@ export default interface LangI {
     googlePlay: string;
     projectWebsite: string;
     description: string;
+    github: string;
+    branch: string;
+    email: string;
+    gpgKeys: string;
 }
