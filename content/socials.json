@@ -14,6 +14,11 @@
             "name": "E-Mail",
             "icon": ["fa-solid", "fa-envelope"],
             "link": "mailto:pawlowskijakub64@gmail.com"
+        },
+        {
+            "name": "GPG Keys",
+            "icon": ["fa-solid", "fa-key"],
+            "link": "/gpg-keys"
         }
     ]
 }
