@@ -1,41 +1,41 @@
 <template>
     <div class="gpg-key-entry">
-        <ul class="gpg-key-entry__list">
-            <li>
-                <i class="fa-solid fa-key"></i>
-                {{ gpgKey.id }}
-            </li>
-            <hr />
-            <li>
-                <i class="fa-solid fa-tag"></i>
-                {{ gpgKey.label }}
-            </li>
-            <hr />
-            <li>
-                <i class="fa-solid fa-user"></i>
-                {{ gpgKey.name }}
-            </li>
-            <hr />
-            <li>
-                <i class="fa-solid fa-envelope"></i>
-                {{ gpgKey.email }}
-            </li>
-            <hr />
-            <li>
-                <i class="fa-solid fa-shield"></i>
-                <span
-                    class="clickable-text"
-                    @click="toggleShowArmoredPublicKey"
-                >
-                    {{ armoredPublicKeyListText }}
-                </span>
-            </li>
-        </ul>
-        <div
-            :style="{ 'max-height': armoredPublicKeyShowed ? '1000px' : '0' }"
-            class="gpg-key-entry__armored-key"
-        >
-            <pre>{{ gpgKey.armoredPublicKey }}</pre>
+        <h2>{{ gpgKey.label }}</h2>
+        <div class="gpg-key-entry__content">
+            <ul class="gpg-key-entry__content__list">
+                <li style="line-break: anywhere">
+                    <i class="fa-solid fa-key"></i>
+                    {{ gpgKey.id }}
+                </li>
+                <hr />
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    {{ gpgKey.name }}
+                </li>
+                <hr />
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    {{ gpgKey.email }}
+                </li>
+                <hr />
+                <li>
+                    <i class="fa-solid fa-shield"></i>
+                    <span
+                        class="clickable-text"
+                        @click="toggleShowArmoredPublicKey"
+                    >
+                        {{ armoredPublicKeyListText }}
+                    </span>
+                </li>
+            </ul>
+            <div
+                :style="{
+                    'max-height': armoredPublicKeyShowed ? '1000px' : '0',
+                }"
+                class="gpg-key-entry__content__armored-key"
+            >
+                <pre>{{ gpgKey.armoredPublicKey }}</pre>
+            </div>
         </div>
     </div>
 </template>
@@ -74,41 +74,42 @@ export default defineComponent({
 
 <style lang="scss">
 div.gpg-key-entry {
-    margin: 1.5rem 0;
-    width: 50vw;
-    min-width: 300px;
-    min-height: 50px;
-    background-color: $background-color-lighter;
-    border-radius: 0.5rem;
+    &__content {
+        margin: 1.5rem 0;
+        width: 50vw;
+        min-width: 300px;
+        min-height: 50px;
+        background-color: $background-color-lighter;
+        border-radius: 0.5rem;
 
-    ul {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-        list-style-type: none;
-        li {
-            padding: 0.8rem 1rem;
+        ul {
+            margin: 0;
             display: flex;
-            align-items: center;
-            min-height: 3rem;
-            line-break: anywhere;
-            i {
-                font-size: 1.5rem;
-                margin-right: 1rem;
+            flex-direction: column;
+            padding-left: 0;
+            list-style-type: none;
+            li {
+                padding: 0.8rem 1rem;
+                display: flex;
+                align-items: center;
+                min-height: 3rem;
+                i {
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+            }
+            hr {
+                width: 97%;
+                margin: 0 auto;
+                border-color: $background-color-more-lighter;
             }
         }
-        hr {
-            width: 97%;
-            margin: 0 auto;
-            border-color: $background-color-more-lighter;
-        }
-    }
 
-    &__armored-key {
-        padding-left: 4rem;
-        overflow-y: hidden;
-        transition: max-height 0.15s ease-out;
+        &__armored-key {
+            padding-left: 4rem;
+            overflow-y: hidden;
+            transition: max-height 0.15s ease-out;
+        }
     }
 }
 
@@ -121,7 +122,7 @@ span.clickable-text {
 }
 
 @media only screen and (max-width: 1000px) {
-    div.gpg-key-entry {
+    div.gpg-key-entry__content {
         width: auto;
     }
 }
