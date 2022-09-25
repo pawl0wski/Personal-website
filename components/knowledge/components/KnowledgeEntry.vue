@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType } from "vue";
 import { createPopper } from "@popperjs/core";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
@@ -36,7 +36,7 @@ import Locale from "~/lib/locale/locale";
 export default defineComponent({
     props: {
         knowledge: {
-            type: Object as () => KnowledgeI,
+            type: Object as PropType<KnowledgeI>,
             required: true,
         },
     },
