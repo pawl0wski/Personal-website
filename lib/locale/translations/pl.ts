@@ -27,7 +27,11 @@ const pl: LangI = {
     github: "Github",
     branch: "Branch",
     email: "Adres e-mail",
-    gpgKeys: "Klucze GPG"
+    gpgKeys: "Klucze GPG",
+    clickHereToShowArmoredPublicKey:
+        "Naciśnij tutaj aby wyświetlić opancerzony klucz publiczny",
+    clickHereToHideArmoredPublicKey:
+        "Naciśnij tutaj aby ukryć opancerzony klucz publiczny",
 };
 
 export default pl;
