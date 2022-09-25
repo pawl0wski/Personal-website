@@ -52,10 +52,6 @@ export default defineComponent({
 @media only screen and (max-width: 800px) {
     .knowledge_list {
         width: 100%;
-
-        &__title {
-            text-align: left;
-        }
     }
 }
 </style>
