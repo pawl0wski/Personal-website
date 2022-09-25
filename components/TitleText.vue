@@ -1,7 +1,8 @@
 <template>
     <div class="title">
         <div class="title__box">
-            <h1>{{ content }}</h1>
+            <h1 v-if="useH1">{{ content }}</h1>
+            <h2 style="font-size: 2rem" v-if="!useH1">{{ content }}</h2>
         </div>
     </div>
 </template>
@@ -15,6 +16,10 @@ export default defineComponent({
             type: String,
             required: true,
             default: "",
+        },
+        useH1: {
+            type: Boolean,
+            default: false,
         },
     },
 });
@@ -30,7 +35,8 @@ div.title {
         border-top-color: $primary-color;
         border-top-width: 3px;
 
-        h1 {
+        h1,
+        h2 {
             margin-top: 0.5rem;
         }
     }

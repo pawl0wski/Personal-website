@@ -1,6 +1,6 @@
 <template>
     <div class="gpg-keys-section">
-        <TitleText :content="$locale('gpgKeys')" />
+        <TitleText :content="$locale('gpgKeys')" :use-h1="true" />
         <div class="gpg-keys-section__list">
             <GpgKeyEntry
                 v-for="gpgKey in gpgKeys"
