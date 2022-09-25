@@ -4,7 +4,7 @@
         <div class="knowledge_list__column">
             <KnowledgeEntry
                 v-for="knowledge in knowledgeArray"
-                :key="knowledge.name"
+                :key="knowledge.technology"
                 :knowledge="knowledge"
             />
         </div>
@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, PropType } from "vue";
 import KnowledgeEntry from "./KnowledgeEntry.vue";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
 
@@ -25,7 +25,7 @@ export default defineComponent({
             required: true,
         },
         knowledgeArray: {
-            type: Array as () => KnowledgeI[],
+            type: Object as PropType<KnowledgeI[]>,
             required: true,
         },
     },
