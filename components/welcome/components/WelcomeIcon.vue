@@ -1,5 +1,9 @@
 <template>
-    <div class="welcome__icon" @mouseover="showIconName" @mouseleave="hideIconName">
+    <div
+        class="welcome__icon"
+        @mouseover="showIconName"
+        @mouseleave="hideIconName"
+    >
         <a :href="href" target="_blank">
             <i :class="icon"></i>
         </a>
@@ -8,8 +12,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 import { createPopper } from "@popperjs/core";
+import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 import Locale from "~/lib/locale/locale";
 import LangI from "~/lib/locale/interfaces/lang";
 
@@ -31,7 +35,7 @@ export default Vue.extend({
     methods: {
         showIconName(event: MouseEvent) {
             const popoverController = new InfoPopoverController();
-            const locale = new Locale()
+            const locale = new Locale();
             popoverController.setText(locale.get(this.name as keyof LangI));
             popoverController.show();
             const popoverElement = popoverController.popover;
@@ -39,9 +43,9 @@ export default Vue.extend({
             createPopper(target, popoverElement, {});
         },
         hideIconName() {
-            const popoverController = new InfoPopoverController()
-            popoverController.hide()
-        }
+            const popoverController = new InfoPopoverController();
+            popoverController.hide();
+        },
     },
 });
 </script>
