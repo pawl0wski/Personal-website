@@ -19,4 +19,6 @@ export default interface LangI {
     branch: string;
     email: string;
     gpgKeys: string;
+    clickHereToShowArmoredPublicKey: string;
+    clickHereToHideArmoredPublicKey: string;
 }

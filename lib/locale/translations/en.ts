@@ -27,8 +27,9 @@ const en: LangI = {
     github: "Github",
     branch: "Branch",
     email: "E-Mail address",
-    gpgKeys: "GPG Keys"
-
+    gpgKeys: "GPG Keys",
+    clickHereToShowArmoredPublicKey: "Click here to show armored public key",
+    clickHereToHideArmoredPublicKey: "Click here to hide armored public key",
 };
 
 export default en;
