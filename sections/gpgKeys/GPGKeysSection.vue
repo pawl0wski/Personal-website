@@ -1,7 +1,7 @@
 <template>
-    <div class="gpg-keys-slide">
+    <div class="gpg-keys-section">
         <TitleText :content="$locale('gpgKeys')" />
-        <div class="gpg-keys-slide__list">
+        <div class="gpg-keys-section__list">
             <GpgKeyEntry
                 v-for="gpgKey in gpgKeys"
                 :key="gpgKey.id"
@@ -13,9 +13,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import GpgKeyEntry from "./components/GpgKeyEntry.vue";
 import keysContent from "~/content/keys.json";
 import { GpgKeyI } from "~/content/interfaces/key";
-import GpgKeyEntry from "~/components/gpgKeys/components/GpgKeyEntry.vue";
 import TitleText from "~/components/TitleText.vue";
 
 export default defineComponent({
@@ -29,8 +29,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-div.gpg-keys-slide {
-    @include slide;
+div.gpg-keys-section {
+    @include section;
     padding-top: $medium-margin;
     padding-bottom: $medium-margin;
 

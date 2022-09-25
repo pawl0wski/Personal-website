@@ -13,8 +13,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import KnowledgeEntry from "./KnowledgeEntry.vue";
 import { KnowledgeI } from "~/content/interfaces/knowledge";
-import KnowledgeEntry from "~/components/knowledge/components/KnowledgeEntry.vue";
 
 export default defineComponent({
     components: { KnowledgeEntry },

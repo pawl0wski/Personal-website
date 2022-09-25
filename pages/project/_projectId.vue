@@ -1,18 +1,18 @@
 <template>
     <div class="project">
         <InfoPopover />
-        <ProjectInfoSlide :project="getProject" />
+        <ProjectInfoSection :project="getProject" />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import ProjectInfoSlide from "~/components/projectInfo/ProjectInfoSlide.vue";
+import ProjectInfoSection from "~/sections/projectInfo/ProjectInfoSection.vue";
 import projectsContent from "~/content/projects.json";
 import { ProjectI } from "~/content/interfaces/project";
 
 export default defineComponent({
-    components: { ProjectInfoSlide },
+    components: { ProjectInfoSection },
     computed: {
         getProject(): ProjectI {
             // This is a hotfix because TypeScript cannot detect route in this.

@@ -1,18 +1,18 @@
 <template>
-    <div id="project_info" class="project_info_slide">
-        <span class="project_info_slide__back" @click="goToPrev">
+    <div id="project_info" class="project_info_section">
+        <span class="project_info_section__back" @click="goToPrev">
             {{ $locale("backToHomePage") }}
         </span>
-        <div class="project_info_slide__main">
-            <div class="project_info_slide__main__left">
+        <div class="project_info_section__main">
+            <div class="project_info_section__main__left">
                 <ProjectInfoImages :project="project" />
-                <div class="project_info_slide__main__left__description">
+                <div class="project_info_section__main__left__description">
                     <p>
                         {{ $localeProject(project.id) }}
                     </p>
                 </div>
             </div>
-            <div class="project_info_slide__main__right">
+            <div class="project_info_section__main__right">
                 <ProjectInfoDetails :project="project" />
             </div>
         </div>
@@ -21,8 +21,8 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
-import ProjectInfoImages from "~/components/projectInfo/components/ProjectInfoImages.vue";
-import ProjectInfoDetails from "~/components/projectInfo/components/ProjectInfoDetails.vue";
+import ProjectInfoImages from "./components/ProjectInfoImages.vue";
+import ProjectInfoDetails from "./components/ProjectInfoDetails.vue";
 import { ProjectI } from "~/content/interfaces/project";
 
 export default defineComponent({
@@ -42,8 +42,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.project_info_slide {
-    @include slide;
+.project_info_section {
+    @include section;
     &__back {
         color: $text-color;
 
@@ -81,7 +81,7 @@ export default defineComponent({
 }
 
 @media only screen and (max-width: 800px) {
-    .project_info_slide {
+    .project_info_section {
         &__back {
             font-size: large;
         }

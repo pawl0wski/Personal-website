@@ -22,9 +22,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import KnowledgeList from "./components/KnowledgeList.vue";
+import ColumnDivider from "./components/ColumnDivider.vue";
 import TitleText from "~/components/TitleText.vue";
-import KnowledgeList from "~/components/knowledge/components/KnowledgeList.vue";
-import ColumnDivider from "~/components/knowledge/components/ColumnDivider.vue";
 import { KnowledgeContentI } from "~/content/interfaces/knowledge";
 import knowledgeContent from "~/content/knowledge.json";
 
@@ -46,7 +46,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.knowledge {
-    @include slide;
+    @include section;
     padding-bottom: 3rem;
     margin-top: 5rem;
 

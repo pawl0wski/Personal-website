@@ -12,9 +12,9 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import AboutMeContent from "./components/AboutMeContent.vue";
+import AboutMePhoto from "./components/AboutMePhoto.vue";
 import TitleText from "~/components/TitleText.vue";
-import AboutMeContent from "~/components/aboutMe/components/AboutMeContent.vue";
-import AboutMePhoto from "~/components/aboutMe/components/AboutMePhoto.vue";
 
 export default defineComponent({
     components: { AboutMeContent, TitleText, AboutMePhoto },
@@ -23,7 +23,7 @@ export default defineComponent({
 
 <style lang="scss">
 div.about_me {
-    @include slide;
+    @include section;
     display: flex;
     flex-direction: row;
 

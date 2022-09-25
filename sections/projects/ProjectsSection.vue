@@ -14,8 +14,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import ProjectEntry from "./components/ProjectEntry.vue";
 import TitleText from "~/components/TitleText.vue";
-import ProjectEntry from "~/components/projects/components/ProjectEntry.vue";
 import projectsContent from "~/content/projects.json";
 import { ProjectI } from "~/content/interfaces/project";
 
@@ -35,7 +35,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.projects {
-    @include slide;
+    @include section;
 
     display: flex;
     flex-direction: column;

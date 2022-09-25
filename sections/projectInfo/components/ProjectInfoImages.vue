@@ -43,9 +43,9 @@
 import { defineComponent, PropType } from "vue";
 import { PulseLoader } from "@saeris/vue-spinners";
 import Color from "color";
+import ProjectInfoImagesControls from "./ProjectInfoImagesControls.vue";
+import ProjectInfoImagesSideButton from "./ProjectInfoImagesSideButton.vue";
 import { ProjectI } from "~/content/interfaces/project";
-import ProjectInfoImagesControls from "~/components/projectInfo/components/ProjectInfoImagesControls.vue";
-import ProjectInfoImagesSideButton from "~/components/projectInfo/components/ProjectInfoImagesSideButton.vue";
 
 export default defineComponent({
     components: {

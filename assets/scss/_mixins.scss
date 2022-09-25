@@ -4,7 +4,7 @@
     overflow-x: hidden;
 }
 
-@mixin slide {
+@mixin section {
     min-height: 100vh;
     max-width: 90rem;
     padding: 0 $small-margin;

@@ -21,9 +21,9 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
-import WelcomeText from "~/components/welcome/components/WelcomeText.vue";
-import WelcomeCube from "~/components/welcome/components/WelcomeCube.vue";
-import WelcomeIcon from "~/components/welcome/components/WelcomeIcon.vue";
+import WelcomeText from "./components/WelcomeText.vue";
+import WelcomeCube from "./components/WelcomeCube.vue";
+import WelcomeIcon from "./components/WelcomeIcon.vue";
 import socialsContent from "~/content/socials.json";
 import { SocialI } from "~/content/interfaces/social";
 
@@ -40,7 +40,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 div.welcome {
-    @include slide;
+    @include section;
     height: 100vh;
     display: flex;
 

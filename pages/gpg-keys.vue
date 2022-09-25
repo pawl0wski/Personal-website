@@ -1,15 +1,15 @@
 <template>
     <div class="gpg-keys">
-        <GpgKeysSlide />
+        <GPGKeysSection />
     </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import GpgKeysSlide from "~/components/gpgKeys/GpgKeysSlide.vue";
+import GPGKeysSection from "~/sections/gpgKeys/GPGKeysSection.vue";
 export default defineComponent({
     components: {
-        GpgKeysSlide,
+        GPGKeysSection,
     },
 });
 </script>

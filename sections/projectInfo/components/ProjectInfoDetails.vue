@@ -29,9 +29,9 @@
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
 import { createPopper } from "@popperjs/core";
+import ProjectInfoDetailsLink from "./ProjectInfoDetailsLink.vue";
 import { ProjectI } from "~/content/interfaces/project";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
-import ProjectInfoDetailsLink from "~/components/projectInfo/components/ProjectInfoDetailsLink.vue";
 
 export default defineComponent({
     components: { ProjectInfoDetailsLink },
