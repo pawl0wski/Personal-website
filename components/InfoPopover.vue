@@ -1,16 +1,14 @@
 <template>
     <div class="info_popover">
-        <p class="info_popover__text"></p>
+        <div class="info_popover__content">
+            <p class="info_popover__content__text"></p>
+        </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .info_popover {
-    padding: 1rem;
     max-width: 18rem;
-    border-radius: 10px;
-    background-color: $background-color-lighter;
-    box-shadow: 0 0 15px 0 $background-color;
 
     position: absolute;
 
@@ -20,8 +18,15 @@
     opacity: 0;
     display: none;
 
-    &__text {
-        margin: 0;
+    &__content {
+        margin: 0.7rem;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: $background-color-lighter;
+        box-shadow: 0 0 15px 0 $background-color;
+        &__text {
+            margin: 0;
+        }
     }
 }
 </style>

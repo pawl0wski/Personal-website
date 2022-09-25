@@ -13,7 +13,7 @@ export default class InfoPopoverController {
         )[0] as HTMLElement;
 
         this._popoverText = document.getElementsByClassName(
-            "info_popover__text"
+            "info_popover__content__text"
         )[0] as HTMLElement;
     }
 
