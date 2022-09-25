@@ -14,10 +14,17 @@ import WelcomeSlide from "~/components/welcome/WelcomeSlide.vue";
 import AboutMeSlide from "~/components/aboutMe/AboutMeSlide.vue";
 import ProjectsSlide from "~/components/projects/ProjectsSlide.vue";
 import KnowledgeSlide from "~/components/knowledge/KnowledgeSlide.vue";
+import InfoPopover from "~/components/InfoPopover.vue";
 
 export default defineComponent({
     name: "IndexPage",
-    components: { ProjectsSlide, AboutMeSlide, WelcomeSlide, KnowledgeSlide },
+    components: {
+        ProjectsSlide,
+        AboutMeSlide,
+        WelcomeSlide,
+        KnowledgeSlide,
+        InfoPopover,
+    },
 });
 </script>
 
