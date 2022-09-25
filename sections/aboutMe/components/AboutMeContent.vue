@@ -20,7 +20,6 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.about_me__content {
-    color: $text-color-muted;
     max-width: 30rem;
 
     font-size: large;
