@@ -32,6 +32,9 @@ const pl: LangI = {
         "Naciśnij tutaj aby wyświetlić opancerzony klucz publiczny",
     clickHereToHideArmoredPublicKey:
         "Naciśnij tutaj aby ukryć opancerzony klucz publiczny",
+    indexDescription:
+        "Cześć, jestem Jakub i tworze strony internetowe. A to jest moje portfolio.",
+    gpgKeysDescription: "Lista z wszystkimi kluczami GPG z których korzystam.",
 };
 
 export default pl;

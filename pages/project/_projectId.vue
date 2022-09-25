@@ -1,7 +1,7 @@
 <template>
     <div class="project">
         <InfoPopover />
-        <ProjectInfoSection :project="getProject" />
+        <ProjectInfoSection :project="project" />
     </div>
 </template>
 
@@ -10,21 +10,34 @@ import { defineComponent } from "vue";
 import ProjectInfoSection from "~/sections/projectInfo/ProjectInfoSection.vue";
 import projectsContent from "~/content/projects.json";
 import { ProjectI } from "~/content/interfaces/project";
+import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
     components: { ProjectInfoSection },
-    computed: {
-        getProject(): ProjectI {
-            // This is a hotfix because TypeScript cannot detect route in this.
-            // This should be fixed in the future.
-            const route = this.$route as { params: { [key: string]: any } };
-            return projectsContent.projects.find((e: ProjectI) => {
-                // eslint-disable-next-line eqeqeq
-                return e.id == route.params.projectId;
-            }) as ProjectI;
-        },
+    data(): { project: ProjectI } {
+        const project = projectsContent.projects.find((e: ProjectI) => {
+            return e.id.toString() === this.$route.params.projectId;
+        }) as ProjectI;
+        return {
+            project,
+        };
     },
-    created() {},
+    head() {
+        const locale = new Locale();
+        return {
+            title: `Jakub Pawłowski | ${this.project.name}`,
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content:
+                        locale
+                            .getProjectDescription(this.project.id)
+                            .slice(0, 150) + "...",
+                },
+            ],
+        };
+    },
 });
 </script>
 

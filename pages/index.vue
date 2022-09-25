@@ -15,6 +15,7 @@ import AboutMeSection from "~/sections/aboutMe/AboutMeSection.vue";
 import ProjectsSection from "~/sections/projects/ProjectsSection.vue";
 import KnowledgeSection from "~/sections/knowledge/KnowledgeSection.vue";
 import InfoPopover from "~/components/InfoPopover.vue";
+import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
     name: "IndexPage",
@@ -24,6 +25,19 @@ export default defineComponent({
         WelcomeSection,
         KnowledgeSection,
         InfoPopover,
+    },
+    head() {
+        const locale = new Locale();
+        return {
+            title: "Jakub Pawłowski",
+            meta: [
+                {
+                    hid: "description",
+                    name: "description",
+                    content: locale.get("indexDescription"),
+                },
+            ],
+        };
     },
 });
 </script>

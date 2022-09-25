@@ -2,7 +2,7 @@
     <div class="title">
         <div class="title__box">
             <h1 v-if="useH1">{{ content }}</h1>
-            <h2 style="font-size: 2rem" v-if="!useH1">{{ content }}</h2>
+            <h2 v-if="!useH1" style="font-size: 2rem">{{ content }}</h2>
         </div>
     </div>
 </template>

@@ -21,4 +21,6 @@ export default interface LangI {
     gpgKeys: string;
     clickHereToShowArmoredPublicKey: string;
     clickHereToHideArmoredPublicKey: string;
+    indexDescription: string;
+    gpgKeysDescription: string;
 }

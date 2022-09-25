@@ -14,8 +14,20 @@ export default {
                 name: "viewport",
                 content: "width=device-width, initial-scale=1",
             },
-            { hid: "description", name: "description", content: "" },
             { name: "format-detection", content: "telephone=no" },
+            {
+                name: "keywords",
+                content:
+                    "portfolio, fullstack, pawl0wski, github, programming, developer, typescript, javascript, python, dart, flutter, programmer",
+            },
+            {
+                property: "og:image",
+                content: "/img/thumbnail.jpeg",
+            },
+            {
+                property: "og:type",
+                content: "website",
+            },
         ],
         link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
@@ -30,7 +42,7 @@ export default {
     ],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["~/lib/locale/localePlugin.ts"],
+    plugins: [{ src: "~/lib/locale/localePlugin.ts" }],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,

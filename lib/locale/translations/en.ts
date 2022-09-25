@@ -30,6 +30,9 @@ const en: LangI = {
     gpgKeys: "GPG Keys",
     clickHereToShowArmoredPublicKey: "Click here to show armored public key",
     clickHereToHideArmoredPublicKey: "Click here to hide armored public key",
+    indexDescription:
+        "Hi, I'm Jakub and I create websites. And this is my portfolio.",
+    gpgKeysDescription: "A list with all my GPG keys that I use.",
 };
 
 export default en;

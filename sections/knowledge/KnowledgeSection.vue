@@ -4,17 +4,17 @@
         <div class="knowledge__columns">
             <KnowledgeList
                 :title="$locale('languages')"
-                :knowledgeArray="knowledgeContent['languages']"
+                :knowledge-array="knowledgeContent['languages']"
             />
             <ColumnDivider />
             <KnowledgeList
                 :title="$locale('technologies')"
-                :knowledgeArray="knowledgeContent['technologies']"
+                :knowledge-array="knowledgeContent['technologies']"
             />
             <ColumnDivider />
             <KnowledgeList
                 :title="$locale('appsServices')"
-                :knowledgeArray="knowledgeContent['appsServices']"
+                :knowledge-array="knowledgeContent['appsServices']"
             />
         </div>
     </div>
