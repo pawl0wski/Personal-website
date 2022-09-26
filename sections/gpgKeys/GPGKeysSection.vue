@@ -28,7 +28,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 div.gpg-keys-section {
     @include section;
     padding-top: $medium-margin;

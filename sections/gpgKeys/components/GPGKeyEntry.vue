@@ -72,7 +72,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 div.gpg-key-entry {
     &__content {
         margin: 1.5rem 0;

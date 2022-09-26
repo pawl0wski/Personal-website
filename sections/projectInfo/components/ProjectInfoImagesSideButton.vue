@@ -24,7 +24,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .project_info_images_side_button {
     width: fit-content;
 

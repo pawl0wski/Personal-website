@@ -74,7 +74,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $project-width: 260px;
 
 .projects__project_entry {

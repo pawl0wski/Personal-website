@@ -29,7 +29,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .project_info_details_link {
     &__link {
         width: 100%;
