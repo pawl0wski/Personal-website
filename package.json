@@ -20,7 +20,7 @@
         "@saeris/vue-spinners": "^1.0.8",
         "animate.css": "^4.1.1",
         "color": "^4.2.3",
-        "core-js": "^3.25.1",
+        "core-js": "^3.25.3",
         "nuxt": "^2.15.8",
         "sass": "^1.54.9",
         "vue": "^2.7.7",
