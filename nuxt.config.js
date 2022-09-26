@@ -22,7 +22,7 @@ export default {
             },
             {
                 property: "og:image",
-                content: "/img/thumbnail.jpeg",
+                content: "/img/thumbnail.jpg",
             },
             {
                 property: "og:type",
