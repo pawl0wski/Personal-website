@@ -15,7 +15,13 @@
                 <hr />
                 <li>
                     <i class="fa-solid fa-envelope"></i>
-                    {{ gpgKey.email }}
+                    <span
+                        v-if="!emailShowed"
+                        class="clickable-text"
+                        @click="showEmail"
+                        >{{ $locale("clickToShowEmail") }}</span
+                    >
+                    <span v-if="emailShowed">{{ gpgKey.email }}</span>
                 </li>
                 <hr />
                 <li>
@@ -52,8 +58,8 @@ export default defineComponent({
             required: true,
         },
     },
-    data(): { armoredPublicKeyShowed: boolean } {
-        return { armoredPublicKeyShowed: false };
+    data(): { armoredPublicKeyShowed: boolean; emailShowed: boolean } {
+        return { armoredPublicKeyShowed: false, emailShowed: false };
     },
     computed: {
         armoredPublicKeyListText() {
@@ -67,6 +73,9 @@ export default defineComponent({
     methods: {
         toggleShowArmoredPublicKey() {
             this.armoredPublicKeyShowed = !this.armoredPublicKeyShowed;
+        },
+        showEmail() {
+            this.emailShowed = true;
         },
     },
 });
@@ -118,8 +127,9 @@ div.gpg-key-entry {
 span.clickable-text {
     cursor: pointer;
     user-select: none;
+    text-decoration: underline;
     &:hover {
-        text-decoration: underline;
+        color: $text-color;
     }
 }
 

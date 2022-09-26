@@ -23,4 +23,5 @@ export default interface LangI {
     clickHereToHideArmoredPublicKey: string;
     indexDescription: string;
     gpgKeysDescription: string;
+    clickToShowEmail: string;
 }

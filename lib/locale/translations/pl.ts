@@ -29,12 +29,13 @@ const pl: LangI = {
     email: "Adres e-mail",
     gpgKeys: "Klucze GPG",
     clickHereToShowArmoredPublicKey:
-        "Naciśnij tutaj aby wyświetlić opancerzony klucz publiczny",
+        "Naciśnij tutaj, aby wyświetlić opancerzony klucz publiczny",
     clickHereToHideArmoredPublicKey:
-        "Naciśnij tutaj aby ukryć opancerzony klucz publiczny",
+        "Naciśnij tutaj, aby ukryć opancerzony klucz publiczny",
     indexDescription:
         "Cześć, jestem Jakub i tworze strony internetowe. A to jest moje portfolio.",
-    gpgKeysDescription: "Lista z wszystkimi kluczami GPG z których korzystam.",
+    gpgKeysDescription: "Lista z wszystkimi kluczami GPG, z których korzystam.",
+    clickToShowEmail: "Naciśnij tutaj, aby ukazać E-Mail",
 };
 
 export default pl;
