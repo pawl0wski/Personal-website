@@ -79,6 +79,7 @@ $project-width: 260px;
 
 .projects__project_entry {
     width: $project-width;
+    min-width: $project-width;
     user-select: none;
     &__link {
         text-decoration: none;
@@ -111,7 +112,7 @@ $project-width: 260px;
         }
 
         &__title {
-            font-size: 1.4rem;
+            font-size: 1.25rem;
             margin: 0.7rem 0;
         }
 
@@ -133,6 +134,10 @@ $project-width: 260px;
         &__link {
             &__thumbnail {
                 width: 100%;
+
+                &__logo {
+                    height: 5rem;
+                }
             }
         }
     }

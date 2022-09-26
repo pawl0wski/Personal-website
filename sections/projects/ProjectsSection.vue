@@ -48,7 +48,7 @@ div.projects {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-
+        justify-content: space-between;
         gap: 3rem;
     }
 }
@@ -61,6 +61,14 @@ div.projects {
 
         &__list {
             justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    div.projects {
+        &__list {
+            justify-content: flex-start;
         }
     }
 }
