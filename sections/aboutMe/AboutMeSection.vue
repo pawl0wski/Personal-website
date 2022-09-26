@@ -53,7 +53,7 @@ div.about_me {
             width: 100%;
 
             align-items: center;
-            text-align: justify;
+            text-align: center;
         }
     }
 }

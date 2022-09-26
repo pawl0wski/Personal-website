@@ -75,8 +75,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+$project-width: 260px;
+
 .projects__project_entry {
-    width: 300px;
+    width: $project-width;
     user-select: none;
     &__link {
         text-decoration: none;
@@ -87,8 +89,8 @@ export default defineComponent({
         }
 
         &__thumbnail {
-            width: 300px;
-            height: 200px;
+            width: $project-width;
+            aspect-ratio: 2/1.35;
 
             border-radius: 1rem;
 
@@ -97,12 +99,12 @@ export default defineComponent({
             justify-content: center;
 
             &__logo {
-                height: 4.5rem;
+                height: 4rem;
                 aspect-ratio: 1/1;
-                transition: 0.5s height;
+                transition: 0.2s height ease-in;
 
                 &--hovered {
-                    height: 6rem;
+                    height: 5rem;
                     transition: 0.5s height;
                 }
             }
@@ -120,6 +122,17 @@ export default defineComponent({
         &__read_more {
             &--hovered {
                 text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .projects__project_entry {
+        width: 100%;
+        &__link {
+            &__thumbnail {
+                width: 100%;
             }
         }
     }
