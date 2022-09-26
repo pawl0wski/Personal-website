@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import GpgKeyEntry from "./components/GpgKeyEntry.vue";
+import GpgKeyEntry from "./components/GPGKeyEntry.vue";
 import keysContent from "~/content/keys.json";
 import { GpgKeyI } from "~/content/interfaces/key";
 import TitleText from "~/components/TitleText.vue";
