@@ -11,6 +11,7 @@
         <nuxt-img
             loading="lazy"
             class="knowledge_entry__icon"
+            :alt="knowledge.technology.name"
             :src="`img/devicon/${knowledge.technology.icon}.svg`"
         />
         <span class="knowledge_entry__name">{{

@@ -15,6 +15,7 @@
                 <nuxt-img
                     :src="icon"
                     format="webp"
+                    :alt="project.name"
                     :class="`projects__project_entry__link__thumbnail__logo${
                         hovered ? '--hovered' : ''
                     }`"
