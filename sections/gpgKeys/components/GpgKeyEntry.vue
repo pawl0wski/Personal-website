@@ -89,11 +89,13 @@ div.gpg-key-entry {
             padding-left: 0;
             list-style-type: none;
             li {
+                color: $text-color-muted;
                 padding: 0.8rem 1rem;
                 display: flex;
                 align-items: center;
                 min-height: 3rem;
                 i {
+                    color: $text-color;
                     font-size: 1.5rem;
                     margin-right: 1rem;
                 }
