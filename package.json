@@ -23,7 +23,7 @@
         "core-js": "^3.25.3",
         "nuxt": "^2.15.8",
         "sass": "^1.55.0",
-        "vue": "^2.7.7",
+        "vue": "^3.2.39",
         "vue-server-renderer": "^2.7.7",
         "vue-template-compiler": "^2.7.7",
         "webpack": "^4.46.0"
