@@ -2,6 +2,7 @@ $primary-color: #88d225;
 $background-color: #080808;
 $background-color-lighter: lighten($background-color, 6%);
 $background-color-more-lighter: lighten($background-color-lighter, 10%);
+$even-section-color: lighten($background-color, 1%);
 $text-color: #ffffff;
 $text-color-muted: transparentize($text-color, 0.35);
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="about_me__content">
+    <div class="about_me__text">
         <p v-html="content"></p>
     </div>
 </template>
@@ -19,7 +19,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-div.about_me__content {
+div.about_me__text {
     max-width: 30rem;
 
     font-size: large;

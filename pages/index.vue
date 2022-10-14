@@ -45,6 +45,10 @@ export default defineComponent({
 <style lang="scss" scoped>
 div.index {
     @include page;
+
+    div:nth-child(even) {
+        background-color: $even-section-color;
+    }
 }
 
 @media only screen and (max-width: 800px) {

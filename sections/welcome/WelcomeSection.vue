@@ -1,21 +1,23 @@
 <template>
     <div class="welcome">
-        <div class="welcome__left">
-            <WelcomeText />
-            <div
-                class="welcome__left__icons animate__animated animate__fadeIn animate__delay-1s"
-            >
-                <WelcomeIcon
-                    v-for="social in socials"
-                    :key="social.name"
-                    :name="social.name"
-                    :icon="social.icon"
-                    :href="social.link"
-                />
+        <div class="welcome__content">
+            <div class="welcome__content__left">
+                <WelcomeText />
+                <div
+                    class="welcome__content__left__icons animate__animated animate__fadeIn animate__delay-1s"
+                >
+                    <WelcomeIcon
+                        v-for="social in socials"
+                        :key="social.name"
+                        :name="social.name"
+                        :icon="social.icon"
+                        :href="social.link"
+                    />
+                </div>
             </div>
-        </div>
-        <div class="welcome__right">
-            <WelcomeCube />
+            <div class="welcome__content__right">
+                <WelcomeCube />
+            </div>
         </div>
     </div>
 </template>
@@ -41,53 +43,58 @@ export default Vue.extend({
 <style lang="scss" scoped>
 div.welcome {
     @include section;
-    height: 100vh;
-    display: flex;
 
-    &__left,
-    &__right {
-        width: 50%;
-        height: 100%;
+    &__content {
+        height: 100vh;
         display: flex;
-        align-items: center;
-    }
 
-    &__left {
-        flex-direction: column;
-        justify-content: center;
-
-        align-items: start;
-
-        &__icons {
-            margin-top: 2rem;
-
-            width: 100%;
+        &__left,
+        &__right {
+            width: 50%;
+            height: 100%;
             display: flex;
-
-            gap: 1.5rem;
+            align-items: center;
         }
-    }
 
-    &__right {
-        justify-content: end;
+        &__left {
+            flex-direction: column;
+            justify-content: center;
+
+            align-items: start;
+
+            &__icons {
+                margin-top: 2rem;
+
+                width: 100%;
+                display: flex;
+
+                gap: 1.5rem;
+            }
+        }
+
+        &__right {
+            justify-content: end;
+        }
     }
 }
 
 @media only screen and (max-width: 800px) {
     div.welcome {
-        &__left {
-            text-align: center;
-            width: 100%;
-            align-items: center;
-            margin: 0 $small-margin;
+        &__content {
+            &__left {
+                text-align: center;
+                width: 100%;
+                align-items: center;
+                margin: 0 $small-margin;
 
-            &__icons {
-                justify-content: center;
+                &__icons {
+                    justify-content: center;
+                }
             }
-        }
 
-        &__right {
-            display: none;
+            &__right {
+                display: none;
+            }
         }
     }
 }

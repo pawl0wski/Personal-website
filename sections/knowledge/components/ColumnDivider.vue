@@ -4,10 +4,10 @@
 
 <style lang="scss" scoped>
 div.column_divider {
-    width: 2px;
+    width: 1px;
     margin: 5rem 1rem 0;
 
-    background-color: $background-color-lighter;
+    background-color: $background-color-more-lighter;
     opacity: 0.8;
 }
 

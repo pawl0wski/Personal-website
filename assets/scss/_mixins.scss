@@ -5,10 +5,12 @@
 }
 
 @mixin section {
-    min-height: 100vh;
-    max-width: 80rem;
-    padding: 0 $small-margin;
-    margin: 0 auto;
+    &__content {
+        max-width: 80rem;
+        margin: 0 auto;
+
+        padding: $medium-margin $small-margin;
+    }
 }
 
 @mixin absoluteCenter {

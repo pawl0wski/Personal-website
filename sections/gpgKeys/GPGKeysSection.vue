@@ -1,12 +1,14 @@
 <template>
     <div class="gpg-keys-section">
-        <TitleText :content="$locale('gpgKeys')" :use-h1="true" />
-        <div class="gpg-keys-section__list">
-            <GpgKeyEntry
-                v-for="gpgKey in gpgKeys"
-                :key="gpgKey.id"
-                :gpg-key="gpgKey"
-            />
+        <div class="gpg-keys-section__content">
+            <TitleText :content="$locale('gpgKeys')" :use-h1="true" />
+            <div class="gpg-keys-section__content__list">
+                <GpgKeyEntry
+                    v-for="gpgKey in gpgKeys"
+                    :key="gpgKey.id"
+                    :gpg-key="gpgKey"
+                />
+            </div>
         </div>
     </div>
 </template>
@@ -31,11 +33,13 @@ export default defineComponent({
 <style lang="scss" scoped>
 div.gpg-keys-section {
     @include section;
-    padding-top: $medium-margin;
-    padding-bottom: $medium-margin;
+    &__content {
+        padding-top: $medium-margin;
+        padding-bottom: $medium-margin;
 
-    &__list {
-        margin-top: $medium-margin;
+        &__list {
+            margin-top: $medium-margin;
+        }
     }
 }
 </style>

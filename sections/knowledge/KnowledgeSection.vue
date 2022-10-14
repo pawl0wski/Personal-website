@@ -1,21 +1,23 @@
 <template>
     <div id="knowledge" class="knowledge">
-        <TitleText :content="$locale('knowledgeTitle')" />
-        <div class="knowledge__columns">
-            <KnowledgeList
-                :title="$locale('languages')"
-                :knowledge-array="knowledgeContent['languages']"
-            />
-            <ColumnDivider />
-            <KnowledgeList
-                :title="$locale('technologies')"
-                :knowledge-array="knowledgeContent['technologies']"
-            />
-            <ColumnDivider />
-            <KnowledgeList
-                :title="$locale('appsServices')"
-                :knowledge-array="knowledgeContent['appsServices']"
-            />
+        <div class="knowledge__content">
+            <TitleText :content="$locale('knowledgeTitle')" />
+            <div class="knowledge__content__columns">
+                <KnowledgeList
+                    :title="$locale('languages')"
+                    :knowledge-array="knowledgeContent['languages']"
+                />
+                <ColumnDivider />
+                <KnowledgeList
+                    :title="$locale('technologies')"
+                    :knowledge-array="knowledgeContent['technologies']"
+                />
+                <ColumnDivider />
+                <KnowledgeList
+                    :title="$locale('appsServices')"
+                    :knowledge-array="knowledgeContent['appsServices']"
+                />
+            </div>
         </div>
     </div>
 </template>
@@ -53,18 +55,23 @@ div.knowledge {
     display: flex;
     flex-direction: column;
 
-    &__columns {
-        display: flex;
-        flex-direction: row;
+    &__content {
+        width: 100%;
+        &__columns {
+            display: flex;
+            flex-direction: row;
+        }
     }
 }
 
 @media only screen and (max-width: 800px) {
     div.knowledge {
         align-items: center;
-        &__columns {
-            flex-direction: column;
-            width: 100%;
+        &__content {
+            &__columns {
+                flex-direction: column;
+                width: 100%;
+            }
         }
     }
 }

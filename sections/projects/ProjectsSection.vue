@@ -1,13 +1,15 @@
 <template>
     <div id="projects" class="projects">
-        <TitleText :content="$locale('projectsTitle')" />
-        <div class="projects__list">
-            <ProjectEntry
-                v-for="project in projects"
-                :key="project.id"
-                :project="project"
-                :content="$localeProject(project.id)"
-            />
+        <div class="projects__content">
+            <TitleText :content="$locale('projectsTitle')" />
+            <div class="projects__content__list">
+                <ProjectEntry
+                    v-for="project in projects"
+                    :key="project.id"
+                    :project="project"
+                    :content="$localeProject(project.id)"
+                />
+            </div>
         </div>
     </div>
 </template>
@@ -42,33 +44,39 @@ div.projects {
     gap: 0;
     justify-content: center;
 
-    &__list {
-        margin-top: 3rem;
+    &__content {
+        &__list {
+            margin-top: 3rem;
 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 3rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 3rem;
+        }
     }
 }
 
 @media only screen and (max-width: 800px) {
     div.projects {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-        &__list {
-            justify-content: center;
+            &__list {
+                justify-content: center;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 1220px) {
     div.projects {
-        &__list {
-            justify-content: flex-start;
+        &__content {
+            &__list {
+                justify-content: flex-start;
+            }
         }
     }
 }

@@ -1,11 +1,13 @@
 <template>
     <div id="about_me" class="about_me">
-        <div class="about_me__left">
-            <TitleText :content="$locale('aboutMeTitle')" />
-            <AboutMeContent :content="$locale('aboutMeContent')" />
-        </div>
-        <div class="about_me__right">
-            <AboutMePhoto />
+        <div class="about_me__content">
+            <div class="about_me__content__left">
+                <TitleText :content="$locale('aboutMeTitle')" />
+                <AboutMeContent :content="$locale('aboutMeContent')" />
+            </div>
+            <div class="about_me__content__right">
+                <AboutMePhoto />
+            </div>
         </div>
     </div>
 </template>
@@ -24,36 +26,40 @@ export default defineComponent({
 <style lang="scss" scoped>
 div.about_me {
     @include section;
-    display: flex;
-    flex-direction: row;
 
-    gap: 3rem;
-
-    &__left,
-    &__right {
-        width: 50%;
-
+    &__content {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+        flex-direction: row;
 
-    &__right {
-        align-items: center;
+        gap: 3rem;
+        &__left,
+        &__right {
+            width: 50%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__right {
+            align-items: center;
+        }
     }
 }
 
 @media only screen and (max-width: 800px) {
     div.about_me {
-        flex-direction: column-reverse;
+        &__content {
+            flex-direction: column-reverse;
 
-        gap: 4rem;
-        &__left,
-        &__right {
-            width: 100%;
+            gap: 4rem;
+            &__left,
+            &__right {
+                width: 100%;
 
-            align-items: center;
-            text-align: center;
+                align-items: center;
+                text-align: center;
+            }
         }
     }
 }
