@@ -1,7 +1,9 @@
 <template>
     <h1
         class="animate__animated animate__fadeInUp"
-        v-html="$locale('welcomeTitle')"
+        v-html="
+            $locale('welcomeTitle') + '<br>' + $locale('welcomeContinuation')
+        "
     ></h1>
 </template>
 
