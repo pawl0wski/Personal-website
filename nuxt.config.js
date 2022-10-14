@@ -90,7 +90,7 @@ export default {
     // Google Fonts
     googleFonts: {
         families: {
-            Inter: [400, 700, 900],
+            Rubik: [400, 700, 900],
         },
     },
 };
