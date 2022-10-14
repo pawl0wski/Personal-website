@@ -37,7 +37,7 @@ export default defineComponent({
         padding: 0 1rem;
         border-radius: 7px;
 
-        background-color: $background-color-lighter;
+        background-color: $background-color;
 
         display: flex;
         flex-direction: row;
@@ -48,6 +48,10 @@ export default defineComponent({
 
         color: $text-color;
         transition: 0.2s background-color;
+
+        border-style: solid;
+        border-width: 1px;
+        border-color: $background-color-more-lighter;
 
         &:hover {
             background-color: $background-color-more-lighter;

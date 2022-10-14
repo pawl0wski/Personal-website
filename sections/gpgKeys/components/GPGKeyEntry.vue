@@ -88,8 +88,11 @@ div.gpg-key-entry {
         width: 50vw;
         min-width: 300px;
         min-height: 50px;
-        background-color: $background-color-lighter;
+
         border-radius: 0.5rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $background-color-more-lighter;
 
         ul {
             margin: 0;
@@ -110,9 +113,10 @@ div.gpg-key-entry {
                 }
             }
             hr {
-                width: 97%;
+                width: 100%;
                 margin: 0 auto;
                 border-color: $background-color-more-lighter;
+                border-bottom-style: none;
             }
         }
 

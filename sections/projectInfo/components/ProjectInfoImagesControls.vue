@@ -8,7 +8,6 @@
         >
             <div
                 v-if="i === currentIndex"
-                :style="{ 'background-color': $props.project.color }"
                 class="project_info__images__controls__control__dot"
             ></div>
         </div>

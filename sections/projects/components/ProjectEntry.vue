@@ -94,6 +94,7 @@ $project-width: 260px;
             width: $project-width;
             aspect-ratio: 2/1.35;
 
+
             border-radius: 1rem;
 
             display: flex;

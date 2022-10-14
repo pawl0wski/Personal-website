@@ -74,7 +74,9 @@ export default defineComponent({
     padding: 0 0.8rem;
 
     border-radius: 0.5rem;
-    background-color: $background-color-lighter;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $background-color-more-lighter;
 
     display: flex;
     align-items: center;
