@@ -1,16 +1,11 @@
 <template>
     <div class="about_me__photo">
-        <nuxt-img format="webp" src="/img/me.jpg" />
+<!--        <nuxt-img format="webp" src="/img/me.jpg" />-->
     </div>
 </template>
 
 <style lang="scss" scoped>
 div.about_me__photo {
-    border-width: 2px;
-    border-color: $primary-color;
-    border-style: solid;
-    border-radius: 1rem;
-
     width: auto;
     max-height: 600px;
 
