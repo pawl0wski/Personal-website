@@ -20,15 +20,15 @@
 
     &__content {
         background-color: $background-color;
-        
+
         margin: 0.7rem;
         padding: 1rem;
-        
+
         border-radius: 10px;
         border-style: solid;
         border-width: 1px;
         border-color: $background-color-more-lighter;
-        
+
         box-shadow: 0 0 15px 0 $background-color;
         &__text {
             margin: 0;

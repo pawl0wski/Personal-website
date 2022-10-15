@@ -22,18 +22,20 @@
                 />
             </div>
 
-            <h3 class="projects__project_entry__link__title">
-                {{ project.name }}
-            </h3>
-            <p class="projects__project_entry__link__content">
-                {{ shortContent }}
-            </p>
-            <span
-                :class="`projects__project_entry__link__read_more${
-                    hovered ? '--hovered' : ''
-                }`"
-                >{{ $locale("readMore") }} →</span
-            >
+            <div class="projects__project_entry__link__text">
+                <h3 class="projects__project_entry__link__text__title">
+                    {{ project.name }}
+                </h3>
+                <p class="projects__project_entry__link__text__content">
+                    {{ shortContent }}
+                </p>
+                <span
+                    :class="`projects__project_entry__link__text__read_more${
+                        hovered ? '--hovered' : ''
+                    }`"
+                    >{{ $locale("readMore") }} →</span
+                >
+            </div>
         </NuxtLink>
     </div>
 </template>
@@ -76,12 +78,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-$project-width: 260px;
+$project-width: 270px;
 
 .projects__project_entry {
     width: $project-width;
     min-width: $project-width;
     user-select: none;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: $background-color-more-lighter;
+    border-radius: 1rem;
     &__link {
         text-decoration: none;
         color: $text-color;
@@ -94,7 +101,7 @@ $project-width: 260px;
             width: $project-width;
             aspect-ratio: 2/1.35;
 
-            border-radius: 1rem;
+            border-radius: 1rem 1rem 0 0;
 
             display: flex;
             align-items: center;
@@ -112,18 +119,21 @@ $project-width: 260px;
             }
         }
 
-        &__title {
-            font-size: 1.25rem;
-            margin: 0.7rem 0;
-        }
+        &__text {
+            padding: 0.5rem 1rem;
+            &__title {
+                font-size: 1.25rem;
+                margin: 0.7rem 0;
+            }
 
-        &__content {
-            color: $text-color-muted;
-        }
+            &__content {
+                color: $text-color-muted;
+            }
 
-        &__read_more {
-            &--hovered {
-                text-decoration: underline;
+            &__read_more {
+                &--hovered {
+                    text-decoration: underline;
+                }
             }
         }
     }

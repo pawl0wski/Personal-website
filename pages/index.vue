@@ -46,9 +46,8 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 div.index {
-
     &__content {
-    @include page;
+        @include page;
         div:nth-child(even) {
             background-color: $even-section-color;
 
@@ -57,7 +56,8 @@ div.index {
                 display: block;
                 border-style: solid;
                 border-width: 0 0 5vw 100vw;
-                border-color: transparent transparent $background-color transparent;
+                border-color: transparent transparent $background-color
+                    transparent;
             }
 
             &:before {
@@ -65,11 +65,11 @@ div.index {
                 display: block;
                 border-style: solid;
                 border-width: 5vw 100vw 0 0;
-                border-color: $background-color transparent transparent transparent;
+                border-color: $background-color transparent transparent
+                    transparent;
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 800px) {
