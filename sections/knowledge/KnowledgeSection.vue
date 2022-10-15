@@ -49,13 +49,12 @@ export default defineComponent({
 <style lang="scss" scoped>
 div.knowledge {
     @include section;
-    padding-bottom: 3rem;
-    margin-top: 5rem;
-
-    display: flex;
-    flex-direction: column;
 
     &__content {
+        padding-bottom: 3rem;
+
+        display: flex;
+        flex-direction: column;
         width: 100%;
         &__columns {
             display: flex;
@@ -66,8 +65,8 @@ div.knowledge {
 
 @media only screen and (max-width: 800px) {
     div.knowledge {
-        align-items: center;
         &__content {
+            align-items: center;
             &__columns {
                 flex-direction: column;
                 width: 100%;
