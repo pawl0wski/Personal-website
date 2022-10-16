@@ -120,7 +120,7 @@ $project-width: 270px;
         }
 
         &__text {
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 1rem 1rem;
             &__title {
                 font-size: 1.25rem;
                 margin: 0.7rem 0;
