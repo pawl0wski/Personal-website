@@ -20,8 +20,8 @@ export default interface LangI {
     branch: string;
     email: string;
     gpgKeys: string;
-    clickHereToShowArmoredPublicKey: string;
-    clickHereToHideArmoredPublicKey: string;
+    clickHereToShowPublicKey: string;
+    clickHereToHidePublicKey: string;
     indexDescription: string;
     gpgKeysDescription: string;
     clickToShowEmail: string;

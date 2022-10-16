@@ -65,9 +65,9 @@ export default defineComponent({
         armoredPublicKeyListText() {
             const locale = new Locale();
             if (this.armoredPublicKeyShowed) {
-                return locale.get("clickHereToHideArmoredPublicKey");
+                return locale.get("clickHereToHidePublicKey");
             }
-            return locale.get("clickHereToShowArmoredPublicKey");
+            return locale.get("clickHereToShowPublicKey");
         },
     },
     methods: {
@@ -100,18 +100,21 @@ div.gpg-key-entry {
             flex-direction: column;
             padding-left: 0;
             list-style-type: none;
+
             li {
                 color: $text-color-muted;
                 padding: 0.8rem 1rem;
                 display: flex;
                 align-items: center;
                 min-height: 3rem;
+
                 i {
                     color: $text-color;
                     font-size: 1.5rem;
                     margin-right: 1rem;
                 }
             }
+
             hr {
                 width: 100%;
                 margin: 0 auto;
@@ -132,6 +135,7 @@ span.clickable-text {
     cursor: pointer;
     user-select: none;
     text-decoration: underline;
+
     &:hover {
         color: $text-color;
     }

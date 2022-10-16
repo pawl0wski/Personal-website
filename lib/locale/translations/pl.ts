@@ -28,10 +28,8 @@ const pl: LangI = {
     branch: "Branch",
     email: "Adres e-mail",
     gpgKeys: "Klucze GPG",
-    clickHereToShowArmoredPublicKey:
-        "Naciśnij tutaj, aby wyświetlić opancerzony klucz publiczny",
-    clickHereToHideArmoredPublicKey:
-        "Naciśnij tutaj, aby ukryć opancerzony klucz publiczny",
+    clickHereToShowPublicKey: "Naciśnij tutaj, aby wyświetlić klucz publiczny",
+    clickHereToHidePublicKey: "Naciśnij tutaj, aby ukryć klucz publiczny",
     indexDescription:
         "Cześć, jestem Jakub i tworze strony internetowe. A to jest moje portfolio.",
     gpgKeysDescription: "Lista z wszystkimi kluczami GPG, z których korzystam.",
