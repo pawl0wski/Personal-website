@@ -19,7 +19,7 @@
                         v-if="!emailShowed"
                         class="clickable-text"
                         @click="showEmail"
-                        >{{ $locale("clickToShowEmail") }}</span
+                    >{{ $locale("clickToShowEmail") }}</span
                     >
                     <span v-if="emailShowed">{{ gpgKey.email }}</span>
                 </li>
@@ -40,7 +40,7 @@
                 }"
                 class="gpg-key-entry__content__armored-key"
             >
-                <pre>{{ gpgKey.armoredPublicKey }}</pre>
+                <pre :id="'publicKey' + gpgKey.id" @click="selectAndCopyPublicKey">{{ gpgKey.publicKey }}</pre>
             </div>
         </div>
     </div>
@@ -50,13 +50,14 @@
 import { defineComponent, PropType } from "vue";
 import { GpgKeyI } from "~/content/interfaces/key";
 import Locale from "~/lib/locale/locale";
+import copy from "copy-to-clipboard";
 
 export default defineComponent({
     props: {
         gpgKey: {
             type: Object as PropType<GpgKeyI>,
-            required: true,
-        },
+            required: true
+        }
     },
     data(): { armoredPublicKeyShowed: boolean; emailShowed: boolean } {
         return { armoredPublicKeyShowed: false, emailShowed: false };
@@ -68,7 +69,7 @@ export default defineComponent({
                 return locale.get("clickHereToHidePublicKey");
             }
             return locale.get("clickHereToShowPublicKey");
-        },
+        }
     },
     methods: {
         toggleShowArmoredPublicKey() {
@@ -77,7 +78,13 @@ export default defineComponent({
         showEmail() {
             this.emailShowed = true;
         },
-    },
+        selectAndCopyPublicKey() {
+            const selection = window.getSelection()!;
+            const keyDOMElement = document.querySelector(`#publicKey${this.gpgKey.id}`)!;
+            selection.selectAllChildren(keyDOMElement);
+            copy(this.gpgKey.publicKey);
+        }
+    }
 });
 </script>
 

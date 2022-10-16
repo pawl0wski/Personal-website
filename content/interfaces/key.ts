@@ -3,5 +3,5 @@ export interface GpgKeyI {
     label: string;
     name: string;
     email: string;
-    armoredPublicKey: string;
+    publicKey: string;
 }
