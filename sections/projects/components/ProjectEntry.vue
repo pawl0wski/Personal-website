@@ -89,6 +89,7 @@ $project-width: 270px;
     border-width: 1px;
     border-color: $background-color-more-lighter;
     border-radius: 1rem;
+
     &__link {
         text-decoration: none;
         color: $text-color;
@@ -121,8 +122,10 @@ $project-width: 270px;
 
         &__text {
             padding: 0.5rem 1rem 1rem;
+
             &__title {
-                font-size: 1.25rem;
+                font-weight: normal;
+                font-size: 1.35rem;
                 margin: 0.7rem 0;
             }
 
@@ -142,6 +145,7 @@ $project-width: 270px;
 @media only screen and (max-width: 800px) {
     .projects__project_entry {
         width: 100%;
+
         &__link {
             &__thumbnail {
                 width: 100%;
