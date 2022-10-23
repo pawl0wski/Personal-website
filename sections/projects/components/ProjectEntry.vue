@@ -88,7 +88,7 @@ $project-width: 270px;
     border-style: solid;
     border-width: 1px;
     border-color: $background-color-more-lighter;
-    border-radius: 1rem;
+    border-radius: 0.6rem;
 
     &__link {
         text-decoration: none;
@@ -102,7 +102,7 @@ $project-width: 270px;
             width: $project-width;
             aspect-ratio: 2/1.35;
 
-            border-radius: 1rem 1rem 0 0;
+            border-radius: 0.6rem 0.6rem 0 0;
 
             display: flex;
             align-items: center;
@@ -131,6 +131,7 @@ $project-width: 270px;
 
             &__content {
                 color: $text-color-muted;
+                line-height: 1.35rem;
             }
 
             &__read_more {

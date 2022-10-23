@@ -1,7 +1,10 @@
 <template>
     <div class="welcome_text animate__animated animate__fadeInUp">
         <p class="welcome_text__title" v-html="$locale('welcomeTitle')"></p>
-        <p class="welcome_text__continuation" v-html="$locale('welcomeContinuation')"></p>
+        <p
+            class="welcome_text__continuation"
+            v-html="$locale('welcomeContinuation')"
+        ></p>
     </div>
 </template>
 
@@ -18,7 +21,6 @@
     &__continuation {
         margin-top: 1rem;
         font-size: x-large;
-
     }
 }
 </style>

@@ -2,7 +2,7 @@
     <div class="title">
         <div class="title__box">
             <h1 v-if="useH1">{{ content }}</h1>
-            <h2 v-if="!useH1" style="font-size: 2rem">{{ content }}</h2>
+            <h2 v-if="!useH1">{{ content }}</h2>
         </div>
     </div>
 </template>
@@ -28,6 +28,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 div.title {
     margin-top: 0.5rem;
+
     &__box {
         width: fit-content;
 
@@ -37,6 +38,7 @@ div.title {
 
         h1,
         h2 {
+            font-size: 2.5rem;
             margin-top: 0.5rem;
         }
     }
