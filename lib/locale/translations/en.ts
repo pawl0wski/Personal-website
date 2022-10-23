@@ -16,8 +16,8 @@ const en: LangI = {
         "<br><br>" +
         "Don't be afraid to contact me! I'll be happy to answer your offers or questions 😀.",
     aboutMeTitle: "About me",
-    welcomeTitle: "Hi, my name is <pc>Jacob</pc>.",
-    welcomeContinuation: "And I'm <pc>fullstack</pc> developer.",
+    welcomeTitle: "Hello, I'm <pc>Jakub</pc>.",
+    welcomeContinuation: "And I'm a <pc>fullstack</pc> developer.",
     projectsTitle: "Projects",
     knowledgeTitle: "Knowledge",
     stillLearningInfo:
