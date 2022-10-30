@@ -38,7 +38,7 @@ div.title {
 
         h1,
         h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-top: 0.5rem;
         }
     }

@@ -13,7 +13,7 @@
     letter-spacing: 0.05rem;
 
     &__title {
-        font-size: xxx-large;
+        font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 0;
     }
@@ -21,6 +21,17 @@
     &__continuation {
         margin-top: 1rem;
         font-size: x-large;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .welcome_text {
+        &__title {
+            font-size: xx-large;
+        }
+        &__continuation {
+            font-size: large;
+        }
     }
 }
 </style>
