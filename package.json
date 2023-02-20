@@ -23,7 +23,7 @@
         "copy-to-clipboard": "^3.3.2",
         "core-js": "^3.25.3",
         "nuxt": "^2.15.8",
-        "sass": "^1.55.0",
+        "sass": "^1.58.3",
         "vue": "^2.7.7",
         "vue-server-renderer": "^2.7.7",
         "vue-template-compiler": "^2.7.7",
