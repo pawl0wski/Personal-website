@@ -223,7 +223,8 @@
                 {
                     "name": "Vue",
                     "icon": "vuejs-original"
-                },                {
+                },
+                {
                     "name": "Vuetify",
                     "icon": "vuetify-original"
                 },
@@ -234,7 +235,8 @@
                 {
                     "name": "Express",
                     "icon": "express-original"
-                },                {
+                },
+                {
                     "name": "MongoDB",
                     "icon": "mongodb-original"
                 },
