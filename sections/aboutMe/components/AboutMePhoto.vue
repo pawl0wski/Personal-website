@@ -1,6 +1,6 @@
 <template>
     <div class="about_me__photo">
-        <!--        <nuxt-img format="webp" src="/img/me.jpg" />-->
+        <nuxt-img format="webp" src="/img/me.jpg" />
     </div>
 </template>
 
@@ -10,6 +10,8 @@ div.about_me__photo {
     max-height: 600px;
 
     overflow: hidden;
+
+    border-radius: 1.5em;
 
     aspect-ratio: 9 / 16;
 

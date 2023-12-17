@@ -2,6 +2,20 @@
     "languages": [
         {
             "technology": {
+                "name": "C++",
+                "icon": "cplusplus-original"
+            },
+            "stillLearning": false
+        },
+        {
+            "technology": {
+                "name": "C",
+                "icon": "c-original"
+            },
+            "stillLearning": false
+        },
+        {
+            "technology": {
                 "name": "Javascript",
                 "icon": "javascript-original"
             },
@@ -177,7 +191,7 @@
                 "name": "Docker",
                 "icon": "docker-original"
             },
-            "stillLearning": true
+            "stillLearning": false
         },
         {
             "technology": {

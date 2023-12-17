@@ -26,6 +26,7 @@ const pl: LangI = {
     backToHomePage: "← wróć do strony głównej",
     links: "Linki",
     github: "Github",
+    linkedin: "LinkedIn",
     branch: "Branch",
     email: "Adres e-mail",
     gpgKeys: "Klucze GPG",
