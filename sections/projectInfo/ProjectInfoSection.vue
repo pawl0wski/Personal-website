@@ -46,6 +46,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+@import "assets/scss/mixins";
+
 .project_info_section {
     @include section;
     &__content {

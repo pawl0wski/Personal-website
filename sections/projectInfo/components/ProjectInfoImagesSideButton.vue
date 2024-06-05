@@ -25,6 +25,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .project_info_images_side_button {
     width: fit-content;
 

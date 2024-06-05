@@ -30,6 +30,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .project_info_details_link {
     &__link {
         width: 100%;

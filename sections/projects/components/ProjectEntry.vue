@@ -78,6 +78,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 $project-width: 270px;
 
 .projects__project_entry {

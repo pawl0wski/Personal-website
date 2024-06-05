@@ -3,6 +3,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 div.column_divider {
     width: 1px;
     margin: 5rem 1rem 0;

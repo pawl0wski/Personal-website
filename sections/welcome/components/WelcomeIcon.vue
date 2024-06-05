@@ -51,6 +51,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 div.welcome__icon {
     a {
         text-decoration: none;

@@ -38,6 +38,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .project_info__images__controls {
     width: 100%;
 

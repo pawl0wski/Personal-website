@@ -68,6 +68,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .knowledge_entry {
     width: 100%;
     height: 3rem;

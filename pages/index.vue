@@ -45,6 +45,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+@import "assets/scss/mixins";
+
 div.index {
     &__content {
         @include page;

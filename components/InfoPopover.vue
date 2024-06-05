@@ -7,6 +7,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .info_popover {
     max-width: 18rem;
 

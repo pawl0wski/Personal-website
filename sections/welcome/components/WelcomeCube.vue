@@ -3,6 +3,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 div.welcome__cube {
     width: 30vw;
     height: 30vw;

@@ -29,6 +29,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/mixins";
+
 div.gpg-keys {
     @include page;
 }

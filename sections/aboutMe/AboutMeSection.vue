@@ -24,6 +24,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/mixins";
+@import "assets/scss/variables";
+
 div.about_me {
     @include section;
 
