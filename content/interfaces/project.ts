@@ -1,5 +1,5 @@
-import TechnologyI from "~/content/interfaces/technology";
-import LinkI from "~/content/interfaces/link";
+import type TechnologyI from "~/content/interfaces/technology";
+import type LinkI from "~/content/interfaces/link";
 
 export interface ProjectI {
     id: number;

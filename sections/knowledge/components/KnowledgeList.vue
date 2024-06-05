@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, type PropType } from "vue";
 import KnowledgeEntry from "./KnowledgeEntry.vue";
-import { KnowledgeI } from "~/content/interfaces/knowledge";
+import type { KnowledgeI } from "~/content/interfaces/knowledge";
 
 export default defineComponent({
     components: { KnowledgeEntry },

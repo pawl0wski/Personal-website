@@ -22,14 +22,14 @@
     </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import WelcomeText from "./components/WelcomeText.vue";
 import WelcomeCube from "./components/WelcomeCube.vue";
 import WelcomeIcon from "./components/WelcomeIcon.vue";
 import socialsContent from "~/content/socials.json";
-import { SocialI } from "~/content/interfaces/social";
+import type { SocialI } from "~/content/interfaces/social";
 
-export default Vue.extend({
+export default defineComponent({
     components: { WelcomeText, WelcomeCube, WelcomeIcon },
     data(): { socials: SocialI[] } {
         const { socials } = socialsContent;

@@ -1,4 +1,4 @@
-import LangI from "../interfaces/lang";
+import type { LangI } from "../interfaces/lang";
 
 const pl: LangI = {
     description: "Opis",
