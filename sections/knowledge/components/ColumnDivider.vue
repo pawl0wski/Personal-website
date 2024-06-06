@@ -9,7 +9,7 @@ div.column_divider {
     width: 1px;
     margin: 5rem 1rem 0;
 
-    background-color: $background-color-more-darker;
+    background-color: transparentize($background-color-darker, 0.7);
     opacity: 0.8;
 }
 

@@ -82,6 +82,7 @@ $project-width: 20rem;
     user-select: none;
 
     border-style: solid;
+    border-radius: $small-margin;
     border-width: 1px;
     border-color: $background-color-darker;
 
@@ -99,6 +100,9 @@ $project-width: 20rem;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            border-top-right-radius: $small-margin;
+            border-top-left-radius: $small-margin;
 
             &__logo {
                 height: 4rem;

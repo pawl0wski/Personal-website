@@ -29,6 +29,7 @@
         border-style: solid;
         border-width: 1px;
         border-color: $background-color-more-darker;
+        border-radius: $small-margin;
 
         box-shadow: 0 0 15px 0 $background-color;
         &__text {

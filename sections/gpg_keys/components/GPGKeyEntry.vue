@@ -106,6 +106,7 @@ div.gpg-key-entry {
         border-width: 1px;
         border-style: solid;
         border-color: $background-color-more-darker;
+        border-radius: $small-margin;
 
         ul {
             margin: 0;

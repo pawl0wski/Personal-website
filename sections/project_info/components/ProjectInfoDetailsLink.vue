@@ -53,6 +53,7 @@ export default defineComponent({
         border-style: solid;
         border-width: 1px;
         border-color: $background-color-more-darker;
+        border-radius: $small-margin;
 
         &:hover {
             background-color: $even-section-color;

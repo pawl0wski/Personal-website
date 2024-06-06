@@ -78,6 +78,7 @@ export default defineComponent({
     border-width: 1px;
     border-style: solid;
     border-color: $background-color-darker;
+    border-radius: $small-margin;
 
     background-color: $background-color;
 
