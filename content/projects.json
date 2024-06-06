@@ -14,6 +14,7 @@
                 "pmk8.png"
             ],
             "color": "#F9A949",
+            "mutedColor": "#fff0dd",
             "technologies": [
                 {
                     "name": "Django",
@@ -52,7 +53,8 @@
             "id": 2,
             "name": "Maturzystnie",
             "images": ["m1.png", "m2.png", "m3.png", "m4.png", "m5.png"],
-            "color": "#4B4B4B",
+            "color": "#d4f0dd",
+            "mutedColor": "#e9f9ee",
             "technologies": [
                 {
                     "name": "Django",
@@ -131,7 +133,8 @@
             "id": 4,
             "name": "Playlist Tools",
             "images": ["pt1.png", "pt2.png", "pt3.png", "pt4.png", "pt5.png"],
-            "color": "#004F63",
+            "color": "#37ff70",
+            "mutedColor": "#eeeeee",
             "technologies": [
                 {
                     "name": "Vue",
@@ -172,6 +175,7 @@
             "name": "Technik Informatyk",
             "images": ["ti1.jpg", "ti2.jpg", "ti3.jpg"],
             "color": "#008C71",
+            "mutedColor": "#cae6e1",
             "technologies": [
                 {
                     "name": "Dart",

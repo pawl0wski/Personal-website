@@ -5,6 +5,7 @@ export interface ProjectModel {
     id: number;
     name: string;
     color: string;
+    mutedColor: string;
     images: string[];
     technologies: TechnologyModel[];
     links: LinkModel[];

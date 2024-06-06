@@ -10,7 +10,7 @@
         >
             <div
                 class="projects__project_entry__link__thumbnail"
-                :style="{ backgroundColor: color }"
+                :style="{ backgroundColor: project.mutedColor }"
             >
                 <nuxt-img
                     :src="icon"
@@ -42,7 +42,6 @@
 
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
-import Color from "color";
 import type { ProjectModel } from "~/content/models/project";
 
 export default defineComponent({
@@ -68,11 +67,6 @@ export default defineComponent({
         shortContent() {
             return this.$props.content.slice(0, 100) + "...";
         },
-        color() {
-            const color = Color(this.$props.project.color);
-            if (color.hex() !== "#FFFFFF") return color.darken(0.6);
-            return color;
-        },
     },
 });
 </script>
@@ -80,7 +74,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 @import "assets/scss/variables";
 
-$project-width: 270px;
+$project-width: 20rem;
 
 .projects__project_entry {
     width: $project-width;
@@ -89,8 +83,7 @@ $project-width: 270px;
 
     border-style: solid;
     border-width: 1px;
-    border-color: $background-color-more-lighter;
-    border-radius: 0.6rem;
+    border-color: $background-color-darker;
 
     &__link {
         text-decoration: none;
@@ -101,10 +94,7 @@ $project-width: 270px;
         }
 
         &__thumbnail {
-            width: $project-width;
-            aspect-ratio: 2/1.35;
-
-            border-radius: 0.6rem 0.6rem 0 0;
+            height: 12rem;
 
             display: flex;
             align-items: center;
@@ -126,13 +116,12 @@ $project-width: 270px;
             padding: 0.5rem 1rem 1rem;
 
             &__title {
-                font-weight: normal;
+                font-weight: 600;
                 font-size: 1.35rem;
                 margin: 0.7rem 0;
             }
 
             &__content {
-                color: $text-color-muted;
                 line-height: 1.35rem;
             }
 

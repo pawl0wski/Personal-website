@@ -11,8 +11,6 @@ div.about_me__photo {
 
     overflow: hidden;
 
-    border-radius: 1.5em;
-
     aspect-ratio: 9 / 16;
 
     img {

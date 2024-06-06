@@ -1,9 +1,11 @@
 <template>
     <div id="project_info" class="project_info_section">
         <div class="project_info_section__content">
-            <span class="project_info_section__content__back" @click="goToPrev">
-                {{ $locale("backToHomePage") }}
-            </span>
+            <NuxtLink href="/" style="text-decoration: none">
+                <span class="project_info_section__content__back">
+                    {{ $locale("backToHomePage") }}
+                </span>
+            </NuxtLink>
             <div class="project_info_section__content__main">
                 <div class="project_info_section__content__main__left">
                     <ProjectInfoImages :project="project" />
@@ -35,11 +37,6 @@ export default defineComponent({
         project: {
             type: Object as PropType<ProjectModel>,
             required: true,
-        },
-    },
-    methods: {
-        goToPrev() {
-            this.$router.back();
         },
     },
 });

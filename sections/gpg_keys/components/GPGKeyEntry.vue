@@ -106,7 +106,7 @@ div.gpg-key-entry {
         border-radius: 0.5rem;
         border-width: 1px;
         border-style: solid;
-        border-color: $background-color-more-lighter;
+        border-color: $background-color-more-darker;
 
         ul {
             margin: 0;
@@ -132,7 +132,7 @@ div.gpg-key-entry {
             hr {
                 width: 100%;
                 margin: 0 auto;
-                border-color: $background-color-more-lighter;
+                border-color: $background-color-more-darker;
                 border-bottom-style: none;
             }
         }

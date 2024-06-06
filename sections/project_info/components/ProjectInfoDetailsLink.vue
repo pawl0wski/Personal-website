@@ -53,10 +53,10 @@ export default defineComponent({
 
         border-style: solid;
         border-width: 1px;
-        border-color: $background-color-more-lighter;
+        border-color: $background-color-more-darker;
 
         &:hover {
-            background-color: $background-color-more-lighter;
+            background-color: $background-color-more-darker;
         }
 
         &__icon {

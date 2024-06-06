@@ -60,7 +60,7 @@ export default defineComponent({
 
         overflow: hidden;
 
-        background-color: $background-color-more-lighter;
+        background-color: $background-color-more-darker;
 
         cursor: pointer;
 

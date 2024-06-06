@@ -75,10 +75,11 @@ export default defineComponent({
     height: 3rem;
     padding: 0 0.8rem;
 
-    border-radius: 0.5rem;
     border-width: 1px;
     border-style: solid;
-    border-color: $background-color-more-lighter;
+    border-color: $background-color-darker;
+
+    background-color: $background-color;
 
     display: flex;
     align-items: center;
