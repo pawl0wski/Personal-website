@@ -9,6 +9,13 @@
         },
         {
             "technology": {
+                "name": "C#",
+                "icon": "csharp-original"
+            },
+            "stillLearning": false
+        },
+        {
+            "technology": {
                 "name": "C",
                 "icon": "c-original"
             },
@@ -60,13 +67,6 @@
         },
         {
             "technology": {
-                "name": "Bootstrap",
-                "icon": "bootstrap-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
                 "name": "Vue",
                 "icon": "vuejs-original"
             },
@@ -88,20 +88,6 @@
         },
         {
             "technology": {
-                "name": "Sequelize",
-                "icon": "sequelize-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "Express",
-                "icon": "express-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
                 "name": "Flutter",
                 "icon": "flutter-original"
             },
@@ -111,13 +97,6 @@
             "technology": {
                 "name": "Django",
                 "icon": "django-plain"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "FastAPI",
-                "icon": "fastapi-original"
             },
             "stillLearning": false
         }
@@ -134,13 +113,6 @@
             "technology": {
                 "name": "Linux",
                 "icon": "linux-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "Github",
-                "icon": "github-original"
             },
             "stillLearning": false
         },
@@ -167,20 +139,6 @@
         },
         {
             "technology": {
-                "name": "MySQL",
-                "icon": "mysql-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "SQLite",
-                "icon": "sqlite-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
                 "name": "Figma",
                 "icon": "figma-original"
             },
@@ -190,20 +148,6 @@
             "technology": {
                 "name": "Docker",
                 "icon": "docker-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "Visual Studio Code",
-                "icon": "vscode-original"
-            },
-            "stillLearning": false
-        },
-        {
-            "technology": {
-                "name": "IntelliJ IDEA",
-                "icon": "intellij-original"
             },
             "stillLearning": false
         }

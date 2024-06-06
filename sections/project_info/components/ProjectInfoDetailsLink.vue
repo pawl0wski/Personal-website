@@ -37,7 +37,6 @@ export default defineComponent({
         width: 100%;
         height: 3rem;
         padding: 0 1rem;
-        border-radius: 7px;
 
         background-color: $background-color;
 

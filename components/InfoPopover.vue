@@ -26,7 +26,6 @@
         margin: 0.7rem;
         padding: 1rem;
 
-        border-radius: 10px;
         border-style: solid;
         border-width: 1px;
         border-color: $background-color-more-darker;
