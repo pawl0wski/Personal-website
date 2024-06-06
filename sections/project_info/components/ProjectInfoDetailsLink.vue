@@ -55,7 +55,7 @@ export default defineComponent({
         border-color: $background-color-more-darker;
 
         &:hover {
-            background-color: $background-color-more-darker;
+            background-color: $even-section-color;
         }
 
         &__icon {

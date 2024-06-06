@@ -106,7 +106,7 @@
                 "bm6.jpg",
                 "bm7.jpg"
             ],
-            "color": "#FFFFFF",
+            "color": "#52a300",
             "technologies": [
                 {
                     "name": "Dart",
@@ -133,7 +133,7 @@
             "id": 4,
             "name": "Playlist Tools",
             "images": ["pt1.png", "pt2.png", "pt3.png", "pt4.png", "pt5.png"],
-            "color": "#37ff70",
+            "color": "#24aa4a",
             "mutedColor": "#effff4",
             "technologies": [
                 {

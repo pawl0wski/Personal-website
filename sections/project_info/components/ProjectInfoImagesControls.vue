@@ -8,6 +8,7 @@
         >
             <div
                 v-if="i === currentIndex"
+                :style="{'background-color': color}"
                 class="project_info__images__controls__control__dot"
             ></div>
         </div>
@@ -28,6 +29,10 @@ export default defineComponent({
             type: Object as PropType<ProjectModel>,
             required: true,
         },
+        color: {
+            type: String,
+            required: true
+        }
     },
     methods: {
         changeIndex(i: number) {
@@ -49,10 +54,8 @@ export default defineComponent({
     gap: 1rem;
 
     &__control {
-        width: 0.8rem;
-        aspect-ratio: 1 / 1;
-
-        border-radius: 100%;
+        height: 0.3rem;
+        width: 1rem;
 
         display: flex;
         align-items: center;
@@ -60,15 +63,13 @@ export default defineComponent({
 
         overflow: hidden;
 
-        background-color: $background-color-more-darker;
+        background-color: $background-color-darker !important;
 
         cursor: pointer;
 
         &__dot {
             width: 100%;
             aspect-ratio: 1 / 1;
-
-            background-color: $primary-color;
         }
     }
 }

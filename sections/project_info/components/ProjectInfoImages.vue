@@ -2,16 +2,13 @@
     <div class="project_info_images">
         <div
             class="project_info_images__main"
-            :style="{ 'background-color': darkenColor }"
         >
             <nuxt-img
                 :src="currentImage"
                 format="webp"
+                v-show="!loading"
                 :class="[
                     'project_info_images__main__image',
-                    'animate__animated',
-                    'animate__faster',
-                    loading ? 'animate__fadeOut' : 'animate__fadeIn',
                 ]"
                 @load="imageLoaded"
             />
@@ -29,6 +26,7 @@
         </div>
         <div class="project_info_images__controls">
             <ProjectInfoImagesControls
+                :color="color"
                 :project="project"
                 :current-index="currentIndex"
                 @changeIndex="changeIndex"
@@ -71,10 +69,6 @@ export default defineComponent({
         },
         color(): string {
             return this.$props.project.color;
-        },
-        darkenColor(): string {
-            const color = Color(this.color).darken(0.7);
-            return color.hex();
         },
         lastImageIndex(): number {
             return this.$props.project.images.length - 1;
@@ -121,28 +115,30 @@ export default defineComponent({
         width: 100%;
         max-height: 576px;
         aspect-ratio: 16 / 9;
-        border-radius: 1rem;
         overflow: hidden;
         position: relative;
 
-        &__left_button {
+        background-color: $even-section-color;
+
+        &__left_button,  &__right_button{
             position: absolute;
-            left: 0;
-            bottom: 50%;
-            width: fit-content;
+            height: 100%;
             transform: translateY(50%);
+
+            width: fit-content;
 
             z-index: 2;
         }
+
+        &__left_button{
+            left: 0;
+            bottom: 50%;
+        }
+
         &__right_button {
-            position: absolute;
             left: 100%;
             bottom: 50%;
             transform: translate(-100%, 50%);
-
-            width: fit-content;
-
-            z-index: 3;
         }
 
         &__image {

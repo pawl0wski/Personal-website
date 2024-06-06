@@ -1,5 +1,5 @@
 <template>
-    <div class="project_info_images_side_button" @click="$emit('click')">
+    <div class="project_info_images_side_button">
         <i
             :class="[
                 'fa-solid',
@@ -29,9 +29,13 @@ export default defineComponent({
 
 .project_info_images_side_button {
     width: fit-content;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
 
     padding: 1rem;
-    background-color: transparentize($background-color, 0.7);
+    background-color: transparentize($background-color, 0.95);
 
     user-select: none;
 
