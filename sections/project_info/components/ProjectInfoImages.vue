@@ -1,15 +1,11 @@
 <template>
     <div class="project_info_images">
-        <div
-            class="project_info_images__main"
-        >
+        <div class="project_info_images__main">
             <nuxt-img
                 :src="currentImage"
                 format="webp"
                 v-show="!loading"
-                :class="[
-                    'project_info_images__main__image',
-                ]"
+                :class="['project_info_images__main__image']"
                 @load="imageLoaded"
             />
             <PulseLoader
@@ -120,7 +116,8 @@ export default defineComponent({
 
         background-color: $even-section-color;
 
-        &__left_button,  &__right_button{
+        &__left_button,
+        &__right_button {
             position: absolute;
             height: 100%;
             transform: translateY(50%);
@@ -130,7 +127,7 @@ export default defineComponent({
             z-index: 2;
         }
 
-        &__left_button{
+        &__left_button {
             left: 0;
             bottom: 50%;
         }

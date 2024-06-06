@@ -10,10 +10,10 @@ const pl: LangI = {
     technologies: "Technologie",
     readMore: "Czytaj więcej",
     aboutMeContent:
-        "Dziękuję że odwiedziłeś moją stronę 👋. Jestem Jakub Pawłowski i studiuje na Uniwersytecie Mikołaja Kopernika w Toruniu. Moja pasja do informatyki sięga czasów podstawówki."
-        + "<br><br>" +
-        "Uwielbiam tworzyć strony internetowe i aplikacje mobilne. Fascynują mnie również systemy operacyjne i sieci komputerowe. W wolnym czasie realizuję różne projekty, o których możesz poczytać poniżej."
-        + "<br><br>" +
+        "Dziękuję że odwiedziłeś moją stronę 👋. Jestem Jakub Pawłowski i studiuje na Uniwersytecie Mikołaja Kopernika w Toruniu. Moja pasja do informatyki sięga czasów podstawówki." +
+        "<br><br>" +
+        "Uwielbiam tworzyć strony internetowe i aplikacje mobilne. Fascynują mnie również systemy operacyjne i sieci komputerowe. W wolnym czasie realizuję różne projekty, o których możesz poczytać poniżej." +
+        "<br><br>" +
         "Nie wahaj się ze mną skontaktować! Chętnie odpowiem na Twoje pytania. 😀",
     aboutMeTitle: "O mnie",
     welcomeTitle: "Cześć, nazywam się <pc>Jakub</pc>.",

@@ -8,7 +8,7 @@
         >
             <div
                 v-if="i === currentIndex"
-                :style="{'background-color': color}"
+                :style="{ 'background-color': color }"
                 class="project_info__images__controls__control__dot"
             ></div>
         </div>
@@ -31,8 +31,8 @@ export default defineComponent({
         },
         color: {
             type: String,
-            required: true
-        }
+            required: true,
+        },
     },
     methods: {
         changeIndex(i: number) {

@@ -10,7 +10,6 @@ div.about_me__photo {
 
     overflow: hidden;
 
-
     img {
         width: 100%;
     }

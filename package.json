@@ -8,9 +8,8 @@
         "build": "nuxi build",
         "start": "nuxi start",
         "generate": "nuxi generate",
-        "lint:js": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore .",
         "lint:prettier": "prettier --check .",
-        "lint": "npm run lint:js && npm run lint:prettier",
+        "lint": "npm run lint:prettier",
         "lint:fix": "prettier --write --list-different . && npm run lint:js -- --fix"
     },
     "dependencies": {

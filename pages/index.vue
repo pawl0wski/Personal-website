@@ -3,6 +3,7 @@
         <div class="index__content">
             <WelcomeSection />
             <AboutMeSection />
+            <EducationSection />
             <ProjectsSection />
             <KnowledgeSection />
         </div>
@@ -18,10 +19,12 @@ import ProjectsSection from "~/sections/projects/ProjectsSection.vue";
 import KnowledgeSection from "~/sections/knowledge/KnowledgeSection.vue";
 import InfoPopover from "~/components/InfoPopover.vue";
 import Locale from "~/lib/locale/locale";
+import EducationSection from "~/sections/career/CareerSection.vue";
 
 export default defineComponent({
     name: "IndexPage",
     components: {
+        EducationSection,
         ProjectsSection,
         AboutMeSection,
         WelcomeSection,
