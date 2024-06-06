@@ -17,6 +17,7 @@ export interface LangI {
     projectWebsite: string;
     description: string;
     github: string;
+    linkedin: string;
     branch: string;
     email: string;
     gpgKeys: string;

@@ -209,6 +209,54 @@
                     "icons": ["fa-brands", "fa-google-play"]
                 }
             ]
+        },
+        {
+            "id": 6,
+            "name": "AlgoDebug",
+            "images": ["ad1.jpg", "ad2.jpg", "ad3.jpg", "ad4.jpg", "ad5.jpg"],
+            "color": "#454545",
+            "technologies": [
+                {
+                    "name": "JavaScript",
+                    "icon": "javascript-original"
+                },
+                {
+                    "name": "Vue",
+                    "icon": "vuejs-original"
+                },
+                {
+                    "name": "Vuetify",
+                    "icon": "vuetify-original"
+                },
+                {
+                    "name": "Node",
+                    "icon": "nodejs-original"
+                },
+                {
+                    "name": "Express",
+                    "icon": "express-original"
+                },
+                {
+                    "name": "MongoDB",
+                    "icon": "mongodb-original"
+                },
+                {
+                    "name": "Docker",
+                    "icon": "docker-original"
+                }
+            ],
+            "links": [
+                {
+                    "name": "repository",
+                    "href": "https://github.com/Rubix98/algodebug",
+                    "icons": ["fa-brands", "fa-github"]
+                },
+                {
+                    "name": "projectWebsite",
+                    "href": "https://algodebug.pl/",
+                    "icons": ["fa-solid", "fa-earth-americas"]
+                }
+            ]
         }
     ]
 }

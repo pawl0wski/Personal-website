@@ -6,6 +6,11 @@
             "link": "https://github.com/pawl0wski"
         },
         {
+            "name": "linkedin",
+            "icon": ["fa-brands", "fa-linkedin"],
+            "link": "https://www.linkedin.com/in/jakub-paw%C5%82owski-2625a72a3/"
+        },
+        {
             "name": "branch",
             "icon": ["fa-solid", "fa-code-branch"],
             "link": "https://github.com/pawl0wski/Personal-website"

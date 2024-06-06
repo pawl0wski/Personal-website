@@ -54,7 +54,6 @@ div.projects {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
             gap: 3rem;
         }
     }
