@@ -56,5 +56,37 @@ export default defineNuxtConfig({
 
     components: true,
 
-    build: {},
+    nitro: {
+        prerender: {
+            routes: [
+                '/_ipx/f_webp/img/projects/ti2.jpg',
+                '/_ipx/f_webp/img/projects/ti3.jpg',
+                '/_ipx/f_webp/img/projects/ad2.jpg',
+                '/_ipx/f_webp/img/projects/ad3.jpg',
+                '/_ipx/f_webp/img/projects/ad4.jpg',
+                '/_ipx/f_webp/img/projects/ad5.jpg',
+                '/_ipx/f_webp/img/projects/bm2.jpg',
+                '/_ipx/f_webp/img/projects/bm3.jpg',
+                '/_ipx/f_webp/img/projects/bm4.jpg',
+                '/_ipx/f_webp/img/projects/bm5.jpg',
+                '/_ipx/f_webp/img/projects/bm6.jpg',
+                '/_ipx/f_webp/img/projects/bm7.jpg',
+                '/_ipx/f_webp/img/projects/m2.png',
+                '/_ipx/f_webp/img/projects/m3.png',
+                '/_ipx/f_webp/img/projects/m4.png',
+                '/_ipx/f_webp/img/projects/m5.png',
+                '/_ipx/f_webp/img/projects/pmk2.png',
+                '/_ipx/f_webp/img/projects/pmk3.png',
+                '/_ipx/f_webp/img/projects/pmk4.png',
+                '/_ipx/f_webp/img/projects/pmk5.png',
+                '/_ipx/f_webp/img/projects/pmk6.png',
+                '/_ipx/f_webp/img/projects/pmk7.png',
+                '/_ipx/f_webp/img/projects/pmk8.png',
+                '/_ipx/f_webp/img/projects/pt2.png',
+                '/_ipx/f_webp/img/projects/pt3.png',
+                '/_ipx/f_webp/img/projects/pt4.png',
+                '/_ipx/f_webp/img/projects/pt5.png',
+            ]
+        }
+    }
 });

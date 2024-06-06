@@ -1,7 +1,7 @@
 <template>
     <div class="project_info_images">
         <div class="project_info_images__main">
-            <nuxt-img
+            <NuxtImg
                 :src="currentImage"
                 format="webp"
                 v-show="!loading"
