@@ -10,11 +10,11 @@ const en: LangI = {
     technologies: "Technologies",
     readMore: "Read more",
     aboutMeContent:
-        "Thank you for visiting my website 👋. My name is Jakub Pawlowski and I live in Poland. I have been cultivating my passion for computer science since elementary school." +
-        "<br><br>" +
-        "My first programming language, in which I started doing more serious things, was Python (before that I experimented with C++). I love doing web development and messing around with operating systems. Sometimes I program mobile applications using the Flutter framework. I use the GNU/Linux operating system on a daily basis." +
-        "<br><br>" +
-        "Don't be afraid to contact me! I'll be happy to answer your offers or questions 😀.",
+    "Thank you for visiting my website 👋. My name is Jakub Pawłowski, and I am a student at Nicolaus Copernicus University in Toruń. My passion for computer science dates back to elementary school."
+    + "<br><br>" +
+    "I love creating websites and mobile applications. I am also fascinated by operating systems and computer networks. In my free time, I work on various projects, which you can read about below."
+    + "<br><br>" +
+    "Feel free to contact me! I will be happy to answer your questions. 😀",
     aboutMeTitle: "About me",
     welcomeTitle: "Hello, I'm <pc>Jakub</pc>.",
     welcomeContinuation: "And I'm student computer science <pc>student</pc>.",
