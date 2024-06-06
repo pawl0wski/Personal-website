@@ -19,6 +19,8 @@ jobs:
               run: npm run generate
             - name: "Create CNAME "
               run: printf "${{ secrets.CNAME }}" > .output/public/CNAME
+            - name: "Create .nojekyll"
+              run: touch .output/public/.nojekyll
             - name: "Deploy on GitHub Pages "
               uses: crazy-max/ghaction-github-pages@v3
               with:
