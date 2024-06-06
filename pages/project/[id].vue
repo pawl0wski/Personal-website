@@ -7,17 +7,17 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import ProjectInfoSection from "~/sections/projectInfo/ProjectInfoSection.vue";
+import ProjectInfoSection from "~/sections/project_info/ProjectInfoSection.vue";
 import projectsContent from "~/content/projects.json";
-import type { ProjectI } from "~/content/interfaces/project";
+import type { ProjectModel } from "~/content/models/project";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
     components: { ProjectInfoSection },
-    data(): { project: ProjectI } {
-        const project = projectsContent.projects.find((e: ProjectI) => {
+    data(): { project: ProjectModel } {
+        const project = projectsContent.projects.find((e: ProjectModel) => {
             return e.id.toString() === this.$route.params.id;
-        }) as ProjectI;
+        }) as ProjectModel;
         return {
             project,
         };

@@ -30,14 +30,14 @@
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
-import type { KnowledgeI } from "~/content/interfaces/knowledge";
-import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import type { KnowledgeModel } from "~/content/models/knowledge";
+import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
     props: {
         knowledge: {
-            type: Object as PropType<KnowledgeI>,
+            type: Object as PropType<KnowledgeModel>,
             required: true,
         },
     },

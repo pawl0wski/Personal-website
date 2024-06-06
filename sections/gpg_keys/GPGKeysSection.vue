@@ -17,14 +17,14 @@
 import { defineComponent } from "vue";
 import GpgKeyEntry from "./components/GPGKeyEntry.vue";
 import keysContent from "~/content/keys.json";
-import type { GpgKeyI } from "~/content/interfaces/key";
+import type { GpgKeyModel } from "~/content/models/gpg_key";
 import TitleText from "~/components/TitleText.vue";
 
 export default defineComponent({
     components: { GpgKeyEntry, TitleText },
-    data(): { gpgKeys: GpgKeyI[] } {
+    data(): { gpgKeys: GpgKeyModel[] } {
         return {
-            gpgKeys: keysContent.keys as GpgKeyI[],
+            gpgKeys: keysContent.keys as GpgKeyModel[],
         };
     },
 });

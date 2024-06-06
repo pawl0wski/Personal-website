@@ -13,7 +13,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { createPopper } from "@popperjs/core";
-import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
 import Locale from "~/lib/locale/locale";
 import type { LangI } from "~/lib/locale/interfaces/lang";
 

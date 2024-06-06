@@ -42,7 +42,7 @@ import { defineComponent, type PropType } from "vue";
 import Color from "color";
 import ProjectInfoImagesControls from "./ProjectInfoImagesControls.vue";
 import ProjectInfoImagesSideButton from "./ProjectInfoImagesSideButton.vue";
-import type { ProjectI } from "~/content/interfaces/project";
+import type { ProjectModel } from "~/content/models/project";
 import PulseLoader from "~/components/PulseLoader.vue";
 
 export default defineComponent({
@@ -53,7 +53,7 @@ export default defineComponent({
     },
     props: {
         project: {
-            type: Object as PropType<ProjectI>,
+            type: Object as PropType<ProjectModel>,
             required: true,
         },
     },

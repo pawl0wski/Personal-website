@@ -27,11 +27,11 @@ import WelcomeText from "./components/WelcomeText.vue";
 import WelcomeCube from "./components/WelcomeCube.vue";
 import WelcomeIcon from "./components/WelcomeIcon.vue";
 import socialsContent from "~/content/socials.json";
-import type { SocialI } from "~/content/interfaces/social";
+import type { SocialModel } from "~/content/models/social";
 
 export default defineComponent({
     components: { WelcomeText, WelcomeCube, WelcomeIcon },
-    data(): { socials: SocialI[] } {
+    data(): { socials: SocialModel[] } {
         const { socials } = socialsContent;
         return {
             socials,

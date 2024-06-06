@@ -30,14 +30,14 @@
 import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
 import ProjectInfoDetailsLink from "./ProjectInfoDetailsLink.vue";
-import type { ProjectI } from "~/content/interfaces/project";
-import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import type { ProjectModel } from "~/content/models/project";
+import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
 
 export default defineComponent({
     components: { ProjectInfoDetailsLink },
     props: {
         project: {
-            type: Object as PropType<ProjectI>,
+            type: Object as PropType<ProjectModel>,
             required: true,
         },
     },

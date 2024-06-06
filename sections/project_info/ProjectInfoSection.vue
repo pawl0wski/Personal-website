@@ -27,13 +27,13 @@
 import { defineComponent, type PropType } from "vue";
 import ProjectInfoImages from "./components/ProjectInfoImages.vue";
 import ProjectInfoDetails from "./components/ProjectInfoDetails.vue";
-import type { ProjectI } from "~/content/interfaces/project";
+import type { ProjectModel } from "~/content/models/project";
 
 export default defineComponent({
     components: { ProjectInfoDetails, ProjectInfoImages },
     props: {
         project: {
-            type: Object as PropType<ProjectI>,
+            type: Object as PropType<ProjectModel>,
             required: true,
         },
     },

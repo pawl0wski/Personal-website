@@ -1,4 +1,4 @@
-export interface GpgKeyI {
+export interface GpgKeyModel {
     id: string;
     label: string;
     name: string;

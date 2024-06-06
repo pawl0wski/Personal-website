@@ -53,13 +53,13 @@
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
 import copy from "copy-to-clipboard";
-import type { GpgKeyI } from "~/content/interfaces/key";
+import type { GpgKeyModel } from "~/content/models/gpg_key";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
     props: {
         gpgKey: {
-            type: Object as PropType<GpgKeyI>,
+            type: Object as PropType<GpgKeyModel>,
             required: true,
         },
     },

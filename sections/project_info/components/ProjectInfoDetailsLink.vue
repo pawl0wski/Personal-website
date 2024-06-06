@@ -17,12 +17,12 @@
 
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
-import type LinkI from "~/content/interfaces/link";
+import type LinkModel from "~/content/models/link";
 
 export default defineComponent({
     props: {
         link: {
-            type: Object as PropType<LinkI>,
+            type: Object as PropType<LinkModel>,
             required: true,
         },
     },
