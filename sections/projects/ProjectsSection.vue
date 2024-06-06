@@ -19,14 +19,14 @@ import { defineComponent } from "vue";
 import ProjectEntry from "./components/ProjectEntry.vue";
 import TitleText from "~/components/TitleText.vue";
 import projectsContent from "~/content/projects.json";
-import { ProjectI } from "~/content/interfaces/project";
+import type { ProjectModel } from "~/content/models/project";
 
 export default defineComponent({
     components: {
         TitleText,
         ProjectEntry,
     },
-    data(): { projects: ProjectI[] } {
+    data(): { projects: ProjectModel[] } {
         const { projects } = projectsContent;
         return {
             projects: projects[0].id === 1 ? projects.reverse() : projects,
@@ -36,6 +36,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/mixins";
+@import "assets/scss/variables";
+
 div.projects {
     @include section;
 

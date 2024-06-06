@@ -28,16 +28,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
-import { KnowledgeI } from "~/content/interfaces/knowledge";
-import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import type { KnowledgeModel } from "~/content/models/knowledge";
+import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
     props: {
         knowledge: {
-            type: Object as PropType<KnowledgeI>,
+            type: Object as PropType<KnowledgeModel>,
             required: true,
         },
     },
@@ -68,15 +68,18 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .knowledge_entry {
     width: 100%;
     height: 3rem;
     padding: 0 0.8rem;
 
-    border-radius: 0.5rem;
     border-width: 1px;
     border-style: solid;
-    border-color: $background-color-more-lighter;
+    border-color: $background-color-darker;
+
+    background-color: $background-color;
 
     display: flex;
     align-items: center;

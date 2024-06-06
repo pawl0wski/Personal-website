@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, type PropType } from "vue";
 import KnowledgeEntry from "./KnowledgeEntry.vue";
-import { KnowledgeI } from "~/content/interfaces/knowledge";
+import type { KnowledgeModel } from "~/content/models/knowledge";
 
 export default defineComponent({
     components: { KnowledgeEntry },
@@ -24,7 +24,7 @@ export default defineComponent({
             required: true,
         },
         knowledgeArray: {
-            type: Array as PropType<KnowledgeI[]>,
+            type: Array as PropType<KnowledgeModel[]>,
             required: true,
         },
     },

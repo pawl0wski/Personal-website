@@ -11,13 +11,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import { defineComponent } from "vue";
 import { createPopper } from "@popperjs/core";
-import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
+import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
 import Locale from "~/lib/locale/locale";
-import LangI from "~/lib/locale/interfaces/lang";
+import type { LangI } from "~/lib/locale/interfaces/lang";
 
-export default Vue.extend({
+export default defineComponent({
     props: {
         icon: {
             type: Array,
@@ -51,6 +51,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 div.welcome__icon {
     a {
         text-decoration: none;

@@ -26,6 +26,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 div.title {
     margin-top: 0.5rem;
 

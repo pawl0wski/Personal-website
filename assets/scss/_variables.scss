@@ -1,9 +1,9 @@
-$primary-color: #88d225;
-$background-color: #080808;
-$background-color-lighter: lighten($background-color, 6%);
-$background-color-more-lighter: lighten($background-color-lighter, 6%);
-$even-section-color: lighten($background-color, 2.5%);
-$text-color: #ffffff;
+$primary-color: #7dbe0f;
+$background-color: #ffffff;
+$background-color-darker: darken($background-color, 20%);
+$background-color-more-darker: darken($background-color-darker, 20%);
+$even-section-color: darken($background-color, 2%);
+$text-color: #444444;
 $text-color-muted: transparentize($text-color, 0.35);
 
 $font-family: "Rubik", sans-serif;

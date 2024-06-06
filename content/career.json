@@ -1,0 +1,10 @@
+{
+    "career": [
+        {
+            "name": "Uniwersytet Mikołaja Kopernika",
+            "description": "Informatyka (studia inżynierskie)",
+            "date": "2022-2026",
+            "image": "/img/career/umk.jpg"
+        }
+    ]
+}

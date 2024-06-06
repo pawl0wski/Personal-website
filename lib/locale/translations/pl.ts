@@ -1,4 +1,4 @@
-import LangI from "../interfaces/lang";
+import type { LangI } from "../interfaces/lang";
 
 const pl: LangI = {
     description: "Opis",
@@ -10,15 +10,14 @@ const pl: LangI = {
     technologies: "Technologie",
     readMore: "Czytaj więcej",
     aboutMeContent:
-        "Dziękuję Ci, że odwiedziłeś moją stronę 👋. Nazywam się Jakub Pawłowski i mieszkam w Polsce. Moją pasję do informatyki pielęgnuje już od podstawówki." +
+        "Dziękuję że odwiedziłeś moją stronę 👋. Jestem Jakub Pawłowski i studiuje na Uniwersytecie Mikołaja Kopernika w Toruniu. Moja pasja do informatyki sięga czasów podstawówki." +
         "<br><br>" +
-        "Moim pierwszym językiem programowania, w którym zacząłem robić poważniejsze rzeczy, był Python (wcześniej eksperymentowałem z C++). Kocham zajmować się web developmentem i grzebać w systemach operacyjnych. Czasami programuję  aplikacje mobilne za pomocą frameworka Flutter.  Na co dzień używam systemu operacyjnego GNU/Linux." +
+        "Uwielbiam tworzyć strony internetowe i aplikacje mobilne. Fascynują mnie również systemy operacyjne i sieci komputerowe. W wolnym czasie realizuję różne projekty, o których możesz poczytać poniżej." +
         "<br><br>" +
-        "Nie bój się ze mną skontaktować! Z chęcią odpowiem na twoje oferty lub pytania. 😀",
+        "Nie wahaj się ze mną skontaktować! Chętnie odpowiem na Twoje pytania. 😀",
     aboutMeTitle: "O mnie",
     welcomeTitle: "Cześć, nazywam się <pc>Jakub</pc>.",
-    welcomeContinuation:
-        "I jestem hobbystycznym <pc>fullstack</pc> developerem.",
+    welcomeContinuation: "Jestem <pc>studentem</pc> informatyki na UMK.",
     projectsTitle: "Projekty",
     knowledgeTitle: "Wiedza",
     stillLearningInfo:

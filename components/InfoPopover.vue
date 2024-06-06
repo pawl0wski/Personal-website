@@ -7,6 +7,8 @@
 </template>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+
 .info_popover {
     max-width: 18rem;
 
@@ -24,10 +26,9 @@
         margin: 0.7rem;
         padding: 1rem;
 
-        border-radius: 10px;
         border-style: solid;
         border-width: 1px;
-        border-color: $background-color-more-lighter;
+        border-color: $background-color-more-darker;
 
         box-shadow: 0 0 15px 0 $background-color;
         &__text {

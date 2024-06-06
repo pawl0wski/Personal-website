@@ -1,6 +1,6 @@
 import pl from "./translations/pl";
 import en from "./translations/en";
-import LangI from "./interfaces/lang";
+import type { LangI } from "./interfaces/lang";
 import plProjects from "./projects/pl";
 import enProjects from "./projects/en";
 

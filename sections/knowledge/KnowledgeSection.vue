@@ -27,7 +27,7 @@ import { defineComponent } from "vue";
 import KnowledgeList from "./components/KnowledgeList.vue";
 import ColumnDivider from "./components/ColumnDivider.vue";
 import TitleText from "~/components/TitleText.vue";
-import { KnowledgeContentI } from "~/content/interfaces/knowledge";
+import type { KnowledgeContentModel } from "~/content/models/knowledge";
 import knowledgeContent from "~/content/knowledge.json";
 
 export default defineComponent({
@@ -37,7 +37,7 @@ export default defineComponent({
         ColumnDivider,
     },
     data(): {
-        knowledgeContent: KnowledgeContentI;
+        knowledgeContent: KnowledgeContentModel;
     } {
         return {
             knowledgeContent,
@@ -47,6 +47,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/mixins";
+@import "assets/scss/variables";
+
 div.knowledge {
     @include section;
 

@@ -3,6 +3,7 @@
         <div class="index__content">
             <WelcomeSection />
             <AboutMeSection />
+            <EducationSection />
             <ProjectsSection />
             <KnowledgeSection />
         </div>
@@ -13,15 +14,17 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import WelcomeSection from "~/sections/welcome/WelcomeSection.vue";
-import AboutMeSection from "~/sections/aboutMe/AboutMeSection.vue";
+import AboutMeSection from "~/sections/about_me/AboutMeSection.vue";
 import ProjectsSection from "~/sections/projects/ProjectsSection.vue";
 import KnowledgeSection from "~/sections/knowledge/KnowledgeSection.vue";
 import InfoPopover from "~/components/InfoPopover.vue";
 import Locale from "~/lib/locale/locale";
+import EducationSection from "~/sections/career/CareerSection.vue";
 
 export default defineComponent({
     name: "IndexPage",
     components: {
+        EducationSection,
         ProjectsSection,
         AboutMeSection,
         WelcomeSection,
@@ -45,6 +48,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/variables";
+@import "assets/scss/mixins";
+
 div.index {
     &__content {
         @include page;

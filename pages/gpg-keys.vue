@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import GPGKeysSection from "~/sections/gpgKeys/GPGKeysSection.vue";
+import GPGKeysSection from "~/sections/gpg_keys/GPGKeysSection.vue";
 import Locale from "~/lib/locale/locale";
 export default defineComponent({
     components: {
@@ -29,6 +29,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "assets/scss/mixins";
+
 div.gpg-keys {
     @include page;
 }
