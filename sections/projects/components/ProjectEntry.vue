@@ -84,8 +84,9 @@ $project-width: 20rem;
     min-width: $project-width;
     user-select: none;
     background-color: $background-color;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
-    border-style: solid;
+    border-style: none;
     border-radius: $small-margin;
     border-width: 1px;
     border-color: $background-color-darker;
@@ -139,6 +140,7 @@ $project-width: 20rem;
                 color: white;
                 font-weight: bold;
                 padding: 0.5rem 1rem;
+                border-style: none;
 
                 &--hovered {
                     text-decoration: underline;

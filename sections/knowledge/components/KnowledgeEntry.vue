@@ -74,9 +74,10 @@ export default defineComponent({
     width: 100%;
     height: 3rem;
     padding: 0 0.8rem;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-color: $background-color-darker;
     border-radius: $small-margin;
 

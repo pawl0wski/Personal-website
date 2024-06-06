@@ -50,10 +50,11 @@ export default defineComponent({
         color: $text-color;
         transition: 0.2s background-color;
 
-        border-style: solid;
+        border-style: none;
         border-width: 1px;
         border-color: $background-color-more-darker;
         border-radius: $small-margin;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
         &:hover {
             background-color: $even-section-color;
