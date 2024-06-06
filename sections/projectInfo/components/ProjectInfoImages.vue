@@ -40,12 +40,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, type PropType } from "vue";
 import { PulseLoader } from "@saeris/vue-spinners";
 import Color from "color";
 import ProjectInfoImagesControls from "./ProjectInfoImagesControls.vue";
 import ProjectInfoImagesSideButton from "./ProjectInfoImagesSideButton.vue";
-import { ProjectI } from "~/content/interfaces/project";
+import type { ProjectI } from "~/content/interfaces/project";
 
 export default defineComponent({
     components: {

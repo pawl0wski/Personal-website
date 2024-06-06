@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
-import { ProjectI } from "~/content/interfaces/project";
+import { defineComponent, type PropType } from "vue";
+import type { ProjectI } from "~/content/interfaces/project";
 
 export default defineComponent({
     props: {

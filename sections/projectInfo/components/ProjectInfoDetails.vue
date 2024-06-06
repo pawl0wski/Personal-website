@@ -27,10 +27,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
 import ProjectInfoDetailsLink from "./ProjectInfoDetailsLink.vue";
-import { ProjectI } from "~/content/interfaces/project";
+import type { ProjectI } from "~/content/interfaces/project";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 
 export default defineComponent({

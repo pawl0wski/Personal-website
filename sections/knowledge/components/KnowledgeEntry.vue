@@ -28,9 +28,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
-import { KnowledgeI } from "~/content/interfaces/knowledge";
+import type { KnowledgeI } from "~/content/interfaces/knowledge";
 import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 import Locale from "~/lib/locale/locale";
 

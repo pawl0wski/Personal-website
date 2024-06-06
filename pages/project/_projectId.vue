@@ -9,7 +9,7 @@
 import { defineComponent } from "vue";
 import ProjectInfoSection from "~/sections/projectInfo/ProjectInfoSection.vue";
 import projectsContent from "~/content/projects.json";
-import { ProjectI } from "~/content/interfaces/project";
+import type { ProjectI } from "~/content/interfaces/project";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({

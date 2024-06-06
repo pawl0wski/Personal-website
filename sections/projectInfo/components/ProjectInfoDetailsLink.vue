@@ -16,8 +16,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
-import LinkI from "~/content/interfaces/link";
+import { defineComponent, type PropType } from "vue";
+import type LinkI from "~/content/interfaces/link";
 
 export default defineComponent({
     props: {

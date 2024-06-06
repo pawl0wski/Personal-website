@@ -27,7 +27,7 @@ import { defineComponent } from "vue";
 import KnowledgeList from "./components/KnowledgeList.vue";
 import ColumnDivider from "./components/ColumnDivider.vue";
 import TitleText from "~/components/TitleText.vue";
-import { KnowledgeContentI } from "~/content/interfaces/knowledge";
+import type { KnowledgeContentI } from "~/content/interfaces/knowledge";
 import knowledgeContent from "~/content/knowledge.json";
 
 export default defineComponent({

@@ -19,7 +19,7 @@ import { defineComponent } from "vue";
 import ProjectEntry from "./components/ProjectEntry.vue";
 import TitleText from "~/components/TitleText.vue";
 import projectsContent from "~/content/projects.json";
-import { ProjectI } from "~/content/interfaces/project";
+import type { ProjectI } from "~/content/interfaces/project";
 
 export default defineComponent({
     components: {
