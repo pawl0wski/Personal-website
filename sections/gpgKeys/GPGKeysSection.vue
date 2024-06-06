@@ -17,7 +17,7 @@
 import { defineComponent } from "vue";
 import GpgKeyEntry from "./components/GPGKeyEntry.vue";
 import keysContent from "~/content/keys.json";
-import { GpgKeyI } from "~/content/interfaces/key";
+import type { GpgKeyI } from "~/content/interfaces/key";
 import TitleText from "~/components/TitleText.vue";
 
 export default defineComponent({

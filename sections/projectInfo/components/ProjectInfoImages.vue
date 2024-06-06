@@ -16,12 +16,9 @@
                 @load="imageLoaded"
             />
             <PulseLoader
-                class="project_info_images__main__loader"
-                :loading="loading"
+                v-if="loading"
                 :color="color"
-                :size="0.5"
-                size-unit="rem"
-            ></PulseLoader>
+                class="project_info_images__main__loader" />
             <div class="project_info_images__main__left_button">
                 <ProjectInfoImagesSideButton side="left" @click="prevImage" />
             </div>
@@ -41,11 +38,11 @@
 
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
-import { PulseLoader } from "@saeris/vue-spinners";
 import Color from "color";
 import ProjectInfoImagesControls from "./ProjectInfoImagesControls.vue";
 import ProjectInfoImagesSideButton from "./ProjectInfoImagesSideButton.vue";
 import type { ProjectI } from "~/content/interfaces/project";
+import PulseLoader from "~/components/PulseLoader.vue";
 
 export default defineComponent({
     components: {

@@ -20,6 +20,7 @@
         "@nuxtjs/google-fonts": "^3.2.0",
         "@popperjs/core": "^2.11.8",
         "animate.css": "^4.1.1",
+        "color": "^4.2.3",
         "copy-to-clipboard": "^3.3.3",
         "nuxt": "^3.11.2",
         "vue": "^3.4.27",

@@ -5,7 +5,7 @@
             {{ $locale("technologies") }}:
         </p>
         <div class="project_info_details__technologies_list">
-            <nuxt-img
+            <NuxtImg
                 v-for="technology in project.technologies"
                 :key="technology.name"
                 :alt="technology.name"

@@ -16,7 +16,7 @@ export default defineComponent({
     components: { ProjectInfoSection },
     data(): { project: ProjectI } {
         const project = projectsContent.projects.find((e: ProjectI) => {
-            return e.id.toString() === this.$route.params.projectId;
+            return e.id.toString() === this.$route.params.id;
         }) as ProjectI;
         return {
             project,
