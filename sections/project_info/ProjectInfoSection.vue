@@ -74,6 +74,7 @@ export default defineComponent({
 
                 &__description {
                     padding-top: 2rem;
+                    margin-bottom: 5rem;
                     line-height: 1.7rem;
                     text-align: justify;
                 }

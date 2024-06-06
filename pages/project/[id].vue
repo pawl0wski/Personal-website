@@ -47,6 +47,6 @@ export default defineComponent({
 .project {
     @include page;
 
-    margin-top: 3rem;
+    padding-top: 3rem;
 }
 </style>
