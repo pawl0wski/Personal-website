@@ -53,7 +53,7 @@
 <script lang="ts">
 import { defineComponent, type PropType } from "vue";
 import copy from "copy-to-clipboard";
-import { GpgKeyI } from "~/content/interfaces/key";
+import type { GpgKeyI } from "~/content/interfaces/key";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({
