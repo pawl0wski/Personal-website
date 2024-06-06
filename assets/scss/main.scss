@@ -24,3 +24,12 @@ span.primary-color {
 ::selection {
     background: transparentize($primary-color, 0.4);
 }
+
+button {
+    font-family: Rubik, serif;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}

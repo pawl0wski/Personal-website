@@ -29,12 +29,15 @@
                 <p class="projects__project_entry__link__text__content">
                     {{ shortContent }}
                 </p>
-                <span
-                    :class="`projects__project_entry__link__text__read_more${
-                        hovered ? '--hovered' : ''
+                <button
+                    :class="`projects__project_entry__link__text__read_more ${
+                        hovered
+                            ? 'projects__project_entry__link__text__read_more--hovered'
+                            : ''
                     }`"
-                    >{{ $locale("readMore") }} →</span
                 >
+                    {{ $locale("readMore") }}
+                </button>
             </div>
         </NuxtLink>
     </div>
@@ -80,6 +83,8 @@ $project-width: 20rem;
     width: $project-width;
     min-width: $project-width;
     user-select: none;
+    background-color: $background-color;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 
     border-style: solid;
     border-radius: $small-margin;
@@ -130,6 +135,12 @@ $project-width: 20rem;
             }
 
             &__read_more {
+                width: 100%;
+                background-color: transparentize($primary-color, 0);
+                color: white;
+                font-weight: bold;
+                padding: 0.5rem 1rem;
+
                 &--hovered {
                     text-decoration: underline;
                 }
