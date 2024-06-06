@@ -85,7 +85,7 @@ export default defineComponent({
         selectAndCopyPublicKey() {
             const selection = window.getSelection()!;
             const keyDOMElement = document.querySelector(
-                `#publicKey${this.gpgKey.id}`
+                `#publicKey${this.gpgKey.id}`,
             )!;
             selection.selectAllChildren(keyDOMElement);
             copy(this.gpgKey.publicKey);

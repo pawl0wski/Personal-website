@@ -1,8 +1,11 @@
 <template>
     <div class="pulse-loader">
-        <div v-for="index in 3" :key="index"
-             :style="pulseLoaderCircleStyle"
-             class="pulse-loader__circle"></div>
+        <div
+            v-for="index in 3"
+            :key="index"
+            :style="pulseLoaderCircleStyle"
+            class="pulse-loader__circle"
+        ></div>
     </div>
 </template>
 
@@ -14,15 +17,14 @@ export default defineComponent({
     props: {
         color: {
             type: String,
-            required: true
-        }
+            required: true,
+        },
     },
     computed: {
         pulseLoaderCircleStyle() {
-            return {"background-color": this.$props.color};
-        }
-    }
-
+            return { "background-color": this.$props.color };
+        },
+    },
 });
 </script>
 
@@ -40,7 +42,6 @@ div.pulse-loader {
 
         animation: 1.5s infinite pulse-circle-beat running ease-in-out;
 
-
         &:nth-of-type(2) {
             animation-delay: 0.3s;
         }
@@ -52,7 +53,8 @@ div.pulse-loader {
 }
 
 @keyframes pulse-circle-beat {
-    0%, 100% {
+    0%,
+    100% {
         opacity: 0.5;
         transform: scale(1);
     }

@@ -18,7 +18,8 @@
             <PulseLoader
                 v-if="loading"
                 :color="color"
-                class="project_info_images__main__loader" />
+                class="project_info_images__main__loader"
+            />
             <div class="project_info_images__main__left_button">
                 <ProjectInfoImagesSideButton side="left" @click="prevImage" />
             </div>

@@ -9,11 +9,11 @@ export default class InfoPopoverController {
 
     public constructor() {
         this._popover = document.getElementsByClassName(
-            "info_popover"
+            "info_popover",
         )[0] as HTMLElement;
 
         this._popoverText = document.getElementsByClassName(
-            "info_popover__content__text"
+            "info_popover__content__text",
         )[0] as HTMLElement;
     }
 

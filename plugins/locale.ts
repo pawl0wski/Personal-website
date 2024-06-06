@@ -1,4 +1,4 @@
-import {defineNuxtPlugin} from "nuxt/app";
+import { defineNuxtPlugin } from "nuxt/app";
 import Locale from "~/lib/locale/locale";
 import type { LangI } from "~/lib/locale/interfaces/lang";
 
@@ -10,8 +10,9 @@ export default defineNuxtPlugin({
         return {
             provide: {
                 locale: (key: string) => locale.get(key as keyof LangI),
-                localeProject: (projectId: number) => locale.getProjectDescription(projectId),
-            }
-        }
-    }
+                localeProject: (projectId: number) =>
+                    locale.getProjectDescription(projectId),
+            },
+        };
+    },
 });
