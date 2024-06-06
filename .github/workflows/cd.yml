@@ -12,16 +12,14 @@ jobs:
             - name: Setup Node.js environment
               uses: actions/setup-node@v3.4.1
               with:
-                  node-version: "16"
-            - name: "Install dependencies 💿"
+                  node-version: "21"
+            - name: "Install dependencies "
               run: npm ci
-            #            - name: "Apply my Google Analytics key 📈"
-            #              run: mv .env.example .env && sed -i "s/xxx/${{ secrets.GOOGLE_ANALYTICS }}/" .env
-            - name: "Build project 🔨"
+            - name: "Build project "
               run: npm run generate
-            - name: "Create CNAME 📄"
+            - name: "Create CNAME "
               run: printf "${{ secrets.CNAME }}" > dist/CNAME
-            - name: "Deploy on GitHub Pages 🌐"
+            - name: "Deploy on GitHub Pages "
               uses: crazy-max/ghaction-github-pages@v3
               with:
                   target_branch: gh-pages

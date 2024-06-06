@@ -103,7 +103,6 @@ div.gpg-key-entry {
         min-width: 300px;
         min-height: 50px;
 
-        border-radius: 0.5rem;
         border-width: 1px;
         border-style: solid;
         border-color: $background-color-more-darker;
@@ -116,7 +115,6 @@ div.gpg-key-entry {
             list-style-type: none;
 
             li {
-                color: $text-color-muted;
                 padding: 0.8rem 1rem;
                 display: flex;
                 align-items: center;

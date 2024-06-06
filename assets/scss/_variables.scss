@@ -1,8 +1,8 @@
 $primary-color: #7dbe0f;
-$background-color: #fcfcfc;
+$background-color: #ffffff;
 $background-color-darker: darken($background-color, 20%);
 $background-color-more-darker: darken($background-color-darker, 20%);
-$even-section-color: darken($background-color, 3%);
+$even-section-color: darken($background-color, 2%);
 $text-color: #444444;
 $text-color-muted: transparentize($text-color, 0.35);
 

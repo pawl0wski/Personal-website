@@ -14,7 +14,7 @@
                 "pmk8.png"
             ],
             "color": "#F9A949",
-            "mutedColor": "#FFF7EE",
+            "mutedColor": "#FDF8F2",
             "technologies": [
                 {
                     "name": "Django",
@@ -54,7 +54,7 @@
             "name": "Maturzystnie",
             "images": ["m1.png", "m2.png", "m3.png", "m4.png", "m5.png"],
             "color": "#d4f0dd",
-            "mutedColor": "#edfbf2",
+            "mutedColor": "#f2fdf6",
             "technologies": [
                 {
                     "name": "Django",
@@ -107,6 +107,7 @@
                 "bm7.jpg"
             ],
             "color": "#52a300",
+            "mutedColor": "#f7ffef",
             "technologies": [
                 {
                     "name": "Dart",
