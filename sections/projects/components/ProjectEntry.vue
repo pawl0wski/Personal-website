@@ -84,7 +84,6 @@ $project-width: 20rem;
     min-width: $project-width;
     user-select: none;
     background-color: $background-color;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 
     border-style: solid;
     border-radius: $small-margin;
