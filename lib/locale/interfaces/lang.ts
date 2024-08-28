@@ -26,4 +26,5 @@ export interface LangI {
     indexDescription: string;
     gpgKeysDescription: string;
     clickToShowEmail: string;
+    carrier: string;
 }

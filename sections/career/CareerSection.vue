@@ -1,7 +1,7 @@
 <template>
     <div class="education">
         <div class="education__content">
-            <TitleText content="Kariera" style="margin-bottom: 5rem" />
+            <TitleText :content="$locale('carrier')" style="margin-bottom: 5rem" />
             <CareerEntry v-for="c in career" :key="c.name" :career="c" />
         </div>
     </div>
@@ -12,9 +12,10 @@ import { defineComponent } from "vue";
 import type CareerModel from "~/content/models/career";
 import careerContent from "~/content/career.json";
 import CareerEntry from "~/sections/career/components/CareerEntry.vue";
+import TitleText from "~/components/TitleText.vue";
 
 export default defineComponent({
-    components: { CareerEntry },
+    components: { TitleText, CareerEntry },
     data(): { career: CareerModel[] } {
         return {
             career: careerContent["career"],

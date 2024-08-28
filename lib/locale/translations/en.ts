@@ -35,6 +35,7 @@ const en: LangI = {
         "Hi, I'm Jakub and I create websites. And this is my portfolio.",
     gpgKeysDescription: "A list with all my GPG keys that I use.",
     clickToShowEmail: "Click here to show E-Mail",
+    carrier: "Carrier"
 };
 
 export default en;
