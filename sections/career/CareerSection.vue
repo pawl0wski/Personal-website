@@ -1,7 +1,10 @@
 <template>
     <div class="education">
         <div class="education__content">
-            <TitleText :content="$locale('carrier')" style="margin-bottom: 5rem" />
+            <TitleText
+                :content="$locale('carrier')"
+                style="margin-bottom: 5rem"
+            />
             <CareerEntry v-for="c in career" :key="c.name" :career="c" />
         </div>
     </div>

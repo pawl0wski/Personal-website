@@ -35,7 +35,7 @@ const pl: LangI = {
         "Cześć, jestem Jakub i tworze strony internetowe. A to jest moje portfolio.",
     gpgKeysDescription: "Lista z wszystkimi kluczami GPG, z których korzystam.",
     clickToShowEmail: "Naciśnij tutaj, aby ukazać E-Mail",
-    carrier: "Kariera"
+    carrier: "Kariera",
 };
 
 export default pl;
