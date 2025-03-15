@@ -3,7 +3,10 @@
 $primary-color: #7dbe0f;
 $background-color: #ffffff;
 $background-color-darker: color.scale($background-color, $lightness: -20%);
-$background-color-more-darker: color.scale($background-color-darker, $lightness: -20%);
+$background-color-more-darker: color.scale(
+    $background-color-darker,
+    $lightness: -20%
+);
 $even-section-color: color.scale($background-color, $lightness: -2%);
 $text-color: #444444;
 $text-color-muted: color.scale($text-color, $alpha: -35%);

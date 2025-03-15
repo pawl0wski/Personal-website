@@ -5,7 +5,7 @@
  */
 export default class InfoPopoverController {
     public hide() {
-        const popover = this.getPopoverElement()
+        const popover = this.getPopoverElement();
 
         if (popover) {
             popover.style.display = "hidden";
@@ -14,7 +14,7 @@ export default class InfoPopoverController {
     }
 
     public show() {
-        const popover = this.getPopoverElement()
+        const popover = this.getPopoverElement();
 
         if (popover) {
             popover.style.display = "block";
@@ -23,7 +23,7 @@ export default class InfoPopoverController {
     }
 
     public setText(text: string) {
-        const popoverContent = this.getPopoverTextElement()
+        const popoverContent = this.getPopoverTextElement();
 
         if (popoverContent) {
             popoverContent.textContent = text;

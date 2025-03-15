@@ -1,8 +1,8 @@
 <template>
     <div class="about_me__text">
-        <p>{{$locale("aboutMeContentIntro")}}</p>
-        <p>{{$locale("aboutMeContentInterests")}}</p>
-        <p>{{$locale("aboutMeContentContact")}}</p>
+        <p>{{ $locale("aboutMeContentIntro") }}</p>
+        <p>{{ $locale("aboutMeContentInterests") }}</p>
+        <p>{{ $locale("aboutMeContentContact") }}</p>
     </div>
 </template>
 
