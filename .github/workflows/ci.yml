@@ -1,4 +1,4 @@
-name: ci
+name: CI
 
 on:
     push:
@@ -12,28 +12,17 @@ on:
 
 jobs:
     ci:
-        runs-on: ${{ matrix.os }}
-
-        strategy:
-            matrix:
-                os: [ubuntu-latest]
-                node: [v21]
-
+        runs-on: ubuntu-22.04
         steps:
-            - name: Checkout
-              uses: actions/checkout@master
-
-            - name: Setup node env
-              uses: actions/setup-node@v3.4.1
+            - name: "Checkout repository"
+              uses: actions/checkout@v4
+            - name: "Setup NodeJS"
+              uses: actions/setup-node@v4
               with:
-                  node-version: ${{ matrix.node }}
-                  check-latest: true
-
-            - name: Install dependencies
-              run: npm ci --no-audit
-
-            - name: Run linter
+                  node-version: "v22"
+            - name: "Install dependencies"
+              run: npm ci
+            - name: "Check for formatting problems"
               run: npm run lint
-
-            - name: Generate project
+            - name: "Generate project"
               run: npm run generate
