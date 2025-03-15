@@ -21,8 +21,8 @@
         "animate.css": "^4.1.1",
         "color": "^4.2.3",
         "copy-to-clipboard": "^3.3.3",
-        "nuxt": "^3.11.2",
-        "vue": "^3.4.27",
+        "nuxt": "^3.16",
+        "vue": "^3.5.13",
         "vue-router": "^4.3.2"
     },
     "devDependencies": {
