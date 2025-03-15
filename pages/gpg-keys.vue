@@ -30,9 +30,9 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
+@use "assets/scss/mixins";
 
 div.gpg-keys {
-    @include page;
+    @include mixins.page;
 }
 </style>

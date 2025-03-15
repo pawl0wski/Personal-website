@@ -1,3 +1,5 @@
+@use "variables";
+
 @mixin page {
     max-height: 100vh;
     overflow-y: scroll;
@@ -9,7 +11,7 @@
         max-width: 80rem;
         margin: 0 auto;
 
-        padding: $slide-padding;
+        padding: variables.$slide-padding;
     }
 }
 

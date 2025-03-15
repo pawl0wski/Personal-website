@@ -43,10 +43,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
+@use "assets/scss/mixins";
 
 .project {
-    @include page;
+    @include mixins.page;
 
     padding-top: 3rem;
 }

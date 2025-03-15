@@ -99,8 +99,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
-@import "assets/scss/variables";
+@use "assets/scss/mixins";
+@use "assets/scss/variables";
 
 .project_info_images {
     display: flex;
@@ -114,15 +114,15 @@ export default defineComponent({
         overflow: hidden;
         position: relative;
 
-        background-color: $even-section-color;
+        background-color: variables.$even-section-color;
 
         &__left_button,
         &__right_button {
             position: absolute;
-            height: 100%;
-            transform: translateY(50%);
 
             width: fit-content;
+            height: 100%;
+            transform: translateY(50%);
 
             z-index: 2;
         }
@@ -139,16 +139,16 @@ export default defineComponent({
         }
 
         &__image {
-            height: 100%;
+            @include mixins.absoluteCenter;
 
-            @include absoluteCenter;
+            height: 100%;
             z-index: 0;
         }
 
         &__loader {
-            text-align: center;
+            @include mixins.absoluteCenter;
 
-            @include absoluteCenter;
+            text-align: center;
             z-index: 1;
         }
     }

@@ -47,11 +47,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
-@import "assets/scss/variables";
+@use "assets/scss/mixins";
+@use "assets/scss/variables";
 
 div.knowledge {
-    @include section;
+    @include mixins.section;
 
     &__content {
         padding-bottom: 3rem;

@@ -24,11 +24,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
-@import "assets/scss/variables";
+@use "assets/scss/mixins";
 
 div.about_me {
-    @include section;
+    @include mixins.section;
 
     &__content {
         display: flex;

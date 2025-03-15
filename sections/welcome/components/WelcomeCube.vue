@@ -3,7 +3,8 @@
 </template>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "sass:color";
+@use "assets/scss/variables";
 
 div.welcome__cube {
     width: 30vw;
@@ -13,8 +14,8 @@ div.welcome__cube {
 
     background: linear-gradient(
         90deg,
-        $primary-color 5%,
-        darken($primary-color, 5%) 95%
+        variables.$primary-color 5%,
+        color.scale(variables.$primary-color, $lightness: -20%) 95%
     );
     border-radius: 33px;
     transform: rotate(60deg) translate(10vw, -16vw);

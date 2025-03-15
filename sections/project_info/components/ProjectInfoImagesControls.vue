@@ -43,7 +43,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
 .project_info__images__controls {
     width: 100%;
@@ -63,7 +63,7 @@ export default defineComponent({
 
         overflow: hidden;
 
-        background-color: $background-color-darker !important;
+        background-color: variables.$background-color-darker !important;
 
         cursor: pointer;
 

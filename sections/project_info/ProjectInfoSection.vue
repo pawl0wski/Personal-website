@@ -43,21 +43,22 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
-@import "assets/scss/mixins";
+@use "assets/scss/variables";
+@use "assets/scss/mixins";
 
 .project_info_section {
-    @include section;
+    @include mixins.section;
+
     &__content {
         &__back {
-            color: $text-color;
+            color: variables.$text-color;
 
             text-decoration: none;
             font-size: x-large;
             user-select: none;
 
             &:hover {
-                color: $primary-color;
+                color: variables.$primary-color;
                 text-decoration: underline;
 
                 cursor: pointer;

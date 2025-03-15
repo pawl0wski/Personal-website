@@ -95,7 +95,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
+
 div.gpg-key-entry {
     &__content {
         margin: 1.5rem 0;
@@ -105,8 +106,8 @@ div.gpg-key-entry {
 
         border-width: 1px;
         border-style: solid;
-        border-color: $background-color-more-darker;
-        border-radius: $small-margin;
+        border-color: variables.$background-color-more-darker;
+        border-radius: variables.$small-margin;
 
         ul {
             margin: 0;
@@ -122,7 +123,7 @@ div.gpg-key-entry {
                 min-height: 3rem;
 
                 i {
-                    color: $text-color;
+                    color: variables.$text-color;
                     font-size: 1.5rem;
                     margin-right: 1rem;
                 }
@@ -131,7 +132,7 @@ div.gpg-key-entry {
             hr {
                 width: 100%;
                 margin: 0 auto;
-                border-color: $background-color-more-darker;
+                border-color: variables.$background-color-more-darker;
                 border-bottom-style: none;
             }
         }
@@ -150,7 +151,7 @@ span.clickable-text {
     text-decoration: underline;
 
     &:hover {
-        color: $text-color;
+        color: variables.$text-color;
     }
 }
 

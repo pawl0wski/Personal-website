@@ -3,13 +3,17 @@
 </template>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "sass:color";
+@use "assets/scss/variables";
 
 div.column_divider {
     width: 1px;
     margin: 5rem 1rem 0;
 
-    background-color: transparentize($background-color-darker, 0.7);
+    background-color: color.scale(
+        variables.$background-color-darker,
+        $alpha: -30%
+    );
     opacity: 0.8;
 }
 

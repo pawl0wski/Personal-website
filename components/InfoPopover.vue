@@ -7,13 +7,13 @@
 </template>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
 #info_popover {
     max-width: 18rem;
 
     position: absolute;
-    z-index: 1;
+    z-index: 5;
 
     transition: 0.25s opacity;
 
@@ -22,17 +22,18 @@
     display: none;
 
     &__content {
-        background-color: $background-color;
+        background-color: variables.$background-color;
 
         margin: 0.7rem;
         padding: 1rem;
 
         border-style: solid;
         border-width: 1px;
-        border-color: $background-color-more-darker;
-        border-radius: $small-margin;
+        border-color: variables.$background-color-more-darker;
+        border-radius: variables.$small-margin;
 
-        box-shadow: 0 0 15px 0 $background-color;
+        box-shadow: 0 0 15px 0 variables.$background-color;
+
         &__text {
             margin: 0;
         }

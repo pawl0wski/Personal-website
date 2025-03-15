@@ -73,7 +73,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
 .knowledge_entry {
     width: 100%;
@@ -83,10 +83,10 @@ export default defineComponent({
 
     border-width: 1px;
     border-style: none;
-    border-color: $background-color-darker;
-    border-radius: $small-margin;
+    border-color: variables.$background-color-darker;
+    border-radius: variables.$small-margin;
 
-    background-color: $background-color;
+    background-color: variables.$background-color;
 
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@ export default defineComponent({
 
     &__still_learning {
         margin-left: auto;
-        color: $text-color;
+        color: variables.$text-color;
         cursor: help;
     }
 }

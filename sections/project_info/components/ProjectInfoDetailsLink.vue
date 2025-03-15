@@ -30,7 +30,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
 .project_info_details_link {
     &__link {
@@ -38,7 +38,7 @@ export default defineComponent({
         height: 3rem;
         padding: 0 1rem;
 
-        background-color: $background-color;
+        background-color: variables.$background-color;
 
         display: flex;
         flex-direction: row;
@@ -47,17 +47,17 @@ export default defineComponent({
 
         text-decoration: none;
 
-        color: $text-color;
+        color: variables.$text-color;
         transition: 0.2s background-color;
 
         border-style: none;
         border-width: 1px;
-        border-color: $background-color-more-darker;
-        border-radius: $small-margin;
+        border-color: variables.$background-color-more-darker;
+        border-radius: variables.$small-margin;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
         &:hover {
-            background-color: $even-section-color;
+            background-color: variables.$even-section-color;
         }
 
         &__icon {

@@ -25,7 +25,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "sass:color";
+@use "assets/scss/variables";
 
 .project_info_images_side_button {
     width: fit-content;
@@ -35,7 +36,7 @@ export default defineComponent({
     align-items: center;
 
     padding: 1rem;
-    background-color: transparentize($background-color, 0.95);
+    background-color: color.scale(variables.$background-color, $alpha: -95%);
 
     user-select: none;
 

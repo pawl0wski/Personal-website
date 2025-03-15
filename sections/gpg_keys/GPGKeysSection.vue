@@ -31,17 +31,18 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
-@import "assets/scss/mixins";
+@use "assets/scss/variables";
+@use "assets/scss/mixins";
 
 div.gpg-keys-section {
-    @include section;
+    @include mixins.section;
+
     &__content {
-        padding-top: $medium-margin;
-        padding-bottom: $medium-margin;
+        padding-top: variables.$medium-margin;
+        padding-bottom: variables.$medium-margin;
 
         &__list {
-            margin-top: $medium-margin;
+            margin-top: variables.$medium-margin;
         }
     }
 }

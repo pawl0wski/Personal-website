@@ -75,25 +75,25 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
-$project-width: 20rem;
+$_project-width: 20rem;
 
 .projects__project_entry {
-    width: $project-width;
-    min-width: $project-width;
+    width: $_project-width;
+    min-width: $_project-width;
     user-select: none;
-    background-color: $background-color;
+    background-color: variables.$background-color;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
 
     border-style: none;
-    border-radius: $small-margin;
+    border-radius: variables.$small-margin;
     border-width: 1px;
-    border-color: $background-color-darker;
+    border-color: variables.$background-color-darker;
 
     &__link {
         text-decoration: none;
-        color: $text-color;
+        color: variables.$text-color;
 
         &:hover {
             cursor: pointer;
@@ -106,8 +106,8 @@ $project-width: 20rem;
             align-items: center;
             justify-content: center;
 
-            border-top-right-radius: $small-margin;
-            border-top-left-radius: $small-margin;
+            border-top-right-radius: variables.$small-margin;
+            border-top-left-radius: variables.$small-margin;
 
             &__logo {
                 height: 4rem;
@@ -136,7 +136,7 @@ $project-width: 20rem;
 
             &__read_more {
                 width: 100%;
-                background-color: transparentize($primary-color, 0);
+                background-color: variables.$primary-color;
                 color: white;
                 font-weight: bold;
                 padding: 0.5rem 1rem;

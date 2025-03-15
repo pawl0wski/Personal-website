@@ -45,22 +45,23 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
-@import "assets/scss/mixins";
+@use "assets/scss/variables";
+@use "assets/scss/mixins";
 
 div.index {
     &__content {
-        @include page;
+        @include mixins.page;
+
         div:nth-child(even) {
-            background-color: $even-section-color;
+            background-color: variables.$even-section-color;
 
             &:not(:last-child):after {
                 content: "";
                 display: block;
                 border-style: solid;
                 border-width: 0 0 5vw 100vw;
-                border-color: transparent transparent $background-color
-                    transparent;
+                border-color: transparent transparent
+                    variables.$background-color transparent;
             }
 
             &:before {
@@ -68,8 +69,8 @@ div.index {
                 display: block;
                 border-style: solid;
                 border-width: 5vw 100vw 0 0;
-                border-color: $background-color transparent transparent
-                    transparent;
+                border-color: variables.$background-color transparent
+                    transparent transparent;
             }
         }
     }

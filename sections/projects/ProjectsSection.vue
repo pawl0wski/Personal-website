@@ -40,16 +40,15 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
-@import "assets/scss/variables";
+@use "assets/scss/mixins";
 
 div.projects {
-    @include section;
-
     display: flex;
     flex-direction: column;
     gap: 0;
     justify-content: center;
+
+    @include mixins.section;
 
     &__content {
         &__list {

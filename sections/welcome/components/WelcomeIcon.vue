@@ -65,17 +65,17 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
 div.welcome__icon {
     a {
         text-decoration: none;
-        color: $text-color;
+        color: variables.$text-color;
 
         transition: 0.1s color;
 
         &:hover {
-            color: $primary-color;
+            color: variables.$primary-color;
         }
 
         i {

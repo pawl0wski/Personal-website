@@ -28,10 +28,9 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import "assets/scss/mixins";
-@import "assets/scss/variables";
+@use "assets/scss/mixins";
 
 div.education {
-    @include section;
+    @include mixins.section;
 }
 </style>

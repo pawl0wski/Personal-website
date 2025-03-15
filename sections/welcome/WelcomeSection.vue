@@ -41,11 +41,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/mixins";
-@import "assets/scss/variables";
+@use "assets/scss/mixins";
+@use "assets/scss/variables";
 
 div.welcome {
-    @include section;
+    @include mixins.section;
 
     &__content {
         height: 100vh;
@@ -88,7 +88,7 @@ div.welcome {
                 text-align: center;
                 width: 100%;
                 align-items: center;
-                margin: 0 $small-margin;
+                margin: 0 variables.$small-margin;
 
                 &__icons {
                     justify-content: center;

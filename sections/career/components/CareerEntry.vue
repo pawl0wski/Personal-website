@@ -28,7 +28,8 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
-@import "assets/scss/variables";
+@use "assets/scss/variables";
+
 .education-section {
     width: fit-content;
     padding: 0 0.5rem;
@@ -55,7 +56,7 @@ export default defineComponent({
         }
 
         &__date {
-            color: $text-color-muted;
+            color: variables.$text-color-muted;
         }
     }
 }

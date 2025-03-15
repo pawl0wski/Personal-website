@@ -26,7 +26,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import "assets/scss/variables";
+@use "assets/scss/variables";
 
 div.title {
     margin-top: 0.5rem;
@@ -35,7 +35,7 @@ div.title {
         width: fit-content;
 
         border-top-style: solid;
-        border-top-color: $primary-color;
+        border-top-color: variables.$primary-color;
         border-top-width: 3px;
 
         h1,
