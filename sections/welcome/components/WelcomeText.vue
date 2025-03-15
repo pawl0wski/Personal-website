@@ -1,10 +1,15 @@
 <template>
     <div class="welcome_text animate__animated animate__fadeInUp">
-        <p class="welcome_text__title" v-html="$locale('welcomeTitle')"></p>
-        <p
-            class="welcome_text__continuation"
-            v-html="$locale('welcomeContinuation')"
-        ></p>
+        <p class="welcome_text__title">
+            {{ $locale("welcomeTitle") }}
+            <span class="primary-color">{{ $locale("firstname") }}</span>
+        </p>
+        <p class="welcome_text__continuation">
+            <span class="primary-color">{{
+                $locale("welcomeContinuationProfession")
+            }}</span>
+            {{ $locale("welcomeContinuationProfessionLocalization") }}
+        </p>
     </div>
 </template>
 
@@ -29,9 +34,11 @@
         &__title {
             font-size: xx-large;
         }
+
         &__continuation {
             font-size: large;
         }
     }
 }
 </style>
+<script setup lang="ts"></script>

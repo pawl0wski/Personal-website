@@ -1,30 +1,54 @@
 export interface LangI {
-    readMore: string;
+    /* General */
+    firstname: string;
+    lastname: string;
+    fullname: string;
+
+    /* Welcome */
     welcomeTitle: string;
-    welcomeContinuation: string;
+    welcomeContinuationProfession: string;
+    welcomeContinuationProfessionLocalization: string;
+
+    /* Links */
+    github: string;
+    linkedin: string;
+    branch: string;
+    email: string;
+    gpgKeys: string;
+
+    /* About me */
     aboutMeTitle: string;
-    aboutMeContent: string;
+    aboutMeContentIntro: string;
+    aboutMeContentInterests: string;
+    aboutMeContentContact: string;
+
+    /* Projects */
     projectsTitle: string;
+    readMore: string;
+
+    /* Knowledge */
     knowledgeTitle: string;
+    stillLearningInfo: string;
+
     languages: string;
     technologies: string;
     appsServices: string;
-    stillLearningInfo: string;
+
+    /* Project content */
     backToHomePage: string;
     links: string;
     repository: string;
     googlePlay: string;
     projectWebsite: string;
     description: string;
-    github: string;
-    linkedin: string;
-    branch: string;
-    email: string;
-    gpgKeys: string;
+
+    /* GPG Keys */
     clickHereToShowPublicKey: string;
     clickHereToHidePublicKey: string;
-    indexDescription: string;
     gpgKeysDescription: string;
     clickToShowEmail: string;
+
+    /* Others */
     carrier: string;
+    indexDescription: string;
 }

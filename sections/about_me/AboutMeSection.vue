@@ -3,7 +3,7 @@
         <div class="about_me__content">
             <div class="about_me__content__left">
                 <TitleText :content="$locale('aboutMeTitle')" />
-                <AboutMeContent :content="$locale('aboutMeContent')" />
+                <AboutMeContent />
             </div>
             <div class="about_me__content__right">
                 <AboutMePhoto />
@@ -35,6 +35,7 @@ div.about_me {
         flex-direction: row;
 
         gap: 3rem;
+
         &__left,
         &__right {
             width: 50%;
@@ -56,6 +57,7 @@ div.about_me {
             flex-direction: column-reverse;
 
             gap: 4rem;
+
             &__left,
             &__right {
                 width: 100%;

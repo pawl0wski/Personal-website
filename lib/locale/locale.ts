@@ -11,21 +11,17 @@ export default class Locale {
      * @returns {string} The localized HTML string.
      */
     get(key: keyof LangI): string {
-        let text: string;
         switch (this._detectLanguage()) {
             case "pl":
-                text = pl[key] ?? "";
-                break;
+                return pl[key] ?? "";
             default:
-                text = en[key] ?? "";
+                return en[key] ?? "";
         }
-
-        return this._changePrimaryColorTags(text);
     }
 
     /**
      * Retrieves the project description based on the detected language.
-     * @param {number} id - The project Id.
+     * @param {number} id - The project id.
      * @returns {string} The localized project description.
      */
     getProjectDescription(id: number): string {
@@ -45,17 +41,5 @@ export default class Locale {
         if (lang.includes("-")) lang = lang.split("-")[0];
 
         return lang;
-    }
-
-    /**
-     * Replaces `<pc>` tags in the given text with corresponding HTML color tags.
-     * @param {string} content - The text containing `<pc>` tags.
-     * @returns {string} The processed text with replaced color tags.
-     * @private
-     */
-    private _changePrimaryColorTags(content: string): string {
-        return content
-            .replaceAll("<pc>", `<span class="primary-color">`)
-            .replaceAll("</pc>", "</span>");
     }
 }

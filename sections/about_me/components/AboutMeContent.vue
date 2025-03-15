@@ -1,22 +1,10 @@
 <template>
     <div class="about_me__text">
-        <p v-html="content"></p>
+        <p>{{$locale("aboutMeContentIntro")}}</p>
+        <p>{{$locale("aboutMeContentInterests")}}</p>
+        <p>{{$locale("aboutMeContentContact")}}</p>
     </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-    props: {
-        content: {
-            type: String,
-            required: true,
-            default: "",
-        },
-    },
-});
-</script>
 
 <style lang="scss" scoped>
 div.about_me__text {
