@@ -17,6 +17,10 @@ import InfoPopoverController from "~/lib/info_popover_controller/info_popover_co
 import Locale from "~/lib/locale/locale";
 import type { LangI } from "~/lib/locale/interfaces/lang";
 
+interface WelcomeIconData {
+    popoverController: InfoPopoverController;
+}
+
 export default defineComponent({
     props: {
         icon: {
@@ -32,15 +36,25 @@ export default defineComponent({
             required: true,
         },
     },
+    data: (): WelcomeIconData => ({
+        popoverController: new InfoPopoverController(),
+    }),
     methods: {
         showIconName(event: MouseEvent) {
-            const popoverController = new InfoPopoverController();
             const locale = new Locale();
-            popoverController.setText(locale.get(this.name as keyof LangI));
-            popoverController.show();
-            const popoverElement = popoverController.popover;
-            const target = event.target as Element;
-            createPopper(target, popoverElement, {});
+            const popover = this.popoverController.getPopoverElement();
+            const target = event.target;
+
+            if (!popover || !target) {
+                return;
+            }
+
+            this.popoverController.setText(
+                locale.get(this.name as keyof LangI),
+            );
+            this.popoverController.show();
+
+            createPopper(target as Element, popover, {});
         },
         hideIconName() {
             const popoverController = new InfoPopoverController();

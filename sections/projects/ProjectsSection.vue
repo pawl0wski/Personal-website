@@ -21,12 +21,16 @@ import TitleText from "~/components/TitleText.vue";
 import projectsContent from "~/content/projects.json";
 import type { ProjectModel } from "~/content/models/project";
 
+interface ProjectsSectionData {
+    projects: ProjectModel[];
+}
+
 export default defineComponent({
     components: {
         TitleText,
         ProjectEntry,
     },
-    data(): { projects: ProjectModel[] } {
+    data(): ProjectsSectionData {
         const { projects } = projectsContent;
         return {
             projects: projects[0].id === 1 ? projects.reverse() : projects,

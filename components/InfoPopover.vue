@@ -1,7 +1,7 @@
 <template>
-    <div class="info_popover">
-        <div class="info_popover__content">
-            <p class="info_popover__content__text"></p>
+    <div id="info_popover">
+        <div id="info_popover__content">
+            <p id="info_popover__content__text"></p>
         </div>
     </div>
 </template>
@@ -9,10 +9,11 @@
 <style lang="scss" scoped>
 @import "assets/scss/variables";
 
-.info_popover {
+#info_popover {
     max-width: 18rem;
 
     position: absolute;
+    z-index: 1;
 
     transition: 0.25s opacity;
 

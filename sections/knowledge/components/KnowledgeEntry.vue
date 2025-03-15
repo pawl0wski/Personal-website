@@ -41,21 +41,26 @@ export default defineComponent({
             required: true,
         },
     },
-    data(): { hovered: boolean } {
-        return { hovered: false };
+    data(): { hovered: boolean; popoverController: InfoPopoverController } {
+        return {
+            hovered: false,
+            popoverController: new InfoPopoverController(),
+        };
     },
     methods: {
         showStillLearningPopover(event: MouseEvent) {
-            const popoverController = new InfoPopoverController();
             const locale = new Locale();
+            const target = event.target;
+            const popover = this.popoverController.getPopoverElement();
 
-            const target = event.target as Element;
-            const popover = popoverController.popover;
+            if (!target || !popover) {
+                return;
+            }
 
-            popoverController.setText(locale.get("stillLearningInfo"));
-            popoverController.show();
+            this.popoverController.setText(locale.get("stillLearningInfo"));
+            this.popoverController.show();
 
-            createPopper(target, popover, {
+            createPopper(target as Element, popover, {
                 placement: "bottom-end",
             });
         },

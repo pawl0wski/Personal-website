@@ -11,9 +11,10 @@ import ProjectInfoSection from "~/sections/project_info/ProjectInfoSection.vue";
 import projectsContent from "~/content/projects.json";
 import type { ProjectModel } from "~/content/models/project";
 import Locale from "~/lib/locale/locale";
+import InfoPopover from "~/components/InfoPopover.vue";
 
 export default defineComponent({
-    components: { ProjectInfoSection },
+    components: { InfoPopover, ProjectInfoSection },
     data(): { project: ProjectModel } {
         const project = projectsContent.projects.find((e: ProjectModel) => {
             return e.id.toString() === this.$route.params.id;

@@ -10,9 +10,9 @@
                 :key="technology.name"
                 :alt="technology.name"
                 :src="`/img/devicon/${technology.icon}.svg`"
-                @mouseover="showStillLearningPopover"
-                @mouseleave="hideStillLearningPopover"
-                @click="showStillLearningPopover"
+                @mouseover="showTechnologyNamePopover"
+                @mouseleave="hideTechnologyNamePopover"
+                @click="showTechnologyNamePopover"
             />
         </div>
         <p class="project_info_details__links">{{ $locale("links") }}:</p>
@@ -33,6 +33,10 @@ import ProjectInfoDetailsLink from "./ProjectInfoDetailsLink.vue";
 import type { ProjectModel } from "~/content/models/project";
 import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
 
+interface ProjectInfoDetailsData {
+    popoverController: InfoPopoverController;
+}
+
 export default defineComponent({
     components: { ProjectInfoDetailsLink },
     props: {
@@ -41,23 +45,27 @@ export default defineComponent({
             required: true,
         },
     },
+    data: (): ProjectInfoDetailsData => ({
+        popoverController: new InfoPopoverController(),
+    }),
     methods: {
-        showStillLearningPopover(event: MouseEvent) {
-            const popoverController = new InfoPopoverController();
+        showTechnologyNamePopover(event: MouseEvent) {
+            const target = event.target as HTMLImageElement | null;
+            const popover = this.popoverController.getPopoverElement();
 
-            const target = event.target as HTMLImageElement;
-            const popover = popoverController.popover;
+            if (!target || !popover) {
+                return;
+            }
 
-            popoverController.setText(target.alt);
-            popoverController.show();
+            this.popoverController.setText(target.alt);
+            this.popoverController.show();
 
             createPopper(target, popover, {
                 placement: "bottom",
             });
         },
-        hideStillLearningPopover() {
-            const popoverController = new InfoPopoverController();
-            popoverController.hide();
+        hideTechnologyNamePopover() {
+            this.popoverController.hide();
         },
     },
 });
@@ -86,6 +94,7 @@ export default defineComponent({
         flex-direction: row;
         gap: 1rem;
         flex-wrap: wrap;
+
         img {
             width: 1.8rem;
             aspect-ratio: 1 / 1;

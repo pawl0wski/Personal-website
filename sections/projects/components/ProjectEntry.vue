@@ -68,7 +68,7 @@ export default defineComponent({
             return `/img/projects/icons/${this.$props.project.id}.png`;
         },
         shortContent() {
-            return this.$props.content.slice(0, 100) + "...";
+            return this.$props.content.slice(0, 95) + "...";
         },
     },
 });

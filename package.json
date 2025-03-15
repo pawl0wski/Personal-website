@@ -1,7 +1,7 @@
 {
     "name": "personal-website",
     "version": "1.0.0",
-    "homepage": "https://pawl0wski.pl ",
+    "homepage": "https://pawl0wski.pl",
     "private": true,
     "scripts": {
         "dev": "nuxi dev",

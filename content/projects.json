@@ -86,11 +86,6 @@
                     "name": "repository",
                     "href": "https://github.com/pawl0wski/maturzystnie-web",
                     "icons": ["fa-brands", "fa-github"]
-                },
-                {
-                    "name": "projectWebsite",
-                    "href": "https://maturzystnie.pl",
-                    "icons": ["fa-solid", "fa-earth-americas"]
                 }
             ]
         },
@@ -129,6 +124,7 @@
                     "icons": ["fa-brands", "fa-google-play"]
                 }
             ]
+
         },
         {
             "id": 4,
@@ -220,6 +216,7 @@
             "name": "AlgoDebug",
             "images": ["ad1.jpg", "ad2.jpg", "ad3.jpg", "ad4.jpg", "ad5.jpg"],
             "color": "#454545",
+            "mutedColor": "#ffffff",
             "technologies": [
                 {
                     "name": "JavaScript",
