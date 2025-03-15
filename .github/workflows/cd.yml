@@ -4,6 +4,11 @@ on:
     push:
         branches: [main]
 
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
 jobs:
     check:
         runs-on: ubuntu-22.04
@@ -39,7 +44,9 @@ jobs:
               run: printf "${{ secrets.CNAME }}" > .output/public/CNAME
             - name: "Create .nojekyll"
               run: touch .output/public/.nojekyll
-            - name: "Deploy on GitHub Pages "
+            - name: "Prepare deployment artifact"
               uses: actions/upload-pages-artifact@v3
               with:
                   path: .output/public
+            - name: "Deploy to Github Pages"
+              uses: actions/deploy-pages@v4
