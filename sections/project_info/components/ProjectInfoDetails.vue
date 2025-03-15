@@ -31,7 +31,7 @@ import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
 import ProjectInfoDetailsLink from "./ProjectInfoDetailsLink.vue";
 import type { ProjectModel } from "~/content/models/project";
-import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
+import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 
 interface ProjectInfoDetailsData {
     popoverController: InfoPopoverController;

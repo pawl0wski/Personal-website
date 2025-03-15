@@ -31,7 +31,7 @@
 import { defineComponent, type PropType } from "vue";
 import { createPopper } from "@popperjs/core";
 import type { KnowledgeModel } from "~/content/models/knowledge";
-import InfoPopoverController from "~/lib/info_popover_controller/info_popover_controller";
+import InfoPopoverController from "~/lib/infoPopoverController/infoPopoverController";
 import Locale from "~/lib/locale/locale";
 
 export default defineComponent({

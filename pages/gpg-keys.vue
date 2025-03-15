@@ -8,6 +8,7 @@
 import { defineComponent } from "vue";
 import GPGKeysSection from "~/sections/gpg_keys/GPGKeysSection.vue";
 import Locale from "~/lib/locale/locale";
+
 export default defineComponent({
     components: {
         GPGKeysSection,
