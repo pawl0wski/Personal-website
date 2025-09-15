@@ -14,7 +14,7 @@ const en: LangI = {
     /* Links */
     github: "Github",
     linkedin: "LinkedIn",
-    branch: "Branch",
+    branch: "Source code",
     email: "E-Mail address",
     gpgKeys: "GPG Keys",
 

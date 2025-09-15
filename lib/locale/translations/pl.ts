@@ -14,7 +14,7 @@ const pl: LangI = {
     /* Links */
     github: "Github",
     linkedin: "LinkedIn",
-    branch: "Branch",
+    branch: "Kod źródłowy",
     email: "Adres e-mail",
     gpgKeys: "Klucze GPG",
 
