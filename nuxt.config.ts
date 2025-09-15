@@ -24,7 +24,12 @@ export default defineNuxtConfig({
                 },
             },
         ],
+        "nuxt-gtag",
     ],
+
+    gtag: {
+        id: "G-Y0CWQRXP00",
+    },
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     app: {
